@@ -1,0 +1,29 @@
+# Ignore whole work directory
+work/*
+
+# Ignore qt creator cache directory
+.qtc_clangd
+
+# Ignore qt creator user files
+*.pro.user*
+
+# Ignore aadl files
+*.aadl
+
+# Except PONGER source files
+!work/ponger
+work/ponger/*
+!work/ponger/C
+work/ponger/C/*
+!work/ponger/C/src
+work/ponger/C/src/*
+!work/ponger/C/src/ponger.c
+
+# Except PINGER source files
+!work/pinger
+work/pinger/*
+!work/pinger/SDL
+work/pinger/SDL/*
+!work/pinger/SDL/src
+work/pinger/SDL/src/*
+!work/pinger/SDL/src/pinger.pr
