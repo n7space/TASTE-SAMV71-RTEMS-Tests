@@ -1,4 +1,4 @@
 .PHONY: tests
 
 tests:
-	../env/bin/pytest
+	../env/bin/pytest -vv
