@@ -14,30 +14,30 @@ def test_samv71_rtems_serial():
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
     gdbmi = GdbController(command=["gdb-multiarch", "--interpreter=mi2"])
-    gdbmi.write(f"target extended-remote {remote_gdb_server}")
-    gdbmi.write("file samv71-rtems-serial/work/binaries/partition_1")
-    gdbmi.write("monitor reset")
-    gdbmi.write("load")
-    gdbmi.write("continue")
+    try:
+        gdbmi.write(f"target extended-remote {remote_gdb_server}")
+        gdbmi.write("file samv71-rtems-serial/work/binaries/partition_1")
+        gdbmi.write("monitor reset")
+        gdbmi.write("load")
+        gdbmi.write("continue")
 
-    # Wait for remote gdb
-    time.sleep(2)
+        # Wait for remote gdb
+        time.sleep(2)
 
-    expected = [
-        "Sent ping  0",
-        "Got pong  0",
-        "Sent ping  1",
-        "Got pong  1",
-        "Sent ping  2",
-        "Got pong  2",
-    ]
+        expected = [
+            "Sent ping  0",
+            "Got pong  0",
+            "Sent ping  1",
+            "Got pong  1",
+            "Sent ping  2",
+            "Got pong  2",
+        ]
 
-    errors = common.do_execute(
-        "samv71-rtems-serial", expected, test_exe="work/binaries/partition_2"
-    )
-
-    gdbmi.exit()
-
+        errors = common.do_execute(
+            "samv71-rtems-serial", expected, test_exe="work/binaries/partition_2"
+        )
+    finally:
+        gdbmi.exit()
     assert not errors, "\n".join(errors)
 
 
