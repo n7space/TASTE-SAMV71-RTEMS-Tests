@@ -62,7 +62,7 @@ def do_clean_build(test_name):
 def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
     '''Execute project and check expected output.
 
-    This function executes `test_binaries.sh` inside test_name directory,
+    This function executes the file specified by `test_exe` inside the test_name directory.
 
     test_name -- name of the test and also directory with test project
     expected -- a list of expected outputs
