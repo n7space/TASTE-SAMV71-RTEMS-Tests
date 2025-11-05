@@ -102,8 +102,8 @@ def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
             break
         if idx == 1:
             errors.append(
-                'Timeout ({} seconds), while expecting line {} from:\n {}'
-                .format(timeout, cnt+1, '\n'.join([str(x) for x in expected])))
+                'EOF (End of file) reached while expecting line {} from:\n {}'
+                .format(cnt+1, '\n'.join([str(x) for x in expected])))
             errors.append('Output:\n{}'.format(execute_log.getvalue()
                                                .decode('utf-8')))
             break
