@@ -1,100 +1,101 @@
-MBEP-RT-GEN-10; 
-MBEP-RT-FUN-10; 
-MBEP-RT-FUN-20; 
-MBEP-RT-FUN-30; 
-MBEP-RT-FUN-40; 
-MBEP-RT-FUN-50; 
-MBEP-RT-FUN-60; 
-MBEP-RT-FUN-70; 
-MBEP-RT-FUN-80; 
-MBEP-RT-FUN-90; 
-MBEP-RT-FUN-100; 
-MBEP-RT-FUN-101;
-MBEP-RT-FUN-110; 
-MBEP-RT-FUN-111;
-MBEP-RT-FUN-120; 
-MBEP-RT-FUN-130; 
-MBEP-RT-FUN-140; 
-MBEP-RT-FUN-150; 
-MBEP-RT-FUN-160; 
-MBEP-RT-FUN-170; 
-MBEP-RT-FUN-180; 
-MBEP-RT-FUN-190; 
-MBEP-RT-FUN-200; 
-MBEP-RT-FUN-210; 
-MBEP-RT-FUN-211;
-MBEP-RT-FUN-220; 
-MBEP-RT-FUN-221;
-MBEP-RT-FUN-230; 
-MBEP-RT-FUN-231;
-MBEP-RT-FUN-240; 
-MBEP-RT-FUN-250; 
-MBEP-RT-FUN-310; 
-MBEP-RT-FUN-320; 
-MBEP-RT-FUN-330; 
-MBEP-RT-FUN-331;
-MBEP-RT-FUN-340; 
-MBEP-RT-FUN-350; 
-MBEP-RT-FUN-360; 
-MBEP-RT-FUN-370; 
-MBEP-RT-FUN-410; 
-MBEP-RT-FUN-420; 
-MBEP-RT-FUN-430; 
-MBEP-RT-FUN-440; 
-MBEP-RT-FUN-450; 
-MBEP-RT-FUN-510; 
-MBEP-RT-FUN-520; 
-MBEP-RT-FUN-610; 
-MBEP-RT-FUN-620; 
-MBEP-RT-FUN-630; 
-MBEP-RT-FUN-640; 
-MBEP-RT-FUN-650; 
-MBEP-RT-FUN-660; 
-MBEP-RT-FUN-670; 
-MBEP-RT-FUN-680; 
-MBEP-RT-FUN-710; 
-MBEP-RT-FUN-720; 
-MBEP-RT-PER-10; 
-MBEP-RT-PER-20; 
-MBEP-RT-PER-30; 
-MBEP-RT-PER-40; 
+REQUIREMENT ID; TEST FOLDERS
+MBEP-RT-GEN-10; NONE
+MBEP-RT-FUN-10; samv71-rtems-interfaces
+MBEP-RT-FUN-20; samv71-rtems-interfaces
+MBEP-RT-FUN-30; samv71-rtems-interfaces
+MBEP-RT-FUN-40; samv71-rtems-interfaces
+MBEP-RT-FUN-50; samv71-rtems-interfaces
+MBEP-RT-FUN-60; samv71-rtems-interfaces
+MBEP-RT-FUN-70; samv71-rtems-interfaces
+MBEP-RT-FUN-80; samv71-rtems-interfaces
+MBEP-RT-FUN-90; samv71-rtems-queues
+MBEP-RT-FUN-100; samv71-rtems-sporadic-stack-size
+MBEP-RT-FUN-101; samv71-rtems-sporadic-priority
+MBEP-RT-FUN-110; samv71-rtems-cyclic-stack-size
+MBEP-RT-FUN-111; samv71-rtems-cyclic-priority
+MBEP-RT-FUN-120; samv71-rtems-interfaces
+MBEP-RT-FUN-130; samv71-rtems-interfaces
+MBEP-RT-FUN-140; samv71-rtems-interfaces
+MBEP-RT-FUN-150; samv71-rtems-interfaces
+MBEP-RT-FUN-160; samv71-rtems-interfaces
+MBEP-RT-FUN-170; samv71-rtems-interfaces
+MBEP-RT-FUN-180; samv71-rtems-interfaces
+MBEP-RT-FUN-190; samv71-rtems-interfaces
+MBEP-RT-FUN-200; samv71-rtems-sdl-timers
+MBEP-RT-FUN-210; samv71-rtems-1-n-communication
+MBEP-RT-FUN-211; samv71-rtems-1-n-communication
+MBEP-RT-FUN-220; samv71-rtems-n-1-communication
+MBEP-RT-FUN-221; samv71-rtems-n-1-communication
+MBEP-RT-FUN-230; samv71-rtems-n-m-communication
+MBEP-RT-FUN-231; samv71-rtems-n-m-communication
+MBEP-RT-FUN-240; samv71-rtems-parameter-encoding
+MBEP-RT-FUN-250; samv71-rtems-parameter-encoding
+MBEP-RT-FUN-310; samv71-rtems-boot-reason
+MBEP-RT-FUN-320; samv71-rtems-death-report
+MBEP-RT-FUN-330; samv71-rtems-death-report
+MBEP-RT-FUN-331; samv71-rtems-death-report
+MBEP-RT-FUN-340; samv71-rtems-transcoding-errors
+MBEP-RT-FUN-350; samv71-rtems-queue-overflow
+MBEP-RT-FUN-360; REMOVED
+MBEP-RT-FUN-370; samv71-rtems-time
+MBEP-RT-FUN-410; samv71-rtems-c
+MBEP-RT-FUN-420; samv71-rtems-ada
+MBEP-RT-FUN-430; samv71-rtems-sdl-c, samv71-rtems-sdl-ada
+MBEP-RT-FUN-440; samv71-rtems-sdl-c
+MBEP-RT-FUN-450; samv71-rtems-sdl-ada
+MBEP-RT-FUN-510; REMOVED
+MBEP-RT-FUN-520; REMOVED
+MBEP-RT-FUN-610; samv71-rtems-cpu-usage
+MBEP-RT-FUN-620; samv71-rtems-stack-usage
+MBEP-RT-FUN-630; samv71-rtems-sporadic-execution-stats, samv71-rtems-cyclic-execution-stats 
+MBEP-RT-FUN-640; samv71-rtems-sporadic-execution-stats, samv71-rtems-cyclic-execution-stats
+MBEP-RT-FUN-650; samv71-rtems-sporadic-execution-stats, samv71-rtems-cyclic-execution-stats
+MBEP-RT-FUN-660; samv71-rtems-queue-usage
+MBEP-RT-FUN-670; samv71-rtems-log
+MBEP-RT-FUN-680; samv71-rtems-log
+MBEP-RT-FUN-710; samv71-rtems-cpu-config-on
+MBEP-RT-FUN-720; samv71-rtems-cpu-config-off
+MBEP-RT-PER-10; samv71-rtems-cpu-config-on
+MBEP-RT-PER-20; REMOVED
+MBEP-RT-PER-30; REMOVED
+MBEP-RT-PER-40; REMOVED
 MBEP-RT-IF-10; samv71-rtems-serial
-MBEP-RT-IF-20; 
-MBEP-RT-IF-30; 
-MBEP-RT-IF-40; 
-MBEP-RT-IF-50; 
-MBEP-RT-IF-110; 
-MBEP-RT-IF-120; 
-MBEP-RT-IF-210; 
-MBEP-RT-IF-220; 
-MBEP-RT-IF-310; 
-MBEP-RT-IF-320; 
-MBEP-RT-IF-330; 
-MBEP-RT-OPER-10; 
-MBEP-RT-OPER-20; 
-MBEP-RT-RES-10; 
-MBEP-RT-RES-20; 
-MBEP-RT-RES-30; 
-MBEP-RT-RES-40; 
-MBEP-RT-RES-50; 
-MBEP-RT-RES-60; 
-MBEP-RT-RES-70; 
-MBEP-RT-RES-80; 
-MBEP-RT-RES-90; 
-MBEP-RT-RES-110; 
-MBEP-RT-RES-210; 
-MBEP-RT-RES-220; 
-MBEP-RT-RES-310; 
-MBEP-RT-DES-10; 
-MBEP-RT-DES-20; 
-MBEP-RT-DES-30; 
-MBEP-RT-DES-40; 
-MBEP-RT-DES-50; 
-MBEP-RT-DES-60; 
-MBEP-RT-DES-70; 
-MBEP-RT-DES-80; 
-MBEP-RT-Q-10; 
-MBEP-RT-Q-20; 
-MBEP-RT-Q-30; 
-MBEP-RT-Q-40; 
-MBEP-RT-INST-10;
+MBEP-RT-IF-20; NONE
+MBEP-RT-IF-30; samv71-rtems-can
+MBEP-RT-IF-40; samv71-rtems-passthrough
+MBEP-RT-IF-50; samv71-rtems-twin-serial
+MBEP-RT-IF-110; samv71-rtems-death-report
+MBEP-RT-IF-120; samv71-rtems-death-report
+MBEP-RT-IF-210; samv71-rtems-sporadic-execution-stats, samv71-rtems-cyclic-execution-stats, samv71-rtems-queue-usage, samv71-rtems-stack-usage, samv71-rtems-cpu-usage
+MBEP-RT-IF-220; samv71-rtems-log
+MBEP-RT-IF-310; samv71-rtems-time-resolution
+MBEP-RT-IF-320; samv71-rtems-timer-resolution
+MBEP-RT-IF-330; samv71-rtems-cyclic-resolution
+MBEP-RT-OPER-10; NONE
+MBEP-RT-OPER-20; NONE
+MBEP-RT-RES-10; NONE
+MBEP-RT-RES-20; REMOVED
+MBEP-RT-RES-30; REMOVED
+MBEP-RT-RES-40; REMOVED
+MBEP-RT-RES-50; REMOVED
+MBEP-RT-RES-60; REMOVED
+MBEP-RT-RES-70; REMOVED
+MBEP-RT-RES-80; REMOVED
+MBEP-RT-RES-90; REMOVED
+MBEP-RT-RES-110; samv71-rtems-fpu
+MBEP-RT-RES-210; samv71-rtems-stress
+MBEP-RT-RES-220; samv71-rtems-stress
+MBEP-RT-RES-310; samv71-rtems-log, samv71-rtems-sporadic-execution-stats, samv71-rtems-cyclic-execution-stats, samv71-rtems-queue-usage, samv71-rtems-stack-usage, samv71-rtems-cpu-usage
+MBEP-RT-DES-10; NONE
+MBEP-RT-DES-20; NONE
+MBEP-RT-DES-30; NONE
+MBEP-RT-DES-40; NONE
+MBEP-RT-DES-50; NONE
+MBEP-RT-DES-60; NONE
+MBEP-RT-DES-70; NONE
+MBEP-RT-DES-80; NONE
+MBEP-RT-Q-10; NONE
+MBEP-RT-Q-20; NONE
+MBEP-RT-Q-30; samv71-rtems-build
+MBEP-RT-Q-40; samv71-rtems-build
+MBEP-RT-INST-10; NONE
