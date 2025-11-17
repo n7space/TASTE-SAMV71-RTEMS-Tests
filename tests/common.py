@@ -26,8 +26,6 @@ def do_build(test_name, arguments):
     stdout_file = "{}_stdout.log".format(os.path.basename(os.path.normpath(test_name)))
     stderr_file = "{}_stderr.log".format(os.path.basename(os.path.normpath(test_name)))
 
-    print
-
     stdout_filepath = os.path.join(logs_dir, stdout_file)
     stderr_filepath = os.path.join(logs_dir, stderr_file)
 
