@@ -21,7 +21,7 @@ void function_1_PI_trigger(void)
 {
 	if(counter == 3){
 
-		volatile int a = 1969;
+		volatile int a = 4005;
    		volatile int b = 0;
     	volatile int c = a / b;  // triggers UsageFault
     	(void)c;

@@ -4,7 +4,6 @@
 import common
 import time
 import os
-import pprint
 from pygdbmi.gdbcontroller import GdbController
 
 
@@ -20,7 +19,7 @@ def test_samv71_rtems_death_report():
         gdbmi.write("file samv71-rtems-death-report/TEST-SAMV71-FAULT/work/binaries/partition_1")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
-        test_result = gdbmi.write("continue")
+        gdbmi.write("continue")
 
         # Wait for remote gdb
         time.sleep(2)
@@ -37,16 +36,22 @@ def test_samv71_rtems_death_report():
         gdbmi.write("file samv71-rtems-death-report/TEST-SAMV71-VERIFY-FAULT/work/binaries/partition_1")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
-        gdbmi.write("b function_1.c:45")
+        gdbmi.write("b function_1.c:44")
         gdbmi.write("continue")
 
         # Wait for remote gdb
         stopped = False
-        while not stopped:
+        max_iterations = 1000
+        iterations = 0
+        while not stopped and iterations < max_iterations:
             responses = gdbmi.get_gdb_response(timeout_sec=3)
             for msg in responses:
                 if msg['type'] == 'notify' and msg['message'] == 'stopped':
                     stopped = True
+            iterations += 1
+
+        if not stopped:
+            raise TimeoutError("Debugger did not stop within expected time")
 
         test_result = gdbmi.write('-data-evaluate-expression test_result')
         value = None

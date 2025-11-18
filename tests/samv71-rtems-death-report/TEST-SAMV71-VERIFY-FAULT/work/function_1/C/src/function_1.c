@@ -41,8 +41,6 @@ void function_1_PI_trigger(void)
 	if(death_report->stack_trace[2] != 4005){
 		test_result = false;
 	}
-
-	(void)test_result;
 }
 
 
