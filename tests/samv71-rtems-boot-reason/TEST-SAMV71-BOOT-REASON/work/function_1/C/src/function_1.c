@@ -12,9 +12,6 @@
 
 void function_1_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[Function_1] Startup");
 }
 
 void function_1_PI_trigger(void)
