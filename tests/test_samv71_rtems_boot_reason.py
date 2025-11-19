@@ -41,11 +41,17 @@ def test_samv71_rtems_boot_reason():
 
         # Wait for remote gdb
         stopped = False
-        while not stopped:
+        max_iterations = 1000
+        iterations = 0
+        while not stopped and iterations < max_iterations:
             responses = gdbmi.get_gdb_response(timeout_sec=3)
             for msg in responses:
                 if msg['type'] == 'notify' and msg['message'] == 'stopped':
                     stopped = True
+            iterations += 1
+
+        if not stopped:
+            raise TimeoutError("Debugger did not stop within expected time")
 
         test_result = gdbmi.write('-data-evaluate-expression test_result')
         value = None
