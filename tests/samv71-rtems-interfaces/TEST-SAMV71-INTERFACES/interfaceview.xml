@@ -1,0 +1,323 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-INTERFACES.acn" UiFile="interfaceview.ui.xml" modifierHash="8f9a913">
+<Function id="{c42e15d2-9b8c-4cd6-8d1f-1ae7a454c22a}" name="trigger" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{e266a5a7-61dc-4214-9e88-6bcb53d65bdf}" name="cyclic_if" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" stack_size="1024" priority="1">
+</Provided_Interface>
+
+<Required_Interface id="{54ccc373-50b5-4d3d-986f-288415f2ba98}" name="sporadic_provided_if_no_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{7353b3b1-df3f-459b-ab17-0681e9013bec}" name="sporadic_provided_if_with_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Input_Parameter name="p1" type="MySeq" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{cd63d972-ab7a-4dce-b3b3-29b8094f7d3b}" name="protected_provided_if_no_params" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{722393cc-8aed-4e74-9b16-e8c0d4b1c605}" name="protected_provided_if_with_params_in" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{ff899330-d427-488b-8a54-5a9d6526467d}" name="unportected_provided_if_no_params" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{c0e7c547-6ac4-4a44-983e-dad374f731ac}" name="unprotected_provided_if_with_params_in" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{2e11a151-19e4-4369-a060-8fee792dc113}" name="protected_provided_if_with_params_out" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{14e0f81f-e2dc-4b0e-86e4-01dc8bd773c2}" name="unprotected_provided_if_with_params_out" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{41238062-506a-444d-b06b-9c74131752e0}" name="testfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{0a62439c-7622-4b65-8a16-3259e54ff836}" name="sporadic_provided_if_no_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+</Provided_Interface>
+
+<Provided_Interface id="{8678f654-b7a4-4582-afbb-2df9cf09a809}" name="sporadic_provided_if_with_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Input_Parameter name="p1" type="MySeq" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{ef3c608c-407b-4342-b1aa-d720db050b3b}" name="protected_provided_if_no_params" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{1b1609e2-785a-403f-8c85-13e61bdb73ca}" name="protected_provided_if_with_params_in" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{ae4cdb70-8523-4b23-9137-a7c2c1c2b136}" name="unportected_provided_if_no_params" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{42aaf4b1-b2a5-4442-b61b-3249ce0440d7}" name="unprotected_provided_if_with_params_in" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{a8d33ce0-549e-4bdc-a832-4fc80cdcc537}" name="protected_provided_if_with_params_out" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{888d8973-d48c-4b81-9a8c-89fa1b451b15}" name="unprotected_provided_if_with_params_out" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{f4e9cc74-b133-4826-8577-8acac28f53d3}" name="test_loop" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" dispatch_offset="150" stack_size="1024" priority="1">
+</Provided_Interface>
+
+<Required_Interface id="{d78157a8-1d9b-4044-a07d-d40dea565099}" name="sporadic_required_if_no_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{3ab06b90-8eb6-4460-aa03-13cad52016f6}" name="sporadic_required_if_with_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Input_Parameter name="p1" type="MySeq" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{59f97886-be89-41d5-a6a6-be42ffe369ad}" name="protected_required_if_no_params" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+<Required_Interface id="{2dfe8489-bca0-4a8d-a0c4-23ae07998ef6}" name="protected_required_if_with_params_in" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="false"/>
+</Required_Interface>
+
+<Required_Interface id="{97f236b3-6739-485d-818a-4f2112e2a64a}" name="unportected_required_if_no_params" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="false"/>
+</Required_Interface>
+
+<Required_Interface id="{e6d4cd73-a9b6-4077-98ad-77a9ca26ad99}" name="unprotected_required_if_with_params_in" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="false"/>
+</Required_Interface>
+
+<Required_Interface id="{4a81bf7e-a960-44ba-9f85-808d69e7e617}" name="protected_required_if_with_params_out" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="false"/>
+</Required_Interface>
+
+<Required_Interface id="{0cb95f1d-5168-438e-ba16-bbc116f4bfc8}" name="unprotected_required_if_with_params_out" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{46855349-3626-4e8a-b50e-84bbcbd73daf}" name="mock" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{8a3fc1c9-3169-45e9-a2bb-8c9e2cf6c4c1}" name="sporadic_required_if_no_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+</Provided_Interface>
+
+<Provided_Interface id="{4942a28d-35b2-40b2-86cc-41468b6c3335}" name="sporadic_required_if_with_param" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" queue_size="1" miat="0" stack_size="1024" priority="1">
+    <Input_Parameter name="p1" type="MySeq" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{b295985d-21ec-432a-a25b-a903cc4620e1}" name="protected_required_if_no_params" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{dd3e7339-3b09-4046-8e35-ecadf0b53570}" name="protected_provided_if_with_params_in" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{f065ca8d-ea28-40c9-beb2-d94ed8b30398}" name="unportected_provided_if_no_params" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+</Provided_Interface>
+
+<Provided_Interface id="{20b40a42-e7e2-4d76-b571-c83dd778c714}" name="unprotected_provided_if_with_params_in" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Input_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Input_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{8112e0c5-f782-4348-8eda-78246a27d5bf}" name="protected_provided_if_with_params_out" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{f9a11f90-0411-4488-bc65-176f91dfae97}" name="unprotected_required_if_with_params_out" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p2" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p3" type="MyInteger" encoding="NATIVE"/>
+    <Output_Parameter name="p4" type="MySeq" encoding="NATIVE"/>
+    <Output_Parameter name="p5" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Connection id="{8f997c91-5a29-437b-a2ca-28f020eb9acd}" name="testfunction_unportected_required_if_no_params____mock_unportected_provided_if_no_params" required_system_element="NO">
+    <Source iface_id="{97f236b3-6739-485d-818a-4f2112e2a64a}" func_name="testfunction" ri_name="unportected_required_if_no_params" />
+    <Target iface_id="{f065ca8d-ea28-40c9-beb2-d94ed8b30398}" func_name="mock" pi_name="unportected_provided_if_no_params" />
+</Connection>
+
+<Connection id="{c845bd37-a0d4-4d2d-a9f7-1991f19a0ce0}" required_system_element="NO">
+    <Source iface_id="{2e11a151-19e4-4369-a060-8fee792dc113}" func_name="trigger" ri_name="protected_provided_if_with_params_out" />
+    <Target iface_id="{a8d33ce0-549e-4bdc-a832-4fc80cdcc537}" func_name="testfunction" pi_name="protected_provided_if_with_params_out" />
+</Connection>
+
+<Connection id="{cdfe7e93-ae08-4b66-b1bb-8cd870757c61}" required_system_element="NO">
+    <Source iface_id="{54ccc373-50b5-4d3d-986f-288415f2ba98}" func_name="trigger" ri_name="sporadic_provided_if_no_param" />
+    <Target iface_id="{0a62439c-7622-4b65-8a16-3259e54ff836}" func_name="testfunction" pi_name="sporadic_provided_if_no_param" />
+</Connection>
+
+<Connection id="{f6db059d-ff7d-4343-80d1-9576f0662635}" required_system_element="NO">
+    <Source iface_id="{d78157a8-1d9b-4044-a07d-d40dea565099}" func_name="testfunction" ri_name="sporadic_required_if_no_param" />
+    <Target iface_id="{8a3fc1c9-3169-45e9-a2bb-8c9e2cf6c4c1}" func_name="mock" pi_name="sporadic_required_if_no_param" />
+</Connection>
+
+<Connection id="{cb79669a-d6e0-4424-b600-a263329cf72f}" name="testfunction_protected_required_if_with_params_in____mock_protected_provided_if_with_params_in" required_system_element="NO">
+    <Source iface_id="{2dfe8489-bca0-4a8d-a0c4-23ae07998ef6}" func_name="testfunction" ri_name="protected_required_if_with_params_in" />
+    <Target iface_id="{dd3e7339-3b09-4046-8e35-ecadf0b53570}" func_name="mock" pi_name="protected_provided_if_with_params_in" />
+</Connection>
+
+<Connection id="{2ce9dfb5-550f-41b0-bc1f-f2b59a667bbc}" required_system_element="NO">
+    <Source iface_id="{14e0f81f-e2dc-4b0e-86e4-01dc8bd773c2}" func_name="trigger" ri_name="unprotected_provided_if_with_params_out" />
+    <Target iface_id="{888d8973-d48c-4b81-9a8c-89fa1b451b15}" func_name="testfunction" pi_name="unprotected_provided_if_with_params_out" />
+</Connection>
+
+<Connection id="{784c3f5d-365f-49e0-8581-eccffdb9ed72}" required_system_element="NO">
+    <Source iface_id="{59f97886-be89-41d5-a6a6-be42ffe369ad}" func_name="testfunction" ri_name="protected_required_if_no_params" />
+    <Target iface_id="{b295985d-21ec-432a-a25b-a903cc4620e1}" func_name="mock" pi_name="protected_required_if_no_params" />
+</Connection>
+
+<Connection id="{3ca55741-a38e-4b44-abe8-2b1faddacd96}" required_system_element="NO">
+    <Source iface_id="{3ab06b90-8eb6-4460-aa03-13cad52016f6}" func_name="testfunction" ri_name="sporadic_required_if_with_param" />
+    <Target iface_id="{4942a28d-35b2-40b2-86cc-41468b6c3335}" func_name="mock" pi_name="sporadic_required_if_with_param" />
+</Connection>
+
+<Connection id="{ffbbb6ae-a859-4b71-b5eb-1e89c5b9fbbc}" required_system_element="NO">
+    <Source iface_id="{cd63d972-ab7a-4dce-b3b3-29b8094f7d3b}" func_name="trigger" ri_name="protected_provided_if_no_params" />
+    <Target iface_id="{ef3c608c-407b-4342-b1aa-d720db050b3b}" func_name="testfunction" pi_name="protected_provided_if_no_params" />
+</Connection>
+
+<Connection id="{2bb64101-cc55-4535-b5a9-e252d0abd747}" name="testfunction_unprotected_required_if_with_params_in____mock_unprotected_provided_if_with_params_in" required_system_element="NO">
+    <Source iface_id="{e6d4cd73-a9b6-4077-98ad-77a9ca26ad99}" func_name="testfunction" ri_name="unprotected_required_if_with_params_in" />
+    <Target iface_id="{20b40a42-e7e2-4d76-b571-c83dd778c714}" func_name="mock" pi_name="unprotected_provided_if_with_params_in" />
+</Connection>
+
+<Connection id="{726e961f-7042-4bd7-9c2e-cbb6ec838b30}" name="trigger_protected_provided_if_with_params_in____testfunction_protected_provided_if_with_params_in" required_system_element="NO">
+    <Source iface_id="{722393cc-8aed-4e74-9b16-e8c0d4b1c605}" func_name="trigger" ri_name="protected_provided_if_with_params_in" />
+    <Target iface_id="{1b1609e2-785a-403f-8c85-13e61bdb73ca}" func_name="testfunction" pi_name="protected_provided_if_with_params_in" />
+</Connection>
+
+<Connection id="{5c6b1c81-fd6b-4d2f-9e4a-7565ef2664ee}" name="trigger_unprotected_provided_if_with_params_in____testfunction_unprotected_provided_if_with_params_in" required_system_element="NO">
+    <Source iface_id="{c0e7c547-6ac4-4a44-983e-dad374f731ac}" func_name="trigger" ri_name="unprotected_provided_if_with_params_in" />
+    <Target iface_id="{42aaf4b1-b2a5-4442-b61b-3249ce0440d7}" func_name="testfunction" pi_name="unprotected_provided_if_with_params_in" />
+</Connection>
+
+<Connection id="{f15f8f55-b03d-48fc-9fb5-329697f7d896}" required_system_element="NO">
+    <Source iface_id="{ff899330-d427-488b-8a54-5a9d6526467d}" func_name="trigger" ri_name="unportected_provided_if_no_params" />
+    <Target iface_id="{ae4cdb70-8523-4b23-9137-a7c2c1c2b136}" func_name="testfunction" pi_name="unportected_provided_if_no_params" />
+</Connection>
+
+<Connection id="{c4996aad-fb59-4702-a9fd-f9058cc02187}" name="testfunction_protected_required_if_with_params_out____mock_protected_provided_if_with_params_out" required_system_element="NO">
+    <Source iface_id="{4a81bf7e-a960-44ba-9f85-808d69e7e617}" func_name="testfunction" ri_name="protected_required_if_with_params_out" />
+    <Target iface_id="{8112e0c5-f782-4348-8eda-78246a27d5bf}" func_name="mock" pi_name="protected_provided_if_with_params_out" />
+</Connection>
+
+<Connection id="{c68b9f1f-b8ec-4db4-a703-1a5ba1aebcda}" required_system_element="NO">
+    <Source iface_id="{0cb95f1d-5168-438e-ba16-bbc116f4bfc8}" func_name="testfunction" ri_name="unprotected_required_if_with_params_out" />
+    <Target iface_id="{f9a11f90-0411-4488-bc65-176f91dfae97}" func_name="mock" pi_name="unprotected_required_if_with_params_out" />
+</Connection>
+
+<Connection id="{0c3d5eff-1565-489b-8044-8cb975ae56db}" required_system_element="NO">
+    <Source iface_id="{7353b3b1-df3f-459b-ab17-0681e9013bec}" func_name="trigger" ri_name="sporadic_provided_if_with_param" />
+    <Target iface_id="{8678f654-b7a4-4582-afbb-2df9cf09a809}" func_name="testfunction" pi_name="sporadic_provided_if_with_param" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
