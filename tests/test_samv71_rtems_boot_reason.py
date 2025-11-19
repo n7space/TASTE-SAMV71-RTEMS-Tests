@@ -4,11 +4,10 @@
 import common
 import time
 import os
-import pprint
 from pygdbmi.gdbcontroller import GdbController
 
 
-def test_samv71_rtems_bot_reason():
+def test_samv71_rtems_boot_reason():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     build = common.do_build("samv71-rtems-boot-reason/TEST-SAMV71-FAULT", ["samv71", "debug"])
     stderr = build.stderr.decode("utf-8")
@@ -20,7 +19,7 @@ def test_samv71_rtems_bot_reason():
         gdbmi.write("file samv71-rtems-boot-reason/TEST-SAMV71-FAULT/work/binaries/partition_1")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
-        test_result = gdbmi.write("continue")
+        gdbmi.write("continue")
 
         # Wait for remote gdb
         time.sleep(2)
@@ -62,4 +61,4 @@ def test_samv71_rtems_bot_reason():
 
 
 if __name__ == "__main__":
-    test_samv71_rtems_death_report()
+    test_samv71_rtems_boot_reason()

@@ -16,11 +16,9 @@ void function_1_startup(void)
 
 void function_1_PI_trigger(void)
 {
-	enum BootHelper_ResetReason reset_reason = Hal_GetResetReason();
+	enum Reset_Reason reset_reason = Hal_GetResetReason();
 
-	volatile bool test_result = reset_reason == BootHelper_ResetReason_Software;
-
-	(void)test_result;
+	volatile bool test_result = reset_reason == Reset_Reason_Software;
 }
 
 
