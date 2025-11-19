@@ -36,7 +36,7 @@ def test_samv71_rtems_boot_reason():
         gdbmi.write("file samv71-rtems-boot-reason/TEST-SAMV71-BOOT-REASON/work/binaries/partition_1")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
-        gdbmi.write("b function_1.c:26")
+        gdbmi.write("b function_1.c:22")
         gdbmi.write("continue")
 
         # Wait for remote gdb
