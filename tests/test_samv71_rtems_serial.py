@@ -40,6 +40,5 @@ def test_samv71_rtems_serial():
         gdbmi.exit()
     assert not errors, "\n".join(errors)
 
-
 if __name__ == "__main__":
     test_samv71_rtems_serial()
