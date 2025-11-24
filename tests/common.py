@@ -6,6 +6,7 @@ import os
 import io
 import pexpect
 import signal
+from pygdbmi.gdbcontroller import GdbController
 
 
 def do_build(test_name, arguments):
@@ -112,3 +113,39 @@ def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
 
     process.kill(signal.SIGKILL)
     return errors
+
+def run_verification_project(remote_gdb_server, project_bin, src_file_name, src_file_line, test_result_var_name='test_result'):
+    gdbmi = GdbController(command=["gdb-multiarch", "--interpreter=mi2"])
+    try:
+        gdbmi.write(f"target extended-remote {remote_gdb_server}")
+        gdbmi.write(f"file {project_bin}")
+        gdbmi.write("monitor reset")
+        gdbmi.write("load")
+        gdbmi.write(f"b {src_file_name}:{src_file_line}")
+        gdbmi.write("continue")
+
+        # Wait for remote gdb
+        stopped = False
+        max_iterations = 1000
+        iterations = 0
+        while not stopped and iterations < max_iterations:
+            responses = gdbmi.get_gdb_response(timeout_sec=3)
+            for msg in responses:
+                if msg['type'] == 'notify' and msg['message'] == 'stopped':
+                    stopped = True
+            iterations += 1
+
+        if not stopped:
+            raise TimeoutError("Debugger did not stop within expected time")
+
+        test_result = gdbmi.write(f'-data-evaluate-expression {test_result_var_name}')
+        value = None
+        for msg in test_result:
+            if msg['type'] == 'result' and msg['message'] == 'done':
+                payload = msg.get('payload', {})
+                if 'value' in payload:
+                    value = payload['value']
+
+        assert value == 'true', f"Test execution errors: \n test_result = {value}"
+    finally:
+        gdbmi.exit()

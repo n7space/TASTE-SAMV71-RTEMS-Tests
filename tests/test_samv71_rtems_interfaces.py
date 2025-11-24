@@ -8,6 +8,7 @@ from pygdbmi.gdbcontroller import GdbController
 
 
 def test_samv71_rtems_interfaces():
+    common.do_clean_build("samv71-rtems-interfaces/TEST-SAMV71-INTERFACES")
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     
     build = common.do_build("samv71-rtems-interfaces/TEST-SAMV71-INTERFACES", ["samv71", "debug"])
