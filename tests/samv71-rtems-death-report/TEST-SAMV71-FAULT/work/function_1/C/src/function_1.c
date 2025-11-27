@@ -9,19 +9,37 @@
 */
 #include "function_1.h"
 #include <FaultHandler.h>
+#include <DeathReport.h>
 
 static unsigned int counter = 0;
+extern const uint32_t DEATH_REPORT_BEGIN;
+
+static void clean_death_report()
+{
+	DeathReportWriter_DeathReport *const death_report =
+		(DeathReportWriter_DeathReport *const)&DEATH_REPORT_BEGIN;
+
+	death_report->checksum = 0;
+	death_report->exception_id = 0;
+	death_report->registers.r1 = 0;
+	death_report->registers.r2 = 0;
+
+	for(int i = 0; i < DEATH_REPORT_STACK_TRACE_SIZE; i++){
+		death_report->stack_trace[i] = 0;
+	}
+}
 
 void function_1_startup(void)
 {
-	FaultHandler_Init();
 }
 
 void function_1_PI_trigger(void)
 {
 	if(counter == 3){
 
-		volatile int a = 4005;
+		clean_death_report();
+
+		volatile int a = 4004;
    		volatile int b = 0;
     	volatile int c = a / b;  // triggers UsageFault
     	(void)c;

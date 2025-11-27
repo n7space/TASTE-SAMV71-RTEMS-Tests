@@ -12,11 +12,23 @@
 
 extern const uint32_t DEATH_REPORT_BEGIN;
 
+static void clean_death_report()
+{
+	DeathReportWriter_DeathReport *const death_report =
+		(DeathReportWriter_DeathReport *const)&DEATH_REPORT_BEGIN;
+
+	death_report->checksum = 0;
+	death_report->exception_id = 0;
+	death_report->registers.r1 = 0;
+	death_report->registers.r2 = 0;
+
+	for(int i = 0; i < DEATH_REPORT_STACK_TRACE_SIZE; i++){
+		death_report->stack_trace[i] = 0;
+	}
+}
+
 void function_1_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[Function_1] Startup");
 }
 
 void function_1_PI_trigger(void)
@@ -34,13 +46,15 @@ void function_1_PI_trigger(void)
 		test_result = false;
 	}
 
-	if(death_report->registers.r2 != 4005){
+	if(death_report->registers.r2 != 4004){
 		test_result = false;
 	}
 
-	if(death_report->stack_trace[2] != 4005){
+	if(death_report->stack_trace[2] != 4004){
 		test_result = false;
 	}
+
+	clean_death_report();
 }
 
 
