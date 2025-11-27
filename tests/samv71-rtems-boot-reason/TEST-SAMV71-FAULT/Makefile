@@ -11,9 +11,6 @@ SPACECREATOR?=spacecreator.AppImage
 #
 # NOTE: this can also be done in the Deployment View directly
 
-CURRENT_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-export PARTITION_1_USER_LDSCRIPT=$(CURRENT_DIR)work/linker_script/linkcmds.intsram
-
 # If you need to reset this Makefile to its original state, run:
 # $ taste reset
 
