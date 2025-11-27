@@ -15,7 +15,7 @@ def test_samv71_rtems_1_n_communication():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-1-n-communication/TEST-SAMV71-1-N-COMMUNICATION/work/binaries/partition_1', 'testfunction.c', '31')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-1-n-communication/TEST-SAMV71-1-N-COMMUNICATION/work/binaries/partition_1', 'testfunction.c', '45')
 
 if __name__ == "__main__":
     test_samv71_rtems_1_n_communication()

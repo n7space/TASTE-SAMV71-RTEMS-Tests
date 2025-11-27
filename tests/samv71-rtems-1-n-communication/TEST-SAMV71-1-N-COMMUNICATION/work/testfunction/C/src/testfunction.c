@@ -9,12 +9,19 @@
 */
 #include "testfunction.h"
 
+#define TEST_FUNCTIONS_COUNT 10
+
 static bool test_result;
 static bool is_done = false;
-int test_counter = 0;
+
+// set of flags, each represents if communication to a given required interface has succeded
+bool test_1_to_n_flag[TEST_FUNCTIONS_COUNT];
 
 void testfunction_startup(void)
 {
+	for(int i = 0; i < TEST_FUNCTIONS_COUNT; i++){
+		test_1_to_n_flag[i] = false;
+	}
 }
 
 void testfunction_PI_trigger(void)
@@ -26,7 +33,14 @@ void testfunction_PI_trigger(void)
 	asn1SccMyInteger param = 13;
 	testfunction_RI_PI_1(&param);
 
-	test_result = test_counter == 10;
+	test_result = true;
+	for(int i = 0; i < TEST_FUNCTIONS_COUNT; i++){
+		if(test_1_to_n_flag[i] == false){
+			test_result = false;
+			break;
+		}
+	}
+
 	is_done = true;
 }
 

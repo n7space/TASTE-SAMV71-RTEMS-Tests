@@ -9,7 +9,7 @@
 */
 #include "function_2.h"
 
-extern int test_counter;
+extern bool test_1_to_n_flag[10];
 
 void function_2_startup(void)
 {
@@ -18,7 +18,7 @@ void function_2_startup(void)
 void function_2_PI_PI_1(const asn1SccMyInteger *IN_P1)
 {
 	if(*IN_P1 == 13){
-		test_counter++;
+		test_1_to_n_flag[0] = true;
 	}
 }
 

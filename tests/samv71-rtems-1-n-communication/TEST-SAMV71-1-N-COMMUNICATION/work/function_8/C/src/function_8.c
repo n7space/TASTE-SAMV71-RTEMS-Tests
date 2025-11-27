@@ -9,7 +9,9 @@
 */
 #include "function_8.h"
 
-extern int test_counter;
+#define TEST_FUNCTIONS_COUNT 10
+
+extern bool test_1_to_n_flag[TEST_FUNCTIONS_COUNT];
 
 void function_8_startup(void)
 {
@@ -18,7 +20,7 @@ void function_8_startup(void)
 void function_8_PI_PI_1(const asn1SccMyInteger *IN_P1)
 {
 	if(*IN_P1 == 13){
-		test_counter++;
+		test_1_to_n_flag[6] = true;
 	}
 }
 
