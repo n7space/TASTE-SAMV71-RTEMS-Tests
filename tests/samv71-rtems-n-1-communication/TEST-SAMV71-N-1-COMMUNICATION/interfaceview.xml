@@ -1,0 +1,304 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-N-1-COMMUNICATION.acn" UiFile="interfaceview.ui.xml" modifierHash="8f9a913">
+<Function id="{c991f2bd-791b-4425-b41f-2b680e07aced}" name="triggerfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{97a1055f-9c05-4d57-a198-782ba4bb565e}" name="trigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" dispatch_offset="0" priority="1" period="50" stack_size="1024">
+</Provided_Interface>
+
+<Required_Interface id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{7666e1f5-dd97-44a8-8b1c-e23f9ee59af3}" name="testfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{34cf8218-3c2e-4fa8-9739-d8cfaa721828}" name="testtrigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" dispatch_offset="0" priority="1" period="300" stack_size="1024">
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{e0497e11-96c4-4176-be5f-133b3b9f295c}" name="Function_5" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{c98fd080-74b4-406e-a1af-df2fc8e03bc2}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{d01976c3-381b-4893-be8e-eaf5a6357797}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{243e7ada-c190-48a0-bb3e-7b9d81376566}" name="Function_3" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{bf161606-0a48-4813-a61b-1d3e763a2b4f}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{79bc72a7-74e7-40a5-a4ee-b53c5702dbce}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{36cf870c-bae5-47a7-b40b-d6ccff98b21a}" name="Function_8" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{608e9e35-dea5-41f2-839b-829f7a7745ac}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{e4442b28-de33-40d0-bd83-4d58eb6ab02a}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{715c97ab-ce54-490f-8224-50bccd96b15d}" name="Function_6" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{d1a0dfc8-4952-4b09-8ca0-10b9df50a04f}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{48b63043-1f60-4315-b3e1-2c71c7d7ad61}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{ee349287-e1e9-43a8-92c8-06b23fb62cc0}" name="Function_11" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{5ad6c35c-02d7-4c4c-99fb-2d11a8545474}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{957e871b-3962-475f-b9e6-e7830ea832f5}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{fb7e566d-63af-4165-a265-abe0291cd9c0}" name="Function_2" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{3bca286e-4ae5-406c-813d-7e4685211ed1}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{1b9da29a-6ee0-4545-9eaa-2d00a3caf7a4}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{2590cca6-b3d1-49dd-bf10-65e936190b74}" name="Function_10" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{759313a0-877a-4871-b53d-2822fddde7fa}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{60919505-fc16-4482-b5e4-1a5842aea28f}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{644909de-7d36-4377-a93f-d78f236b5c96}" name="Function_7" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{57ef5adf-f9aa-4be6-99e8-5ed99a0a9455}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{93d36992-2d0e-4978-843c-b346f9419da1}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{bb1852eb-52a3-4e81-a9ed-5bb18d663080}" name="Function_4" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{b23a0e5b-e539-4e68-a03f-c79e0f356b43}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{966c175c-4c36-43dd-bf9f-f6a041fbaab3}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{0e155ccf-eddb-4a28-9244-6e891371c254}" name="Function_9" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_min="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{75b11dee-5c68-4cdf-8319-983e6ebfc797}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{134ffb1d-d7b5-407e-a2a5-eccf6480ee81}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Connection id="{b009a305-f4ad-4337-88ab-b33ae6a29db4}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{57ef5adf-f9aa-4be6-99e8-5ed99a0a9455}" func_name="Function_7" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{13012c2b-2cfa-458a-abfa-470d10a41771}" required_system_element="NO">
+    <Source iface_id="{48b63043-1f60-4315-b3e1-2c71c7d7ad61}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{969d8dec-94a3-4106-b7a3-06e617d2f99a}" required_system_element="NO">
+    <Source iface_id="{957e871b-3962-475f-b9e6-e7830ea832f5}" func_name="Function_11" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{3f458bb6-8f55-43c8-a357-7e5a97e43601}" required_system_element="NO">
+    <Source iface_id="{134ffb1d-d7b5-407e-a2a5-eccf6480ee81}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{e60d15b8-343c-48fe-84c2-75541daa0bec}" required_system_element="NO">
+    <Source iface_id="{966c175c-4c36-43dd-bf9f-f6a041fbaab3}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{d8db5ea1-941e-4f60-9b36-6f006dcebcb8}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{d1a0dfc8-4952-4b09-8ca0-10b9df50a04f}" func_name="Function_6" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{303745d1-e4e8-46f9-96ca-5325ce492895}" required_system_element="NO">
+    <Source iface_id="{79bc72a7-74e7-40a5-a4ee-b53c5702dbce}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{d9958d2c-a399-4020-b928-a0e90868ef52}" required_system_element="NO">
+    <Source iface_id="{e4442b28-de33-40d0-bd83-4d58eb6ab02a}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{b687aeab-9de4-4261-844a-43ce98ac0b15}" required_system_element="NO">
+    <Source iface_id="{d01976c3-381b-4893-be8e-eaf5a6357797}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{8acc51c6-2e16-4d01-a846-ef406bd2b88b}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{608e9e35-dea5-41f2-839b-829f7a7745ac}" func_name="Function_8" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a9fbfb06-5d94-4dfd-a082-4d1ea0d49e6f}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{75b11dee-5c68-4cdf-8319-983e6ebfc797}" func_name="Function_9" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{29daa465-a75e-4bfd-8e3b-2f8f7f812628}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{b23a0e5b-e539-4e68-a03f-c79e0f356b43}" func_name="Function_4" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{14a6f4af-56ab-42e7-bd67-213d5243aadc}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{5ad6c35c-02d7-4c4c-99fb-2d11a8545474}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{93970325-706d-4291-ab7c-73ece9648057}" required_system_element="NO">
+    <Source iface_id="{1b9da29a-6ee0-4545-9eaa-2d00a3caf7a4}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{da59e8b6-88cb-4a5f-b2a9-8837b8a18936}" required_system_element="NO">
+    <Source iface_id="{60919505-fc16-4482-b5e4-1a5842aea28f}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{7a8d93cc-18f5-4e3e-8b92-f106cb0f987b}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{c98fd080-74b4-406e-a1af-df2fc8e03bc2}" func_name="Function_5" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{2059e56e-0e32-4480-ab7a-46446ce9f951}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{3bca286e-4ae5-406c-813d-7e4685211ed1}" func_name="Function_2" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{617c3618-0686-4178-95c3-d9d16a196382}" required_system_element="NO">
+    <Source iface_id="{93d36992-2d0e-4978-843c-b346f9419da1}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{cb8fd054-74bd-4172-a1ed-66e63e91eff9}" func_name="testfunction" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{492d7f6d-f4ac-458f-9da5-e79d59126804}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{bf161606-0a48-4813-a61b-1d3e763a2b4f}" func_name="Function_3" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{11ed958e-aecb-4b4e-8153-aa5030d92848}" required_system_element="NO">
+    <Source iface_id="{8ef5f145-71ca-4ed9-a986-d65c7744a4bb}" func_name="triggerfunction" ri_name="PI_1" />
+    <Target iface_id="{759313a0-877a-4871-b53d-2822fddde7fa}" func_name="Function_10" pi_name="PI_1" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
