@@ -15,14 +15,24 @@ void triggerfunction_startup(void)
 {
 }
 
+void triggerfunction_PI_PI_2( void )
+{
+	triggerfunction_RI_test_if();
+}
+
 void triggerfunction_PI_trigger(void)
 {
 	if(is_done){
 		return;
 	}
 
-	asn1SccMyInteger param = 18;
-	triggerfunction_RI_sporadic_if(&param);
+	asn1SccMyInteger param;;
+
+	for(int i = 0; i < 10; i++){
+		param = i;
+		triggerfunction_RI_sporadic_if(&param);
+	}
+
 	is_done = true;
 }
 

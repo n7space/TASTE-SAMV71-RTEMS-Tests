@@ -9,6 +9,9 @@
 */
 #include "testfunction.h"
 
+#define QUEUE_SIZE 4
+
+static int test_count = 0;
 static bool test_result = false;
 
 void testfunction_startup(void)
@@ -17,9 +20,18 @@ void testfunction_startup(void)
 
 void testfunction_PI_sporadic_if(const asn1SccMyInteger * IN_param)
 {
-	if(*IN_param == 18){
-		test_result = true;
+	if(*IN_param == test_count){
+		test_count++;
 	}
+}
+
+void testfunction_PI_test_if( void )
+{
+    // The queue size is 4 but due to optimalization and the fact that sporadic_if thread is waiting
+    // in rtems_message_queue_receive the first message is directly passed to thread buffer. 
+    // Actual count of received messeges is then 4 + 1.
+    // For more info see https://docs.rtems.org/docs/main/c-user/message/directives.html#rtems-message-queue-send
+    test_result = test_count == QUEUE_SIZE + 1;
 }
 
 
