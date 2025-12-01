@@ -15,7 +15,7 @@ def test_samv71_rtems_queues():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-queues/TEST-SAMV71-QUEUE-SIZE/work/binaries/partition_1', 'testfunction.c', '35')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-queues/TEST-SAMV71-QUEUE-SIZE/work/binaries/partition_1', 'testfunction.c', '37')
 
 if __name__ == "__main__":
     test_samv71_rtems_queues()

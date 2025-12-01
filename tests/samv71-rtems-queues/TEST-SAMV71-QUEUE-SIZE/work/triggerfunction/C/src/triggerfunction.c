@@ -15,7 +15,7 @@ void triggerfunction_startup(void)
 {
 }
 
-void triggerfunction_PI_PI_2( void )
+void triggerfunction_PI_check_trigger( void )
 {
 	triggerfunction_RI_test_if();
 }
