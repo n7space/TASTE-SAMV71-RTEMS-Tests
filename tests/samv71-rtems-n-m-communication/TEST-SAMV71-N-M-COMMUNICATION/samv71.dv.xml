@@ -1,0 +1,28 @@
+<DeploymentView version="1.2" UiFile="samv71.ui.xml" creatorHash="8f9a913" modifierHash="8f9a913">
+    <Node id="{bbcc2c76-96a2-428e-bcd1-27452ba14aff}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_1" namespace="ocarina_processors_arm">
+        <Partition id="{fdeb988b-0eab-446e-99e1-7d9a74a0ee25}" name="Partition_1">
+            <Function id="{6ccda8b8-3017-482e-9796-a1388038bd65}" name="Function_20" path="Function_20"/>
+            <Function id="{bfefeadd-7c71-4923-ba19-72dd65e53c15}" name="Function_2" path="Function_2"/>
+            <Function id="{1023f946-e967-4dc1-b95c-94adf16f2281}" name="Function_16" path="Function_16"/>
+            <Function id="{8cba631c-07a6-40f1-9c15-59f20e597f51}" name="Function_5" path="Function_5"/>
+            <Function id="{bc89eb76-9dad-4b2b-ad80-8c1d9a310a52}" name="Function_19" path="Function_19"/>
+            <Function id="{41c6b09a-238a-4e2c-b45c-4b1628d6822f}" name="Function_3" path="Function_3"/>
+            <Function id="{9fd40647-4c72-4426-9eb9-cdf3194ffd4a}" name="Function_8" path="Function_8"/>
+            <Function id="{b5f6db35-3e3f-4301-a9e5-c970dc998a5d}" name="testtrigger" path="testtrigger"/>
+            <Function id="{cca527cf-05ef-45cf-bcaf-332c1f3bdf12}" name="Function_11" path="Function_11"/>
+            <Function id="{75f5d405-fd5d-467b-9321-ac0aec75d297}" name="Function_13" path="Function_13"/>
+            <Function id="{0e974f9c-316f-4b38-aa6c-e0d052a1d0b4}" name="Function_12" path="Function_12"/>
+            <Function id="{03517446-9809-42a4-9ea7-96bd9cbde94f}" name="Function_4" path="Function_4"/>
+            <Function id="{b84da0fe-ecca-4446-b96a-b56f5549fe6e}" name="Function_15" path="Function_15"/>
+            <Function id="{436d2b4a-ccc1-460c-91bc-f68eb09c912b}" name="Function_18" path="Function_18"/>
+            <Function id="{9f90736a-0d35-4042-9c25-cb882df2b482}" name="Function_9" path="Function_9"/>
+            <Function id="{9d00e830-246e-495f-b269-2d45dd0f7503}" name="Function_17" path="Function_17"/>
+            <Function id="{8623874c-1642-4fac-8949-9ea8c500f7a8}" name="Function_6" path="Function_6"/>
+            <Function id="{760dd7a5-3567-4dc4-87f8-973df856f0c1}" name="testfunction" path="testfunction"/>
+            <Function id="{b8ecee06-2984-4029-ac1c-36ef423ddf43}" name="Function_10" path="Function_10"/>
+            <Function id="{34c29d73-f45b-4407-a0f0-b0f50fd0b710}" name="Function_7" path="Function_7"/>
+            <Function id="{ab35a1f0-7a0f-446e-886a-8b56a9af8d0a}" name="Function_1" path="Function_1"/>
+            <Function id="{7970e095-ab71-4b86-91eb-6f0166b8edc5}" name="Function_14" path="Function_14"/>
+        </Partition>
+    </Node>
+</DeploymentView>

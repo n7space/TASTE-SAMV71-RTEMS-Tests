@@ -1,0 +1,952 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-N-M-COMMUNICATION.acn" UiFile="interfaceview.ui.xml" modifierHash="8f9a913">
+<Function id="{866ccf6f-4de7-4ca5-80d5-3e44e865eadf}" name="Function_2" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{6301d8cf-79c1-4889-8620-fec7df7c0575}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{7657e544-3226-4833-84ae-867630390b1a}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{3c0cc29c-dcd3-4206-90fa-f304994a115d}" name="Function_20" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{9d02c783-92e3-4f5e-90a2-ef27f820d254}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{cea1c160-f10d-4573-a542-3989974bdb76}" name="Function_16" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{9765475b-b968-428e-af82-5d75840fc939}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{cd4f5212-1ca3-4a7c-98f0-3ec346b23839}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{54649f32-2ff0-4001-8592-2b74ec64191c}" name="Function_19" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{c8a59cac-ebdd-458f-ab18-97b65dafbe01}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{6d3b8b51-8da0-47bc-a77a-6ba6ba63f7fb}" name="Function_5" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{448e856d-877d-4b0d-925e-6079a13938bc}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{f0796346-173e-4aae-ac3e-06aee2864957}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{9fbef797-f664-4b76-bcc2-977c58bba638}" name="Function_3" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{3453185c-c53f-4fe5-b33f-5243eb0e96a8}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{e526465e-d69f-4663-9e89-be63c6445e7d}" name="Function_8" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{4bc85591-06f2-48b8-a666-39ccb8b2fc2e}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{bfa84731-4649-4c3a-b2de-d2360ea551b3}" name="testtrigger" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{433eb25a-c32d-4515-8c29-12d2d49e1847}" name="trigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" stack_size="1024" priority="1" period="50" dispatch_offset="0">
+</Provided_Interface>
+
+<Required_Interface id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{efb2b9b5-2952-4ac1-8dbf-46288a681dd4}" name="Function_11" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{2bcdfd91-7342-4972-a924-018421d82518}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="false"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{70fad7c5-81f3-4a03-b4bf-8c9763b0eb88}" name="Function_4" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{c30a42e2-807f-4ff4-aba1-554bb11f5541}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{103f9215-a662-4fa0-aa56-83d000af779c}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{56f311c1-3dfc-4e8a-a833-bf5b3402e44b}" name="Function_12" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{82c2b9fb-963d-4bc7-9db0-9a3078eb31fb}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{abccb77d-81ac-4e1d-9978-981453694de4}" name="Function_13" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{acc86d19-7dae-4ef7-b6a1-3a11fb2720b3}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{96b8196a-9833-4b4f-95f4-044aa16daa7e}" name="Function_18" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{c48e23e2-d2e8-4a11-b2b5-4624f941e6e2}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{a310a57e-067a-465f-b828-595408ed9132}" name="Function_15" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{ce54528b-4bf6-4c59-abfe-e05803868739}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{58a67922-e8b3-4e13-84c4-59d4e341774c}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{668bb291-9e9e-4ea4-8ac5-4fcf8edb9a47}" name="Function_9" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{d92ae89f-e7f0-4813-ba0a-d4615c24f4e7}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{67287937-fa1a-4a0c-898a-651d6ee0bfa1}" name="Function_17" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{c10f4868-30b1-4e84-b144-66e579e655c4}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{0794c2c6-03ef-4242-b775-035b49ad2dd8}" name="Function_6" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{f0a965cc-035a-4f97-880f-4641214113e8}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{560e5481-8f09-4c3a-846c-07d182f625e2}" name="testfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{75e4d007-8043-48c4-b2ea-1d200712b79a}" name="trigger_check" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0" stack_size="1024" priority="1" period="500" dispatch_offset="0">
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{b55727e8-253b-4bf3-9bdc-15f3d3ef26e5}" name="Function_10" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{8ea503b8-c944-4d93-95d8-f05a14d0d223}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{8c5668a2-7b23-491c-bb93-d6d8611de48b}" name="Function_7" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{f14a55a8-5057-4033-a830-5d0bb957065a}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{c98bc28f-eb86-4e22-9be4-67f195daaf06}" name="Function_1" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{2e55ecaa-0b9a-4da6-89bd-a0d895648275}" name="trigger_send" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Required_Interface id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{4c6ac430-2612-4870-b83d-76dd9b17b901}" name="Function_14" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_min="1" startup_priority="1" instances_max="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" name="PI_1" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{9e5db523-3563-4387-b378-ced911a65a17}" name="notify" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Connection id="{71c54815-e8a7-4314-a1e6-ebbd7d1ae10c}" required_system_element="NO">
+    <Source iface_id="{c48e23e2-d2e8-4a11-b2b5-4624f941e6e2}" func_name="Function_18" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{c6406801-60a5-4511-a7bd-1718db48c5a7}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{77975888-bdbd-43b4-b2e9-91775e010e5a}" required_system_element="NO">
+    <Source iface_id="{c10f4868-30b1-4e84-b144-66e579e655c4}" func_name="Function_17" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{806465af-800c-466b-9a94-e728678ee699}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{245929c6-e06e-4b7c-b9b5-f52d54101696}" name="testtrigger_trigger_send____Function_1_trigger_send" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{2e55ecaa-0b9a-4da6-89bd-a0d895648275}" func_name="Function_1" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{5945b865-ce86-4c2f-a1ac-58fe9ed25e0a}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{e6cc8e23-a685-412a-ac7f-4dac8751db1d}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{4a12e99e-1acc-414c-8aaa-e50948a35a72}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{49ced079-e9df-47fc-94e5-5330834c08b7}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{7c1863e6-b830-4d36-bbcb-57393a0838cb}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{5ad3fcd8-b233-42db-a174-3d75ae884fa4}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{db2095d4-c10e-4704-a758-1e1df64ca6f8}" required_system_element="NO">
+    <Source iface_id="{9d02c783-92e3-4f5e-90a2-ef27f820d254}" func_name="Function_20" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{06c5c3b1-cd1a-4eb5-9b75-fe170253e68b}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a564dbfd-b400-4a36-be67-855b00184ae8}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{f7f9f0a3-82c4-4602-9e59-b736811d070b}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{fbc70f36-14f4-40e8-96ac-4cc857c69752}" required_system_element="NO">
+    <Source iface_id="{2bcdfd91-7342-4972-a924-018421d82518}" func_name="Function_11" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{d29d87cb-eae8-4fc2-aa9d-d79f18d20ae2}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{48579932-91a2-4a5d-9784-4ca541a0325c}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{bf8d18b5-80d3-4a1a-9a60-4415a5dd201a}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{3000f7f2-6a3e-407c-ba1a-aac891511568}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{89a9b1b2-4920-4e23-9bc6-5019d777f0e9}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{5f41f4e0-9e07-498a-82e4-f068d1c7bce8}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{cad987f8-24ee-41fd-8745-fe296962bf46}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{c1e1d8d9-69e8-48ca-a8ef-18ce0bec1181}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{d92ae89f-e7f0-4813-ba0a-d4615c24f4e7}" func_name="Function_9" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{fc34c72f-7ccc-48a3-a807-c25c172b9bc2}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{ff76348a-c9fa-48cc-b47a-e7217842c622}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{b9ea3ea2-1383-42b3-9e8e-f24a964685e9}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{492d72fe-f4b5-4b0f-8ae9-257d2c2cf1b7}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{b2db51ec-3430-4f79-b2f3-abfc4af15aa7}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{813e7a73-a562-4d4b-a21f-95b5e95ed03f}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{ff3f66e8-cab3-4dc4-89b6-6367b3b405a5}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{3453185c-c53f-4fe5-b33f-5243eb0e96a8}" func_name="Function_3" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{7a67de6c-82e5-4074-b4b4-8d8a7e6cebac}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{000fc47d-e9ff-40b2-9e01-d03096f0a71e}" required_system_element="NO">
+    <Source iface_id="{cd4f5212-1ca3-4a7c-98f0-3ec346b23839}" func_name="Function_16" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{f44f3df9-3d12-40fa-ad77-eca43653d0e9}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{244f3f6b-6c4a-446b-a4fb-57425f9706dd}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{aae54a1f-2d7b-4caa-b99d-1e7ddef5cdad}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{032e59df-10f2-4cc2-b53a-9bef62ae240c}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{94d143d5-f7c0-4a40-9a29-b76fa8f235ba}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{89dd7039-34ce-47a6-96b3-83c64b97bfe9}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{6527749f-a5b6-41bb-9f00-cfe71e0d4c16}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{01d6d6ae-44dc-4090-86b8-44f87390ea56}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{55793c34-92a8-4913-920e-1e35484d0274}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{00710bc4-48e4-438f-9398-484bb7a735bb}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{29e64078-a1f3-49d2-b97f-b3f352d538a8}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{0012841d-adf5-4eac-b187-c8e8d0c21fea}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{ef820193-942a-445e-b149-6d5915625c0e}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{fcc0376b-0c46-4190-b44b-06667eb897a6}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{2e29ab1a-17a5-44f7-a679-3f40b4008d1c}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{feff483e-4da3-4ecf-9d57-487c0fce7902}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{85ef92b1-2564-437b-804b-bb4939679067}" required_system_element="NO">
+    <Source iface_id="{9e5db523-3563-4387-b378-ced911a65a17}" func_name="Function_14" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{89495a89-6fd5-494d-a00f-f42a14568f8f}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{56d9ea9f-7102-47e0-8e95-9db6cb15a6d9}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a65ffa6c-de6e-4cb9-b88b-a48a4b36dc71}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{34b3506f-8997-40ae-879a-33e891fad0ec}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{e5673569-34ca-4c1f-ab03-c3f6d202535e}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{d31ec62b-ecde-461c-a6bc-f9a3225d3a5e}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{fa7417d3-f3d3-4e7f-be87-83fafc5a28f1}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{339fca42-b563-4469-97ad-eeaac0a16689}" required_system_element="NO">
+    <Source iface_id="{82c2b9fb-963d-4bc7-9db0-9a3078eb31fb}" func_name="Function_12" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{b632b13b-988d-450d-a842-60001c4d2cae}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{4d663f4f-2593-4770-8ced-4dc49c9a0601}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{448e856d-877d-4b0d-925e-6079a13938bc}" func_name="Function_5" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{20e506f4-1969-4cff-957a-791e9b8dd39e}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{34490631-ece2-4ef7-a780-f11c8502bcdd}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{6e1127f8-7652-4797-ad1d-a894e65c362d}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{3419933f-37ea-4ac7-bc2b-5e2ba51c87ec}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a4252019-5ea2-4725-82ff-7a2e0db82184}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{c35bdb6f-5da5-4b0f-aec7-6a5f7146ff86}" required_system_element="NO">
+    <Source iface_id="{c8a59cac-ebdd-458f-ab18-97b65dafbe01}" func_name="Function_19" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{d7e93808-1108-465a-82f3-fc4e18a50e59}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{fa4b39a3-44d8-41f3-b02e-94f7aad3729b}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{8184f094-1f6d-468f-8b5c-13f54c7c0728}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{b64b933a-d6c9-4b6c-b6a2-2b2adff077e6}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{cc0f290b-766d-4748-b5ca-3977212b4722}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{8cb78e95-ab0c-4dfb-a483-1c205ccc648f}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{fef60981-0c98-4f67-8424-bde2cd2b39cd}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{7c3be964-8b48-4e74-a1e7-2f0911383211}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{c30a42e2-807f-4ff4-aba1-554bb11f5541}" func_name="Function_4" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{554d8ecd-ffa3-4fc9-8624-a9fdde7df3a6}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a99b0b2a-298d-4f93-aefd-b03312c135de}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{aa6ca497-9669-455b-8b6b-fa8e686d553a}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{313bcb6d-9207-42d8-815f-ed3362383913}" required_system_element="NO">
+    <Source iface_id="{58a67922-e8b3-4e13-84c4-59d4e341774c}" func_name="Function_15" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{8a715ee2-6573-41fc-83eb-59302ead35ee}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{8479f82e-0f59-4ca0-874c-a76d66db7357}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{dca09741-ce0d-4e9f-aa39-03ea0a9789e1}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{77ae084d-9a23-4992-bd27-622fc48d5917}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{6301d8cf-79c1-4889-8620-fec7df7c0575}" func_name="Function_2" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{ab6b4262-1d65-4546-8cae-ec1693c12a7f}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{5812f373-607a-4287-b0b4-b2660b08460c}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{ae92530a-52a9-497b-9b2b-ff2611b0e1e7}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{8ea503b8-c944-4d93-95d8-f05a14d0d223}" func_name="Function_10" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{2b94279c-5a3e-4df9-a360-cf119d9337c9}" required_system_element="NO">
+    <Source iface_id="{acc86d19-7dae-4ef7-b6a1-3a11fb2720b3}" func_name="Function_13" ri_name="notify" />
+    <Target iface_id="{192b70cc-ab39-4382-bb66-82ecbed81a5d}" func_name="testfunction" pi_name="notify" />
+</Connection>
+
+<Connection id="{98bf8aad-5e15-41d3-a5d0-9da6a7b60e66}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{2f580920-d286-4c5f-826d-8f204cd127f9}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{21695699-c184-4399-8b0d-db02b2686b6c}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{c3223012-6760-4c89-9c93-89142b3fff13}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a808ce5d-e5cb-4985-8919-d0b2c7d196ae}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{e070e05f-29c8-4d56-855b-ffe1c73761fd}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{5f02e638-bd1e-4b5d-b5ec-4b3d35d13282}" func_name="Function_14" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{60876404-430c-4a6b-8ca0-94135e93de9f}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{1eead1cd-ce09-4cff-a43b-1f28e14e0774}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{3328cfb0-3e68-4020-a11f-2f29889a8362}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{792a8544-5deb-4bbb-ac46-f2d2d7c543ee}" required_system_element="NO">
+    <Source iface_id="{7657e544-3226-4833-84ae-867630390b1a}" func_name="Function_2" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{32e9c8aa-bcfa-45d1-89db-72543d9dbb92}" required_system_element="NO">
+    <Source iface_id="{5359a585-58ac-4403-ab98-3e73d32cfd8f}" func_name="Function_3" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{9cf27d29-3e6c-47ea-994e-b7500b49d787}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a86108aa-a683-41bc-8556-ad4ef8914ac9}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{f9100970-1c92-4cc7-b795-56626540e039}" required_system_element="NO">
+    <Source iface_id="{79d7e8bf-43ac-42c4-98ea-d02f96b20855}" func_name="Function_1" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{5fa2f460-7988-4531-b337-7892f19e3ec5}" required_system_element="NO">
+    <Source iface_id="{3f477e59-a4fb-4973-8adb-5e8b291797fc}" func_name="Function_6" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a13eebfe-49cf-4e29-99bf-be624f4621e4}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{117af7fb-2c8c-4c0b-bb5f-1b683f745baa}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{7e907d6f-0c2e-498f-b5a8-56a867c62c20}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a7c058f4-8a99-44e5-8b97-42b13c502f1f}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{9765475b-b968-428e-af82-5d75840fc939}" func_name="Function_16" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{2c9a68b5-26fd-4a7c-b80d-ab8359ec8c0b}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{644fe451-a330-4c88-b252-e740689b6de6}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{a3f4dac6-ba07-4930-804e-0a803b85eb93}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{4bc85591-06f2-48b8-a666-39ccb8b2fc2e}" func_name="Function_8" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{130045d4-6148-4b00-b0ba-60f59e4a0db9}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{ba34348c-337f-40c7-90e2-9ff3d7c5b0fc}" func_name="Function_11" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{cca0e4aa-93d8-420a-bcc5-03cdb71cd757}" required_system_element="NO">
+    <Source iface_id="{3290ddf9-0d61-430d-96b9-33dcc08d5a98}" func_name="Function_10" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{b500f344-da83-4c87-b6ee-f418fad32c3b}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{790d5dda-b9d3-469b-a6c6-93f92da63214}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{f14a55a8-5057-4033-a830-5d0bb957065a}" func_name="Function_7" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{eb539efd-1949-489f-bffb-a763c0a2192d}" required_system_element="NO">
+    <Source iface_id="{5d172f15-b0e6-4878-829a-1adb3affd7a7}" func_name="Function_9" ri_name="PI_1" />
+    <Target iface_id="{91d3101b-ee24-48c4-a6ed-b5929bbbba1f}" func_name="Function_20" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{414a3e7c-9fb0-4859-b908-255d4f492f68}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{d640a75c-8477-4c85-bc53-96e797e23e7c}" func_name="Function_12" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{4446bbdc-5619-4cf4-8b83-b20edfd40237}" required_system_element="NO">
+    <Source iface_id="{ee622b50-67bc-4644-b2dc-f74290904ce7}" func_name="testtrigger" ri_name="trigger_send" />
+    <Target iface_id="{f0a965cc-035a-4f97-880f-4641214113e8}" func_name="Function_6" pi_name="trigger_send" />
+</Connection>
+
+<Connection id="{91582729-ece0-4487-ae61-33311c8d5505}" required_system_element="NO">
+    <Source iface_id="{4d9f4e19-9aa3-4100-8d59-02e297be5088}" func_name="Function_7" ri_name="PI_1" />
+    <Target iface_id="{48d618f7-def9-4e1f-b0bc-be9a50d75db5}" func_name="Function_13" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{33c69c28-4b37-4cac-8174-2f998f5e7974}" required_system_element="NO">
+    <Source iface_id="{103f9215-a662-4fa0-aa56-83d000af779c}" func_name="Function_4" ri_name="PI_1" />
+    <Target iface_id="{ce54528b-4bf6-4c59-abfe-e05803868739}" func_name="Function_15" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{51e7f4ec-20c2-4826-a0f0-ce460eb5bd9a}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{795d5ea0-0e1f-4233-b568-786e8229cc2e}" func_name="Function_18" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{2e2e1372-8745-4a07-a2e1-4b282c137ce7}" required_system_element="NO">
+    <Source iface_id="{060a4f44-9091-4e11-8c80-665cd1dbe5d6}" func_name="Function_8" ri_name="PI_1" />
+    <Target iface_id="{84ed8b0e-3d48-48cd-81ef-b10b743bbd98}" func_name="Function_17" pi_name="PI_1" />
+</Connection>
+
+<Connection id="{3fffcf08-ff8a-4347-9e91-18b1a5c90bcd}" required_system_element="NO">
+    <Source iface_id="{f0796346-173e-4aae-ac3e-06aee2864957}" func_name="Function_5" ri_name="PI_1" />
+    <Target iface_id="{71a8acec-0a4c-4156-9e2b-42c10890e5f3}" func_name="Function_19" pi_name="PI_1" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
