@@ -1,0 +1,13 @@
+TEST-SAMV71-PARAMETER-ENCODING-DATAVIEW DEFINITIONS ::= BEGIN
+
+      MyInteger [encoding pos-int, endianness big, size 16]
+      MyEnum    [encoding pos-int, endianness little, size 32]
+
+      MySeq []  {
+          input-data	[encoding pos-int, endianness little, size 16],
+          output-data    [],
+          padding        NULL [pattern '00101'B],
+          validity       [encoding pos-int, endianness big, size 16]
+      }
+END
+

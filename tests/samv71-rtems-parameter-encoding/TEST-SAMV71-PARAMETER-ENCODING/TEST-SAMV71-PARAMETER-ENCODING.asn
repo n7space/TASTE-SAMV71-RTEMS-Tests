@@ -1,0 +1,14 @@
+TEST-SAMV71-PARAMETER-ENCODING-DATAVIEW DEFINITIONS ::=
+BEGIN
+
+   MyInteger ::= INTEGER (0 .. 10000)
+   MyEnum      ::= ENUMERATED { hello, world, how-are-you }
+
+   MySeq       ::= SEQUENCE {
+       input-data  MyInteger,
+       output-data MyInteger,
+       validity    MyEnum
+   }
+
+END
+
