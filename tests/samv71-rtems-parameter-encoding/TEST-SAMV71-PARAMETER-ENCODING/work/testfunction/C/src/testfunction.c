@@ -9,56 +9,75 @@
 */
 #include "testfunction.h"
 
+#define IF_COUNT 4
+#define PROTECTED_ACN_IF_INDEX 0
+#define PROTECTED_IF_INDEX 1
+#define SPORADIC_ACN_IF_INDEX 2
+#define SPORADIC_IF_INDEX 3
+
 bool test_result = true;
+bool test_result_vector[IF_COUNT];
 
 void testfunction_startup(void)
 {
+    for(int i = 0; i < IF_COUNT; i++){
+        test_result_vector[i] = false;
+    }
 }
 
 void testfunction_PI_protected_acn_if( const asn1SccMyInteger *IN_P1, const asn1SccMySeq *OUT_P2)
 {
+    test_result_vector[PROTECTED_ACN_IF_INDEX] = true;
+
     if(*IN_P1 != 1969){
-        test_result = false;
+        test_result_vector[PROTECTED_ACN_IF_INDEX] = false;
         return;
     }
 
     if(OUT_P2->input_data != 14 || OUT_P2->output_data != 119 || OUT_P2->validity != asn1SccMyEnum_world){
-        test_result = false;
+        test_result_vector[PROTECTED_ACN_IF_INDEX] = false;
     }
 }
 
 
 void testfunction_PI_protected_if( const asn1SccMyInteger *IN_P1, const asn1SccMySeq *OUT_P2)
 {
+    test_result_vector[PROTECTED_IF_INDEX] = true;
+
     if(*IN_P1 != 1969){
-        test_result = false;
+        test_result_vector[PROTECTED_IF_INDEX] = false;
         return;
     }
 
     if(OUT_P2->input_data != 14 || OUT_P2->output_data != 119 || OUT_P2->validity != asn1SccMyEnum_world){
-        test_result = false;
+        test_result_vector[PROTECTED_IF_INDEX] = false;
     }
 }
 
 
 void testfunction_PI_sporadic_acn_if( const asn1SccMySeq *IN_P1)
 {
-    if(IN_P1->input_data != 14 || IN_P1->output_data != 119 || IN_P1->validity != asn1SccMyEnum_world){
-        test_result = false;
+    if(IN_P1->input_data == 14 && IN_P1->output_data == 119 && IN_P1->validity == asn1SccMyEnum_world){
+        test_result_vector[SPORADIC_ACN_IF_INDEX] = true;
     }
 }
 
 
 void testfunction_PI_sporadic_if( const asn1SccMySeq *IN_P1)
 {
-    if(IN_P1->input_data != 14 || IN_P1->output_data != 119 || IN_P1->validity != asn1SccMyEnum_world){
-        test_result = false;
+    if(IN_P1->input_data == 14 && IN_P1->output_data == 119 && IN_P1->validity == asn1SccMyEnum_world){
+        test_result_vector[SPORADIC_IF_INDEX] = true;
     }
 }
 
 void testfunction_PI_trigger_check()
 {
-    asm volatile("nop"); //NOOP
+    for(int i = 0; i < IF_COUNT; i++){
+        if(test_result_vector[i] == false){
+            test_result = false;
+            break;
+        }
+    }
 }
 
 

@@ -15,7 +15,7 @@ def test_samv71_rtems_parameter_encoding():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-parameter-encoding/TEST-SAMV71-PARAMETER-ENCODING/work/binaries/partition_1', 'testfunction.c', '62')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-parameter-encoding/TEST-SAMV71-PARAMETER-ENCODING/work/binaries/partition_1', 'testfunction.c', '81')
 
 if __name__ == "__main__":
     test_samv71_rtems_parameter_encoding()
