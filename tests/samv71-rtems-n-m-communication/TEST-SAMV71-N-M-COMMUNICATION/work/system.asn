@@ -1,0 +1,59 @@
+-- Dataview generated on-the-fly providing information on the system
+-- and made available to the user code.
+System-Dataview DEFINITIONS ::=
+BEGIN
+
+   -- Range of PID - type can be used to size arrays of PID type
+   PID-Range ::= INTEGER(0..22)
+
+   -- List of functions (instances) present in the system
+   PID ::= ENUMERATED {
+       function-1,
+       
+       function-10,
+       
+       function-11,
+       
+       function-12,
+       
+       function-13,
+       
+       function-14,
+       
+       function-15,
+       
+       function-16,
+       
+       function-17,
+       
+       function-18,
+       
+       function-19,
+       
+       function-2,
+       
+       function-20,
+       
+       function-3,
+       
+       function-4,
+       
+       function-5,
+       
+       function-6,
+       
+       function-7,
+       
+       function-8,
+       
+       function-9,
+       
+       testfunction,
+       
+       testtrigger,
+       
+       
+       env
+   }
+
+END

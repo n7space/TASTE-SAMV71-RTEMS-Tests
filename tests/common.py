@@ -129,7 +129,7 @@ def run_verification_project(remote_gdb_server, project_bin, src_file_name, src_
         max_iterations = 1000
         iterations = 0
         while not stopped and iterations < max_iterations:
-            responses = gdbmi.get_gdb_response(timeout_sec=3)
+            responses = gdbmi.get_gdb_response(timeout_sec=5)
             for msg in responses:
                 if msg['type'] == 'notify' and msg['message'] == 'stopped':
                     stopped = True
