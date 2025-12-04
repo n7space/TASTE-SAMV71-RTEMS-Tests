@@ -10,9 +10,9 @@
 #include "testfunction.h"
 #include <Monitor.h>
 
+extern const uint32_t CPU_USAGE_DATA;
 
 static bool test_result = true;
-static struct Monitor_CPUUsageData cpu_usage_data;
 
 void testfunction_startup(void)
 {
@@ -20,11 +20,13 @@ void testfunction_startup(void)
 
 void testfunction_PI_trigger_check(void)
 {
-    Monitor_GetIdleCPUUsageData(&cpu_usage_data);
+    struct Monitor_CPUUsageData *const cpu_usage_data =
+		(struct Monitor_CPUUsageData *const)&CPU_USAGE_DATA;
+    Monitor_GetIdleCPUUsageData(cpu_usage_data);
 
-    if(cpu_usage_data.maximum_cpu_usage >= 100.0 || cpu_usage_data.maximum_cpu_usage <= 0.0 ||
-       cpu_usage_data.minimum_cpu_usage >= 100.0 || cpu_usage_data.minimum_cpu_usage < 0.0 ||
-       cpu_usage_data.average_cpu_usage >= cpu_usage_data.maximum_cpu_usage || cpu_usage_data.average_cpu_usage <= cpu_usage_data.minimum_cpu_usage){
+    if(cpu_usage_data->maximum_cpu_usage >= 100.0 || cpu_usage_data->maximum_cpu_usage <= 0.0 ||
+       cpu_usage_data->minimum_cpu_usage >= 100.0 || cpu_usage_data->minimum_cpu_usage < 0.0 ||
+       cpu_usage_data->average_cpu_usage >= cpu_usage_data->maximum_cpu_usage || cpu_usage_data->average_cpu_usage <= cpu_usage_data->minimum_cpu_usage){
         test_result = false;
     }
 }
