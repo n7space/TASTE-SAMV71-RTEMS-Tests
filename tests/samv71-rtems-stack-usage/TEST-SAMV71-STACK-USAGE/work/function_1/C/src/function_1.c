@@ -33,7 +33,6 @@ void function_1_PI_tested_thread_1(void)
 
     int32_t *const tested_thread_max_stack_usage = (int32_t *const)&STACK_USAGE_DATA;
     tested_thread_max_stack_usage[0] = Monitor_GetMaximumStackUsage(function_1_tested_thread_1);
-    
 }
 
 

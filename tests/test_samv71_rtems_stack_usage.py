@@ -15,7 +15,7 @@ def test_samv71_rtems_stack_usage():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-stack-usage/TEST-SAMV71-STACK-USAGE/work/binaries/partition_1', 'function_3.c', '32')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-stack-usage/TEST-SAMV71-STACK-USAGE/work/binaries/partition_1', 'function_3.c', '29')
 
 if __name__ == "__main__":
     test_samv71_rtems_stack_usage()

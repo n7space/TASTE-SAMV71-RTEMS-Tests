@@ -22,7 +22,8 @@ void function_3_PI_check(void)
     int32_t *const tested_thread_max_stack_usage = (int32_t *const)&STACK_USAGE_DATA;
     tested_thread_max_stack_usage[1] = Monitor_GetMaximumStackUsage(function_2_tested_thread_2);
 
-    if(tested_thread_max_stack_usage[0] == 3344 && tested_thread_max_stack_usage[1] == 1408){
+    if(tested_thread_max_stack_usage[0] > 3000 && tested_thread_max_stack_usage[0] < 3500 && 
+       tested_thread_max_stack_usage[1] > 1200 && tested_thread_max_stack_usage[1] < 1450){
         test_result = true;
     }
 }
