@@ -10,23 +10,19 @@
 #include "function_3.h"
 #include "Monitor.h"
 
-__attribute__((aligned(8), section(".stackusage")))
-static int32_t tested_thread_max_stack_usage[2];
-
+extern const uint32_t STACK_USAGE_DATA;
 static bool test_result = false;
 
 void function_3_startup(void)
 {
-    tested_thread_max_stack_usage[0] = 0;
-    tested_thread_max_stack_usage[1] = 0;
 }
 
 void function_3_PI_check(void)
 {
-    tested_thread_max_stack_usage[0] = Monitor_GetMaximumStackUsage(function_1_tested_thread_1);
+    int32_t *const tested_thread_max_stack_usage = (int32_t *const)&STACK_USAGE_DATA;
     tested_thread_max_stack_usage[1] = Monitor_GetMaximumStackUsage(function_2_tested_thread_2);
 
-    if(tested_thread_max_stack_usage[0] == 1008 && tested_thread_max_stack_usage[1] == 1408){
+    if(tested_thread_max_stack_usage[0] == 3344 && tested_thread_max_stack_usage[1] == 1408){
         test_result = true;
     }
 }

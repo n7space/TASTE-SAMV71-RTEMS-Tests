@@ -8,11 +8,12 @@
     !! file. The up-to-date signatures can be found in the header file. !!
 */
 #include "function_1.h"
-#include <stdint.h>
+#include "Monitor.h"
 #include <string.h>
 
-#define DUMMY_DATA_SIZE 800
+#define DUMMY_DATA_SIZE 3000
 
+extern const uint32_t STACK_USAGE_DATA;
 static bool is_done = false;
 
 void function_1_startup(void)
@@ -29,6 +30,10 @@ void function_1_PI_tested_thread_1(void)
     memset(test_arr, 0xBC, DUMMY_DATA_SIZE);
 
     is_done = true;
+
+    int32_t *const tested_thread_max_stack_usage = (int32_t *const)&STACK_USAGE_DATA;
+    tested_thread_max_stack_usage[0] = Monitor_GetMaximumStackUsage(function_1_tested_thread_1);
+    
 }
 
 
