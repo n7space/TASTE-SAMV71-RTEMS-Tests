@@ -10,6 +10,7 @@
 #include "monitor_tick.h"
 #include <Monitor.h>
 
+extern const uint32_t CPU_USAGE_DATA;
 
 void monitor_tick_startup(void)
 {
@@ -18,6 +19,10 @@ void monitor_tick_startup(void)
 void monitor_tick_PI_monitor_tick(void)
 {
    Monitor_MonitoringTick();
+
+   struct Monitor_CPUUsageData *const cpu_usage_data =
+		(struct Monitor_CPUUsageData *const)&CPU_USAGE_DATA;
+   Monitor_GetIdleCPUUsageData(cpu_usage_data);
 }
 
 

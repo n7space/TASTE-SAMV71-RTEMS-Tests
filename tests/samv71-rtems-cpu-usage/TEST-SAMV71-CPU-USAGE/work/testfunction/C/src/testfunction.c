@@ -22,11 +22,10 @@ void testfunction_PI_trigger_check(void)
 {
     struct Monitor_CPUUsageData *const cpu_usage_data =
 		(struct Monitor_CPUUsageData *const)&CPU_USAGE_DATA;
-    Monitor_GetIdleCPUUsageData(cpu_usage_data);
 
-    if(cpu_usage_data->maximum_cpu_usage >= 100.0 || cpu_usage_data->maximum_cpu_usage <= 0.0 ||
-       cpu_usage_data->minimum_cpu_usage >= 100.0 || cpu_usage_data->minimum_cpu_usage < 0.0 ||
-       cpu_usage_data->average_cpu_usage >= cpu_usage_data->maximum_cpu_usage || cpu_usage_data->average_cpu_usage <= cpu_usage_data->minimum_cpu_usage){
+    if(cpu_usage_data->maximum_cpu_usage >= 100.0 || cpu_usage_data->maximum_cpu_usage <= 99.0 ||
+       cpu_usage_data->minimum_cpu_usage >= 1.0 || cpu_usage_data->minimum_cpu_usage < 0.0 ||
+       cpu_usage_data->average_cpu_usage > 76.0 || cpu_usage_data->average_cpu_usage < 74){
         test_result = false;
     }
 }
