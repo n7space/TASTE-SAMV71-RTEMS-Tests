@@ -1,0 +1,20 @@
+<DeploymentView version="1.2" UiFile="samv71.ui.xml" creatorHash="383508e" modifierHash="383508e">
+    <Node id="{4c1cd04c-b103-4914-aca6-d285816440c6}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_1" namespace="ocarina_processors_arm">
+        <Partition id="{dbe2c3b5-20c5-47f4-9354-61f65400d3ff}" name="Partition_1">
+            <Function id="{b835c93f-3e75-4cef-b7d6-0ae3b6a8e3fe}" name="Function_1" path="Function_1"/>
+            <Function id="{68c3bad5-dd52-401b-95f4-836c1582bb8a}" name="testfunction" path="testfunction"/>
+            <Function id="{c7cc3161-614d-4bc8-90b2-807d2c3d729e}" name="monitor_tick" path="monitor_tick"/>
+            <Function id="{a490493b-c6ab-4825-a4e9-96923e25fc72}" name="Function_2" path="Function_2"/>
+        </Partition>
+        <Device id="{0f9907ce-2735-41eb-8073-7b2899438b2e}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{345f27cc-c188-467e-bbad-70ffd35b1847}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{68f22447-978a-4ff3-b1fe-a5286595d073}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{f3f313aa-821a-494b-9cd0-ee8372b667db}" name="uart3" requires_bus_access="ocarina_buses::serial.ccsds" port="uart3" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{9eefdbef-0b63-4980-925b-3522b8b526c8}" name="uart4" requires_bus_access="ocarina_buses::serial.ccsds" port="uart4" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+    </Node>
+</DeploymentView>
