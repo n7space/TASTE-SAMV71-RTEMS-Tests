@@ -1,0 +1,41 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-TRANSCODING-ERRORS-DECODE.acn" UiFile="interfaceview.ui.xml" modifierHash="383508e">
+<Function id="{3d696c3f-bef5-4ba6-be69-d96604a2e207}" name="testfunction" is_type="NO" language="Blackbox_C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_max="1" startup_priority="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{cd913e92-b8c1-4bb9-92d6-7baa38946c07}" name="protected_if" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+    <Output_Parameter name="p1" type="MySeq" encoding="ACN"/>
+    <Output_Parameter name="p2" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{fc903c8e-a2bd-41eb-85f9-bc8b5a32d028}" name="trigger_check" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" dispatch_offset="0" period="500" wcet="0" stack_size="1024" priority="1">
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="Blackbox_C"/>
+    </Implementations>
+</Function>
+
+<Function id="{5819fddc-26f3-43e1-8d94-0bac2eda8f3b}" name="triggerfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_max="1" startup_priority="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{505b635d-b691-4cfe-94c2-179c294fcc79}" name="trigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" dispatch_offset="0" period="300" wcet="0" stack_size="1024" priority="1">
+</Provided_Interface>
+
+<Required_Interface id="{146501d0-5c73-46fe-90c8-fe96672b22d4}" name="protected_if" kind="Unprotected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" is_alarm="false" wcet="0" is_observable="false">
+    <Output_Parameter name="p1" type="MySeq" encoding="ACN"/>
+    <Output_Parameter name="p2" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Connection id="{5b5548ff-0282-433c-965d-8c4eba54bb41}" name="triggerfunction_protected_if____testfunction_protected_if" required_system_element="NO">
+    <Source iface_id="{146501d0-5c73-46fe-90c8-fe96672b22d4}" func_name="triggerfunction" ri_name="protected_if" />
+    <Target iface_id="{cd913e92-b8c1-4bb9-92d6-7baa38946c07}" func_name="testfunction" pi_name="protected_if" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
