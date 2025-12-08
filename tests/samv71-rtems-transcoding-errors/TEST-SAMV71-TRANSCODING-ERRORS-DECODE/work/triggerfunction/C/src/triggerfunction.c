@@ -29,7 +29,7 @@ void triggerfunction_PI_trigger(void)
 
     triggerfunction_RI_get_last_error(&err);
 
-    test_result = (err.kind == T_Runtime_Error_decodeerror_PRESENT) && (err.u.encodeerror == ERR_MYINTEGER);
+    test_result = (err.kind == T_Runtime_Error_decodeerror_PRESENT) && (err.u.decodeerror == ERR_MYINTEGER);
 }
 
 
