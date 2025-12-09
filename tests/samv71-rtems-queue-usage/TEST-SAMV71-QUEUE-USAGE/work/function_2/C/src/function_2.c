@@ -10,7 +10,7 @@
 #include "function_2.h"
 #include <Hal.h>
 
-#define NANOSECOND_IN_SECOND 1000000000UL
+#define NANOSECONDS_IN_SECOND 1000000000UL
 
 void function_2_startup(void)
 {
@@ -20,7 +20,7 @@ void function_2_PI_sporadic_if
       (const asn1SccMyInteger *IN_p1)
 
 {
-    Hal_SleepNs(5 * NANOSECOND_IN_SECOND);
+    Hal_SleepNs(5 * NANOSECONDS_IN_SECOND);
 }
 
 
