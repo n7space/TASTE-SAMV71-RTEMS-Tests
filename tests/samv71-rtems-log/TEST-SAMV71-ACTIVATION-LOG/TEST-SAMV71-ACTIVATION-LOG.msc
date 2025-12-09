@@ -1,0 +1,12 @@
+mscdocument TEST-SAMV71-ACTIVATION-LOG /* MSC AND */;
+    language ASN.1;
+    data TEST-SAMV71-ACTIVATION-LOG.asn;
+
+/* CIF MSCDOCUMENT (0, 0) (4200, 2300) */
+
+mscdocument Nominal /* MSC LEAF */;
+
+msc TEST-SAMV71-ACTIVATION-LOG;
+endmsc;
+endmscdocument;
+endmscdocument;
