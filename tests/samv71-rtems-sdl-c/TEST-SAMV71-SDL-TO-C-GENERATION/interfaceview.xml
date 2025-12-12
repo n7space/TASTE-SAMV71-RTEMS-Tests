@@ -1,0 +1,51 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-SDL-TO-C-GENERATION.acn" UiFile="interfaceview.ui.xml" modifierHash="383508e">
+<Function id="{3c1d3bfc-a800-4e3e-acbc-7385d4b3d500}" name="testfunction" is_type="NO" language="SDL" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_max="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="C"/>
+<Provided_Interface id="{43b1fba3-da6b-43df-bc6d-603364f22285}" name="ping" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" miat="0" stack_size="1024" queue_size="1" wcet="0" priority="1">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{d2038b3f-c216-45b3-ab57-2ef11feaaea3}" name="pong" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="SDL"/>
+    </Implementations>
+</Function>
+
+<Function id="{9b2dd8a8-5d80-4056-ba6d-cd359495d913}" name="triggerfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_max="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{92e5b269-2aae-49a4-84c5-002399003933}" name="trigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" stack_size="1024" wcet="0" dispatch_offset="0" period="200" priority="1">
+</Provided_Interface>
+
+<Provided_Interface id="{421cc575-b070-4ba1-8891-44540e3ff0df}" name="pong" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Required_Interface id="{eec61ecc-fc9b-42d6-a34b-b30783d8c885}" name="ping" kind="Sporadic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" miat="0" stack_size="1024" queue_size="1" wcet="0" priority="1">
+    <Input_Parameter name="p1" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Connection id="{7787da94-3f43-42dc-ba93-06d467b2f459}" name="testfunction_pong____triggerfunction_pong" required_system_element="NO">
+    <Source iface_id="{d2038b3f-c216-45b3-ab57-2ef11feaaea3}" func_name="testfunction" ri_name="pong" />
+    <Target iface_id="{421cc575-b070-4ba1-8891-44540e3ff0df}" func_name="triggerfunction" pi_name="pong" />
+</Connection>
+
+<Connection id="{fe40f8e9-9730-4678-99e4-23123aa3049d}" name="triggerfunction_ping____testfunction_ping" required_system_element="NO">
+    <Source iface_id="{eec61ecc-fc9b-42d6-a34b-b30783d8c885}" func_name="triggerfunction" ri_name="ping" />
+    <Target iface_id="{43b1fba3-da6b-43df-bc6d-603364f22285}" func_name="testfunction" pi_name="ping" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
