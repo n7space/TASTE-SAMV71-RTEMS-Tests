@@ -14,6 +14,11 @@ SPACECREATOR?=spacecreator.AppImage
 # If you need to reset this Makefile to its original state, run:
 # $ taste reset
 
+export PARTITION_1_USER_LDFLAGS=-Wl,-Map=output.map
+CURRENT_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+export PARTITION_1_USER_LDSCRIPT_DIR=$(CURRENT_DIR)work/linker_script
+export PARTITION_1_USER_LDSCRIPT=$(CURRENT_DIR)work/linker_script/linkcmds.intflash
+
 # Disable the progress bar from taste-update-data-view when building systems
 export NO_PROGRESS_BAR=1
 
