@@ -73,7 +73,7 @@ Function Function_100 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_100
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -89,7 +89,7 @@ Function Function_100 in context _Root
 │        └─ Function Function_92, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_3 - in FV: Function_100
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -126,7 +126,7 @@ Function Function_101 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_101
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -142,7 +142,7 @@ Function Function_101 in context _Root
 │        └─ Function Function_93, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_4 - in FV: Function_101
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -179,7 +179,7 @@ Function Function_102 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_102
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -195,7 +195,7 @@ Function Function_102 in context _Root
 │        └─ Function Function_94, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_5 - in FV: Function_102
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -232,7 +232,7 @@ Function Function_103 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_103
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -248,7 +248,7 @@ Function Function_103 in context _Root
 │        └─ Function Function_95, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_6 - in FV: Function_103
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -285,7 +285,7 @@ Function Function_104 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_104
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -301,7 +301,7 @@ Function Function_104 in context _Root
 │        └─ Function Function_96, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_7 - in FV: Function_104
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -338,7 +338,7 @@ Function Function_106 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_106
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -354,7 +354,7 @@ Function Function_106 in context Function_105
 │        └─ Function Function_98, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_106
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -391,7 +391,7 @@ Function Function_107 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_107
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -407,7 +407,7 @@ Function Function_107 in context Function_105
 │        └─ Function Function_99, interface PI_2
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_107
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -444,7 +444,7 @@ Function Function_108 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_108
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -460,7 +460,7 @@ Function Function_108 in context Function_105
 │        └─ Function Function_100, interface PI_3
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_108
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -497,7 +497,7 @@ Function Function_109 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_109
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -513,7 +513,7 @@ Function Function_109 in context Function_105
 │        └─ Function Function_101, interface PI_4
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_109
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -603,7 +603,7 @@ Function Function_110 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_110
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -619,7 +619,7 @@ Function Function_110 in context Function_105
 │        └─ Function Function_102, interface PI_5
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_110
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -656,7 +656,7 @@ Function Function_111 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_111
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -672,7 +672,7 @@ Function Function_111 in context Function_105
 │        └─ Function Function_103, interface PI_6
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_111
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -709,7 +709,7 @@ Function Function_112 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_112
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -725,7 +725,7 @@ Function Function_112 in context Function_105
 │        └─ Function Function_104, interface PI_7
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_112
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -762,7 +762,7 @@ Function Function_113 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_113
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -778,7 +778,7 @@ Function Function_113 in context Function_105
 │        └─ Function Function_124, interface PI_8
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_113
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -815,7 +815,7 @@ Function Function_115 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_115
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -831,7 +831,7 @@ Function Function_115 in context Function_105
 │        └─ Function Function_106, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_115
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -868,7 +868,7 @@ Function Function_116 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_116
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -884,7 +884,7 @@ Function Function_116 in context Function_105
 │        └─ Function Function_107, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_116
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -921,7 +921,7 @@ Function Function_117 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_117
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -937,7 +937,7 @@ Function Function_117 in context Function_105
 │        └─ Function Function_108, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_117
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -974,7 +974,7 @@ Function Function_118 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_118
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -990,7 +990,7 @@ Function Function_118 in context Function_105
 │        └─ Function Function_109, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_118
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1027,7 +1027,7 @@ Function Function_119 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_119
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1043,7 +1043,7 @@ Function Function_119 in context Function_105
 │        └─ Function Function_110, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_119
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1133,7 +1133,7 @@ Function Function_120 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_120
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1149,7 +1149,7 @@ Function Function_120 in context Function_105
 │        └─ Function Function_111, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_120
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1186,7 +1186,7 @@ Function Function_121 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_121
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1202,7 +1202,7 @@ Function Function_121 in context Function_105
 │        └─ Function Function_112, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_121
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1239,7 +1239,7 @@ Function Function_122 in context Function_105
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_122
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1255,7 +1255,7 @@ Function Function_122 in context Function_105
 │        └─ Function Function_113, interface PI_1
 └─ Required interfaces:
    └─ Name : RI_1 - in FV: Function_122
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1292,7 +1292,7 @@ Function Function_124 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_124
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1308,7 +1308,7 @@ Function Function_124 in context _Root
 │        └─ Function Function_97, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_8 - in FV: Function_124
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1345,7 +1345,7 @@ Function Function_125 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_125
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1361,7 +1361,7 @@ Function Function_125 in context _Root
 │        └─ Function Function_115, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_125
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1398,7 +1398,7 @@ Function Function_126 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_126
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1414,7 +1414,7 @@ Function Function_126 in context _Root
 │        └─ Function Function_116, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_2 - in FV: Function_126
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1451,7 +1451,7 @@ Function Function_127 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_127
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1467,7 +1467,7 @@ Function Function_127 in context _Root
 │        └─ Function Function_117, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_3 - in FV: Function_127
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1504,7 +1504,7 @@ Function Function_128 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_128
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1520,7 +1520,7 @@ Function Function_128 in context _Root
 │        └─ Function Function_118, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_4 - in FV: Function_128
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1557,7 +1557,7 @@ Function Function_129 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_129
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1573,7 +1573,7 @@ Function Function_129 in context _Root
 │        └─ Function Function_119, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_5 - in FV: Function_129
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1663,7 +1663,7 @@ Function Function_130 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_130
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1679,7 +1679,7 @@ Function Function_130 in context _Root
 │        └─ Function Function_120, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_6 - in FV: Function_130
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1716,7 +1716,7 @@ Function Function_131 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_131
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1732,7 +1732,7 @@ Function Function_131 in context _Root
 │        └─ Function Function_121, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_7 - in FV: Function_131
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -1769,7 +1769,7 @@ Function Function_132 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_132
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -1785,7 +1785,7 @@ Function Function_132 in context _Root
 │        └─ Function Function_122, interface RI_1
 └─ Required interfaces:
    └─ Name : PI_8 - in FV: Function_132
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -2527,7 +2527,7 @@ Function Function_26 in context _Root
 │        └─ Function Function_18, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_26
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -2988,7 +2988,7 @@ Function Function_34 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_34
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -3004,7 +3004,7 @@ Function Function_34 in context _Root
 │        └─ Function Function_26, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_34
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3057,7 +3057,7 @@ Function Function_35 in context _Root
 │        └─ Function Function_27, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_35
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3465,7 +3465,7 @@ Function Function_42 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_42
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -3481,7 +3481,7 @@ Function Function_42 in context _Root
 │        └─ Function Function_34, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_42
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3518,7 +3518,7 @@ Function Function_43 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_43
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -3534,7 +3534,7 @@ Function Function_43 in context _Root
 │        └─ Function Function_35, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_43
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3587,7 +3587,7 @@ Function Function_44 in context _Root
 │        └─ Function Function_36, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_44
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3640,7 +3640,7 @@ Function Function_45 in context _Root
 │        └─ Function Function_37, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_45
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3693,7 +3693,7 @@ Function Function_46 in context _Root
 │        └─ Function Function_38, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_46
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3746,7 +3746,7 @@ Function Function_47 in context _Root
 │        └─ Function Function_39, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_47
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3799,7 +3799,7 @@ Function Function_48 in context _Root
 │        └─ Function Function_40, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_48
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3836,7 +3836,7 @@ Function Function_49 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_49
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -3852,7 +3852,7 @@ Function Function_49 in context _Root
 │        └─ Function Function_42, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_49
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3942,7 +3942,7 @@ Function Function_50 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_50
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -3958,7 +3958,7 @@ Function Function_50 in context _Root
 │        └─ Function Function_43, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_50
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -3995,7 +3995,7 @@ Function Function_51 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_51
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4011,7 +4011,7 @@ Function Function_51 in context _Root
 │        └─ Function Function_44, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_51
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4048,7 +4048,7 @@ Function Function_52 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_52
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4064,7 +4064,7 @@ Function Function_52 in context _Root
 │        └─ Function Function_45, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_52
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4101,7 +4101,7 @@ Function Function_53 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_53
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4117,7 +4117,7 @@ Function Function_53 in context _Root
 │        └─ Function Function_46, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_53
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4154,7 +4154,7 @@ Function Function_54 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_54
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4170,7 +4170,7 @@ Function Function_54 in context _Root
 │        └─ Function Function_47, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_54
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4207,7 +4207,7 @@ Function Function_55 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_55
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4223,7 +4223,7 @@ Function Function_55 in context _Root
 │        └─ Function Function_48, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_55
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4260,7 +4260,7 @@ Function Function_56 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_56
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4276,7 +4276,7 @@ Function Function_56 in context _Root
 │        └─ Function Function_57, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_56
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4329,7 +4329,7 @@ Function Function_57 in context _Root
 │        └─ Function Function_41, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_57
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4366,7 +4366,7 @@ Function Function_58 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_58
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4382,7 +4382,7 @@ Function Function_58 in context _Root
 │        └─ Function Function_49, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_58
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4419,7 +4419,7 @@ Function Function_59 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_59
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4435,7 +4435,7 @@ Function Function_59 in context _Root
 │        └─ Function Function_50, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_59
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4525,7 +4525,7 @@ Function Function_60 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_60
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4541,7 +4541,7 @@ Function Function_60 in context _Root
 │        └─ Function Function_51, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_60
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4578,7 +4578,7 @@ Function Function_61 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_61
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4594,7 +4594,7 @@ Function Function_61 in context _Root
 │        └─ Function Function_52, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_61
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4631,7 +4631,7 @@ Function Function_62 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_62
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4647,7 +4647,7 @@ Function Function_62 in context _Root
 │        └─ Function Function_53, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_62
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4684,7 +4684,7 @@ Function Function_63 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_63
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4700,7 +4700,7 @@ Function Function_63 in context _Root
 │        └─ Function Function_54, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_63
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4737,7 +4737,7 @@ Function Function_64 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_64
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4753,7 +4753,7 @@ Function Function_64 in context _Root
 │        └─ Function Function_55, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_64
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4790,7 +4790,7 @@ Function Function_65 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_65
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4806,7 +4806,7 @@ Function Function_65 in context _Root
 │        └─ Function Function_56, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_65
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4843,7 +4843,7 @@ Function Function_66 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_66
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4859,7 +4859,7 @@ Function Function_66 in context _Root
 │        └─ Function Function_58, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_66
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4896,7 +4896,7 @@ Function Function_67 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_67
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4912,7 +4912,7 @@ Function Function_67 in context _Root
 │        └─ Function Function_59, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_67
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -4949,7 +4949,7 @@ Function Function_68 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_68
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -4965,7 +4965,7 @@ Function Function_68 in context _Root
 │        └─ Function Function_60, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_68
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5002,7 +5002,7 @@ Function Function_69 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_69
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5018,7 +5018,7 @@ Function Function_69 in context _Root
 │        └─ Function Function_61, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_69
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5108,7 +5108,7 @@ Function Function_70 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_70
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5124,7 +5124,7 @@ Function Function_70 in context _Root
 │        └─ Function Function_62, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_70
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5161,7 +5161,7 @@ Function Function_71 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_71
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5177,7 +5177,7 @@ Function Function_71 in context _Root
 │        └─ Function Function_63, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_71
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5214,7 +5214,7 @@ Function Function_72 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_72
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5230,7 +5230,7 @@ Function Function_72 in context _Root
 │        └─ Function Function_64, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_72
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5267,7 +5267,7 @@ Function Function_73 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_73
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5320,7 +5320,7 @@ Function Function_74 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_74
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5336,7 +5336,7 @@ Function Function_74 in context _Root
 │        └─ Function Function_66, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_74
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5373,7 +5373,7 @@ Function Function_75 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_75
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5389,7 +5389,7 @@ Function Function_75 in context _Root
 │        └─ Function Function_67, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_75
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5426,7 +5426,7 @@ Function Function_76 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_76
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5442,7 +5442,7 @@ Function Function_76 in context _Root
 │        └─ Function Function_68, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_76
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5479,7 +5479,7 @@ Function Function_77 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_77
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5495,7 +5495,7 @@ Function Function_77 in context _Root
 │        └─ Function Function_69, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_77
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5532,7 +5532,7 @@ Function Function_78 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_78
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5548,7 +5548,7 @@ Function Function_78 in context _Root
 │        └─ Function Function_70, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_78
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5585,7 +5585,7 @@ Function Function_79 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_79
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5601,7 +5601,7 @@ Function Function_79 in context _Root
 │        └─ Function Function_71, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_79
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5691,7 +5691,7 @@ Function Function_80 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_80
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5707,7 +5707,7 @@ Function Function_80 in context _Root
 │        └─ Function Function_72, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_80
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5760,7 +5760,7 @@ Function Function_81 in context _Root
 │        └─ Function Function_73, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_81
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5797,7 +5797,7 @@ Function Function_82 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_82
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5813,7 +5813,7 @@ Function Function_82 in context _Root
 │        └─ Function Function_74, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_82
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5850,7 +5850,7 @@ Function Function_83 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_83
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5866,7 +5866,7 @@ Function Function_83 in context _Root
 │        └─ Function Function_75, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_83
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5903,7 +5903,7 @@ Function Function_84 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_84
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5919,7 +5919,7 @@ Function Function_84 in context _Root
 │        └─ Function Function_76, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_84
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -5956,7 +5956,7 @@ Function Function_85 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_85
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -5972,7 +5972,7 @@ Function Function_85 in context _Root
 │        └─ Function Function_77, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_85
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6009,7 +6009,7 @@ Function Function_86 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_86
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6025,7 +6025,7 @@ Function Function_86 in context _Root
 │        └─ Function Function_78, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_86
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6062,7 +6062,7 @@ Function Function_87 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_87
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6078,7 +6078,7 @@ Function Function_87 in context _Root
 │        └─ Function Function_79, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_87
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6115,7 +6115,7 @@ Function Function_88 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_88
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6131,7 +6131,7 @@ Function Function_88 in context _Root
 │        └─ Function Function_80, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_88
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6168,7 +6168,7 @@ Function Function_89 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_89
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6184,7 +6184,7 @@ Function Function_89 in context _Root
 │        └─ Function Function_81, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_89
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6274,7 +6274,7 @@ Function Function_90 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_90
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6290,7 +6290,7 @@ Function Function_90 in context _Root
 │        └─ Function Function_82, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_90
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6327,7 +6327,7 @@ Function Function_91 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_91
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6343,7 +6343,7 @@ Function Function_91 in context _Root
 │        └─ Function Function_83, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_91
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6380,7 +6380,7 @@ Function Function_92 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_92
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6396,7 +6396,7 @@ Function Function_92 in context _Root
 │        └─ Function Function_84, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_92
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6433,7 +6433,7 @@ Function Function_93 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_93
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6449,7 +6449,7 @@ Function Function_93 in context _Root
 │        └─ Function Function_85, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_93
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6486,7 +6486,7 @@ Function Function_94 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_94
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6502,7 +6502,7 @@ Function Function_94 in context _Root
 │        └─ Function Function_86, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_94
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6539,7 +6539,7 @@ Function Function_95 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_95
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6555,7 +6555,7 @@ Function Function_95 in context _Root
 │        └─ Function Function_87, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_95
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6592,7 +6592,7 @@ Function Function_96 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_96
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6608,7 +6608,7 @@ Function Function_96 in context _Root
 │        └─ Function Function_88, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_96
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6645,7 +6645,7 @@ Function Function_97 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_97
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6661,7 +6661,7 @@ Function Function_97 in context _Root
 │        └─ Function Function_89, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_97
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6698,7 +6698,7 @@ Function Function_98 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_98
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6714,7 +6714,7 @@ Function Function_98 in context _Root
 │        └─ Function Function_90, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_1 - in FV: Function_98
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6751,7 +6751,7 @@ Function Function_99 in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  └─ Name : PI_1 - in FV: Function_99
-│     ├─ RCM Kind    : SPORADIC_OPERATION
+│     ├─ RCM Kind    : PROTECTED_OPERATION
 │     ├─ Period/MIAT :  0
 │     ├─ WCET (ms)   :  0
 │     ├─ Queue Size  :  1
@@ -6767,7 +6767,7 @@ Function Function_99 in context _Root
 │        └─ Function Function_91, interface PI_1
 └─ Required interfaces:
    └─ Name : PI_2 - in FV: Function_99
-      ├─ RCM Kind    : SPORADIC_OPERATION
+      ├─ RCM Kind    : PROTECTED_OPERATION
       ├─ Period/MIAT :  0
       ├─ WCET (ms)   :  0
       ├─ Queue Size  :  1
@@ -6804,7 +6804,7 @@ Function testfunction in context _Root
 ├─ Timers:
 ├─ Provided interfaces:
 │  ├─ Name : PI_1 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6819,7 +6819,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_125, interface PI_1
 │  ├─ Name : PI_2 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6834,7 +6834,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_126, interface PI_2
 │  ├─ Name : PI_3 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6849,7 +6849,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_127, interface PI_3
 │  ├─ Name : PI_4 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6864,7 +6864,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_128, interface PI_4
 │  ├─ Name : PI_5 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6879,7 +6879,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_129, interface PI_5
 │  ├─ Name : PI_6 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6894,7 +6894,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_130, interface PI_6
 │  ├─ Name : PI_7 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6909,7 +6909,7 @@ Function testfunction in context _Root
 │  │  └─ Connections :
 │  │     └─ Function Function_131, interface PI_7
 │  ├─ Name : PI_8 - in FV: testfunction
-│  │  ├─ RCM Kind    : SPORADIC_OPERATION
+│  │  ├─ RCM Kind    : PROTECTED_OPERATION
 │  │  ├─ Period/MIAT :  0
 │  │  ├─ WCET (ms)   :  0
 │  │  ├─ Queue Size  :  1
@@ -6975,12 +6975,12 @@ Function triggerfunction in context _Root
       │  │  ├─ Encoding     : NATIVE
       │  │  └─ Direction    : PARAM_IN
       └─ Connections :
-         ├─ Function Function_9, interface PI_1
          ├─ Function Function_3, interface PI_1
+         ├─ Function Function_9, interface PI_1
          ├─ Function Function_5, interface PI_1
          ├─ Function Function_7, interface PI_1
-         ├─ Function Function_8, interface PI_1
          ├─ Function Function_4, interface PI_1
+         ├─ Function Function_8, interface PI_1
          ├─ Function Function_2, interface PI_1
          └─ Function Function_6, interface PI_1
 

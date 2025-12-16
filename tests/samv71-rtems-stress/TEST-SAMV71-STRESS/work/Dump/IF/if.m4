@@ -265,18 +265,18 @@ define(`m4_function_98_pi_1',`function_106_pi_1')dnl
 define(`m4_function_98_PI_1_provider',`function_106')dnl
 define(`m4_function_99_pi_2',`function_107_pi_1')dnl
 define(`m4_function_99_PI_2_provider',`function_107')dnl
-define(`m4_triggerfunction_pi_1',`function_9_pi_1')dnl
-define(`m4_triggerfunction_PI_1_provider',`function_9')dnl
 define(`m4_triggerfunction_pi_1',`function_3_pi_1')dnl
 define(`m4_triggerfunction_PI_1_provider',`function_3')dnl
+define(`m4_triggerfunction_pi_1',`function_9_pi_1')dnl
+define(`m4_triggerfunction_PI_1_provider',`function_9')dnl
 define(`m4_triggerfunction_pi_1',`function_5_pi_1')dnl
 define(`m4_triggerfunction_PI_1_provider',`function_5')dnl
 define(`m4_triggerfunction_pi_1',`function_7_pi_1')dnl
 define(`m4_triggerfunction_PI_1_provider',`function_7')dnl
-define(`m4_triggerfunction_pi_1',`function_8_pi_1')dnl
-define(`m4_triggerfunction_PI_1_provider',`function_8')dnl
 define(`m4_triggerfunction_pi_1',`function_4_pi_1')dnl
 define(`m4_triggerfunction_PI_1_provider',`function_4')dnl
+define(`m4_triggerfunction_pi_1',`function_8_pi_1')dnl
+define(`m4_triggerfunction_PI_1_provider',`function_8')dnl
 define(`m4_triggerfunction_pi_1',`function_2_pi_1')dnl
 define(`m4_triggerfunction_PI_1_provider',`function_2')dnl
 define(`m4_triggerfunction_pi_1',`function_6_pi_1')dnl
@@ -320,39 +320,39 @@ m4_c_function(function_10,// ERROR: Interface "PI_1" in function "Function_10" h
 
 )
 
-m4_c_function(function_100,// ERROR: Interface "PI_1" in function "Function_100" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_100,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_101,// ERROR: Interface "PI_1" in function "Function_101" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_101,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_102,// ERROR: Interface "PI_1" in function "Function_102" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_102,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_103,// ERROR: Interface "PI_1" in function "Function_103" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_103,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_104,// ERROR: Interface "PI_1" in function "Function_104" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_104,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_106,// ERROR: Interface "PI_1" in function "Function_106" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_106,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_107,// ERROR: Interface "PI_1" in function "Function_107" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_107,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_108,// ERROR: Interface "PI_1" in function "Function_108" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_108,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_109,// ERROR: Interface "PI_1" in function "Function_109" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_109,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -360,39 +360,39 @@ m4_c_function(function_11,// ERROR: Interface "PI_1" in function "Function_11" h
 
 )
 
-m4_c_function(function_110,// ERROR: Interface "PI_1" in function "Function_110" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_110,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_111,// ERROR: Interface "PI_1" in function "Function_111" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_111,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_112,// ERROR: Interface "PI_1" in function "Function_112" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_112,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_113,// ERROR: Interface "PI_1" in function "Function_113" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_113,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_115,// ERROR: Interface "PI_1" in function "Function_115" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_115,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_116,// ERROR: Interface "PI_1" in function "Function_116" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_116,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_117,// ERROR: Interface "PI_1" in function "Function_117" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_117,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_118,// ERROR: Interface "PI_1" in function "Function_118" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_118,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_119,// ERROR: Interface "PI_1" in function "Function_119" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_119,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -400,39 +400,39 @@ m4_c_function(function_12,// ERROR: Interface "PI_1" in function "Function_12" h
 
 )
 
-m4_c_function(function_120,// ERROR: Interface "PI_1" in function "Function_120" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_120,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_121,// ERROR: Interface "PI_1" in function "Function_121" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_121,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_122,// ERROR: Interface "PI_1" in function "Function_122" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_122,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_124,// ERROR: Interface "PI_1" in function "Function_124" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_124,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_125,// ERROR: Interface "PI_1" in function "Function_125" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_125,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_126,// ERROR: Interface "PI_1" in function "Function_126" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_126,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_127,// ERROR: Interface "PI_1" in function "Function_127" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_127,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_128,// ERROR: Interface "PI_1" in function "Function_128" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_128,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_129,// ERROR: Interface "PI_1" in function "Function_129" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_129,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -440,15 +440,15 @@ m4_c_function(function_13,// ERROR: Interface "PI_1" in function "Function_13" h
 
 )
 
-m4_c_function(function_130,// ERROR: Interface "PI_1" in function "Function_130" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_130,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_131,// ERROR: Interface "PI_1" in function "Function_131" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_131,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_132,// ERROR: Interface "PI_1" in function "Function_132" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_132,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -540,7 +540,7 @@ m4_c_function(function_33,// ERROR: Interface "PI_1" in function "Function_33" h
 
 )
 
-m4_c_function(function_34,// ERROR: Interface "PI_1" in function "Function_34" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_34,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -576,11 +576,11 @@ m4_c_function(function_41,// ERROR: Interface "PI_1" in function "Function_41" h
 
 )
 
-m4_c_function(function_42,// ERROR: Interface "PI_1" in function "Function_42" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_42,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_43,// ERROR: Interface "PI_1" in function "Function_43" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_43,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -604,7 +604,7 @@ m4_c_function(function_48,// ERROR: Interface "PI_1" in function "Function_48" h
 
 )
 
-m4_c_function(function_49,// ERROR: Interface "PI_1" in function "Function_49" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_49,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -612,31 +612,31 @@ m4_c_function(function_5,// ERROR: Interface "PI_1" in function "Function_5" has
 
 )
 
-m4_c_function(function_50,// ERROR: Interface "PI_1" in function "Function_50" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_50,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_51,// ERROR: Interface "PI_1" in function "Function_51" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_51,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_52,// ERROR: Interface "PI_1" in function "Function_52" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_52,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_53,// ERROR: Interface "PI_1" in function "Function_53" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_53,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_54,// ERROR: Interface "PI_1" in function "Function_54" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_54,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_55,// ERROR: Interface "PI_1" in function "Function_55" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_55,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_56,// ERROR: Interface "PI_1" in function "Function_56" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_56,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -644,11 +644,11 @@ m4_c_function(function_57,// ERROR: Interface "PI_1" in function "Function_57" h
 
 )
 
-m4_c_function(function_58,// ERROR: Interface "PI_1" in function "Function_58" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_58,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_59,// ERROR: Interface "PI_1" in function "Function_59" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_59,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -656,43 +656,43 @@ m4_c_function(function_6,// ERROR: Interface "PI_1" in function "Function_6" has
 
 )
 
-m4_c_function(function_60,// ERROR: Interface "PI_1" in function "Function_60" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_60,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_61,// ERROR: Interface "PI_1" in function "Function_61" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_61,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_62,// ERROR: Interface "PI_1" in function "Function_62" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_62,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_63,// ERROR: Interface "PI_1" in function "Function_63" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_63,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_64,// ERROR: Interface "PI_1" in function "Function_64" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_64,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_65,// ERROR: Interface "PI_1" in function "Function_65" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_65,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_66,// ERROR: Interface "PI_1" in function "Function_66" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_66,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_67,// ERROR: Interface "PI_1" in function "Function_67" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_67,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_68,// ERROR: Interface "PI_1" in function "Function_68" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_68,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_69,// ERROR: Interface "PI_1" in function "Function_69" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_69,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -700,43 +700,43 @@ m4_c_function(function_7,// ERROR: Interface "PI_1" in function "Function_7" has
 
 )
 
-m4_c_function(function_70,// ERROR: Interface "PI_1" in function "Function_70" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_70,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_71,// ERROR: Interface "PI_1" in function "Function_71" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_71,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_72,// ERROR: Interface "PI_1" in function "Function_72" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_72,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_73,// ERROR: Interface "PI_1" in function "Function_73" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_73,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_74,// ERROR: Interface "PI_1" in function "Function_74" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_74,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_75,// ERROR: Interface "PI_1" in function "Function_75" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_75,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_76,// ERROR: Interface "PI_1" in function "Function_76" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_76,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_77,// ERROR: Interface "PI_1" in function "Function_77" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_77,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_78,// ERROR: Interface "PI_1" in function "Function_78" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_78,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_79,// ERROR: Interface "PI_1" in function "Function_79" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_79,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -744,7 +744,7 @@ m4_c_function(function_8,// ERROR: Interface "PI_1" in function "Function_8" has
 
 )
 
-m4_c_function(function_80,// ERROR: Interface "PI_1" in function "Function_80" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_80,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -752,35 +752,35 @@ m4_c_function(function_81,// ERROR: Interface "PI_1" in function "Function_81" h
 
 )
 
-m4_c_function(function_82,// ERROR: Interface "PI_1" in function "Function_82" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_82,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_83,// ERROR: Interface "PI_1" in function "Function_83" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_83,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_84,// ERROR: Interface "PI_1" in function "Function_84" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_84,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_85,// ERROR: Interface "PI_1" in function "Function_85" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_85,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_86,// ERROR: Interface "PI_1" in function "Function_86" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_86,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_87,// ERROR: Interface "PI_1" in function "Function_87" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_87,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_88,// ERROR: Interface "PI_1" in function "Function_88" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_88,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_89,// ERROR: Interface "PI_1" in function "Function_89" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_89,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
@@ -788,61 +788,61 @@ m4_c_function(function_9,// ERROR: Interface "PI_1" in function "Function_9" has
 
 )
 
-m4_c_function(function_90,// ERROR: Interface "PI_1" in function "Function_90" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_90,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_91,// ERROR: Interface "PI_1" in function "Function_91" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_91,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_92,// ERROR: Interface "PI_1" in function "Function_92" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_92,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_93,// ERROR: Interface "PI_1" in function "Function_93" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_93,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_94,// ERROR: Interface "PI_1" in function "Function_94" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_94,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_95,// ERROR: Interface "PI_1" in function "Function_95" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_95,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_96,// ERROR: Interface "PI_1" in function "Function_96" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_96,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_97,// ERROR: Interface "PI_1" in function "Function_97" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_97,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_98,// ERROR: Interface "PI_1" in function "Function_98" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_98,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(function_99,// ERROR: Interface "PI_1" in function "Function_99" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(function_99,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
 )
 
-m4_c_function(testfunction,// ERROR: Interface "PI_1" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+m4_c_function(testfunction,(PI_1,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_2" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_2,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_3" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_3,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_4" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_4,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_5" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_5,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_6" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_6,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_7" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_7,(p1),(MyInteger),(PARAM_IN), 0),
 
-// ERROR: Interface "PI_8" in function "testfunction" has unsupported kind: "SPORADIC_OPERATION"
+(PI_8,(p1),(MyInteger),(PARAM_IN), 0),
 
 (trigger_check,(),(),(), 0),
 
