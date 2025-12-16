@@ -122,7 +122,7 @@ def run_verification_project(remote_gdb_server, project_bin, src_file_name, src_
         gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write(f"b {src_file_name}:{src_file_line}")
-        gdbmi.write("continue")
+        gdbmi.write("continue", timeout_sec=5)
 
         # Wait for remote gdb
         stopped = False
