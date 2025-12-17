@@ -12,7 +12,7 @@
 
 extern const uint32_t CPU_USAGE_DATA;
 
-static bool test_result = true;
+static bool test_result = false;
 
 void testfunction_startup(void)
 {
@@ -23,11 +23,13 @@ void testfunction_PI_trigger_check(void)
     struct Monitor_CPUUsageData *const cpu_usage_data =
 		(struct Monitor_CPUUsageData *const)&CPU_USAGE_DATA;
 
-    if(cpu_usage_data->maximum_cpu_usage >= 100.0 || cpu_usage_data->maximum_cpu_usage <= 99.0 ||
-       cpu_usage_data->minimum_cpu_usage >= 1.0 || cpu_usage_data->minimum_cpu_usage < 0.0 ||
-       cpu_usage_data->average_cpu_usage > 76.0 || cpu_usage_data->average_cpu_usage < 74){
-        test_result = false;
+    if(cpu_usage_data->maximum_cpu_usage <= 100.0 && cpu_usage_data->maximum_cpu_usage >= 99.0 &&
+       cpu_usage_data->minimum_cpu_usage <= 1.0 && cpu_usage_data->minimum_cpu_usage >= 0.0 &&
+       cpu_usage_data->average_cpu_usage <= 63.0 && cpu_usage_data->average_cpu_usage >= 60.0){
+        test_result = true;
     }
+
+    asm volatile("nop");
 }
 
 

@@ -12,8 +12,9 @@
 #include <Hal.h>
 
 // trigger time should be 1 second and 500 milisecond but because 
-// the specific time is not deterministic this is a minimum value for a trigger time
-#define TRIGGER_IF_START_TIME 1499000000ul
+// the specific time is not deterministic this is a minimum and maximum value for a trigger time
+#define TRIGGER_IF_START_TIME_MINIMUM 1499000000ul
+#define TRIGGER_IF_START_TIME_MAXIMUM 1510000000ul
 
 static bool test_result = false;
 static bool is_done = false;
@@ -38,7 +39,11 @@ void testfunction_PI_trigger(void)
 
 	uint64_t time_in_ns_2 = Hal_GetElapsedTimeInNs();
 
-	if(time_in_ns_1 > TRIGGER_IF_START_TIME && time_in_ns_1 < time_in_ns_2){
+	if(time_in_ns_1 > TRIGGER_IF_START_TIME_MINIMUM &&
+	   time_in_ns_1 < TRIGGER_IF_START_TIME_MAXIMUM &&
+	   time_in_ns_2 > TRIGGER_IF_START_TIME_MINIMUM &&
+	   time_in_ns_2 < TRIGGER_IF_START_TIME_MAXIMUM &&
+	   time_in_ns_1 < time_in_ns_2){
 		test_result = true;
 	}
 

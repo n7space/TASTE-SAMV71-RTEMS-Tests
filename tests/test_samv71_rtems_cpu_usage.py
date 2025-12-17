@@ -15,7 +15,7 @@ def test_samv71_rtems_cpu_usage():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-cpu-usage/TEST-SAMV71-CPU-USAGE/work/binaries/partition_1', 'testfunction.c', '31')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-cpu-usage/TEST-SAMV71-CPU-USAGE/work/binaries/partition_1', 'testfunction.c', '32')
 
 if __name__ == "__main__":
     test_samv71_rtems_cpu_usage()
