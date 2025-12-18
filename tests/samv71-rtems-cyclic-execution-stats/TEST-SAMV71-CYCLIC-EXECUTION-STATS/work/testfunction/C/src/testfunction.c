@@ -25,14 +25,14 @@ void testfunction_PI_trigger_check(void)
 
     if(usage_data[0].maximum_execution_time > usage_data[0].average_execution_time &&
         usage_data[0].average_execution_time > usage_data[0].minimum_execution_time &&
-        usage_data[0].maximum_execution_time < 3270000 && usage_data[0].maximum_execution_time > 3250000 &&
-        usage_data[0].average_execution_time < 3270000 && usage_data[0].average_execution_time > 3250000 &&
-        usage_data[0].minimum_execution_time < 3270000 && usage_data[0].minimum_execution_time > 3250000 &&
+        usage_data[0].maximum_execution_time < 5360000 && usage_data[0].maximum_execution_time > 5350000 &&
+        usage_data[0].average_execution_time < 5360000 && usage_data[0].average_execution_time > 5350000 &&
+        usage_data[0].minimum_execution_time < 5360000 && usage_data[0].minimum_execution_time > 5350000 &&
         usage_data[1].maximum_execution_time > usage_data[1].average_execution_time &&
         usage_data[1].average_execution_time > usage_data[1].minimum_execution_time &&
-        usage_data[1].maximum_execution_time < 32600000 && usage_data[1].maximum_execution_time > 32500000 &&
-        usage_data[1].average_execution_time < 32600000 && usage_data[1].average_execution_time > 32500000 &&
-        usage_data[1].minimum_execution_time < 32600000 && usage_data[1].minimum_execution_time > 32500000)
+        usage_data[1].maximum_execution_time < 53460000 && usage_data[1].maximum_execution_time > 53450000 &&
+        usage_data[1].average_execution_time < 53460000 && usage_data[1].average_execution_time > 53450000 &&
+        usage_data[1].minimum_execution_time < 53460000 && usage_data[1].minimum_execution_time > 53450000)
     {
         test_result = true;
     }
