@@ -1,0 +1,22 @@
+TEST-SAM-RTEMS-CAN-DATAVIEW DEFINITIONS ::=
+BEGIN
+
+   MyInteger ::= INTEGER (0 .. 10000)
+
+  -- Can-Standard-Id ::= INTEGER (0 .. 2047)
+  -- Can-Extended-Id ::= INTEGER (0 .. 536870911)
+
+  -- Can-Id ::= CHOICE {
+  --   standard-id Can-Standard-Id,
+  --   extended-id Can-Extended-Id
+  -- }
+
+ Can-Id ::= INTEGER (0 .. 4294967295)
+
+  Can-Frame ::= SEQUENCE {
+    id Can-Id,
+    data MyInteger
+  }
+
+END
+
