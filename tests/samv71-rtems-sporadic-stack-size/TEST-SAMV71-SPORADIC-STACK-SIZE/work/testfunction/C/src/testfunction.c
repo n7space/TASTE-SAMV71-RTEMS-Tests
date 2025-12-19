@@ -26,12 +26,12 @@ static bool thread_stack_size_visitor(Thread_Control *the_thread, void *arg)
 	const uint32_t id = the_thread->Object.id;
     const Stack_Control *stack = &the_thread->Start.Initial_stack;
 
-	if (threads_info[testfunction_sporadic_if_1].id != id) {
+	if (threads_info[testfunction_sporadic_if_1].id == id) {
 
         sporadic_if_1_size_ok = stack->size == SPORADIC_IF_1_STACK_SIZE;
 		return true;
 	}
-    else if (threads_info[testfunction_sporadic_if_2].id != id) {
+    else if (threads_info[testfunction_sporadic_if_2].id == id) {
 
         sporadic_if_2_size_ok = stack->size == SPORADIC_IF_2_STACK_SIZE;
 		return true;
