@@ -1,0 +1,40 @@
+<InterfaceView version="1.3" asn1file="TEST-SAMV71-SDL-TIMERS.acn" UiFile="interfaceview.ui.xml" modifierHash="383508e">
+<Function id="{a886360a-cfd5-4b0e-ba61-d921751fa195}" name="testfunction" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_max="1" startup_priority="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{caf1c3f2-3358-4ad0-b700-26406a77558c}" name="protected_if" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="counter" type="MyInteger" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{7a67062f-76de-4b7c-bde7-842dcc46e4f1}" name="trigger_check" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" dispatch_offset="0" priority="1" wcet="0" period="700" stack_size="1024">
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+
+<Function id="{945dd1ce-2b09-408d-9e5a-514ec013d382}" name="triggerfunction" is_type="NO" language="SDL" default_implementation="default" fixed_system_element="NO" required_system_element="NO" instances_max="1" startup_priority="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="C"/>
+    <ContextParameter name="test_timer" type="Timer" value=""/>
+<Provided_Interface id="{9dd1085d-4827-48be-8b92-6ba024f4e3d4}" name="dummy_trigger" kind="Cyclic" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" dispatch_offset="0" priority="1" wcet="0" period="1000" stack_size="1024">
+</Provided_Interface>
+
+<Required_Interface id="{2f2bd2c6-1230-42c0-b5f4-0168ebd8bb6d}" name="protected_if" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="counter" type="MyInteger" encoding="NATIVE"/>
+    <Property name="Taste::InheritPI" value="true"/>
+    <Property name="Taste::Autonamed" value="true"/>
+</Required_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="SDL"/>
+    </Implementations>
+</Function>
+
+<Connection id="{7573c3f6-1519-451e-ac29-0980a70f0f8e}" name="triggerfunction_protected_if____testfunction_protected_if" required_system_element="NO">
+    <Source iface_id="{2f2bd2c6-1230-42c0-b5f4-0168ebd8bb6d}" func_name="triggerfunction" ri_name="protected_if" />
+    <Target iface_id="{caf1c3f2-3358-4ad0-b700-26406a77558c}" func_name="testfunction" pi_name="protected_if" />
+</Connection>
+
+<Layer name="default" is_visible="true"/>
+
+</InterfaceView>
