@@ -29,13 +29,13 @@ static bool thread_stack_size_visitor(Thread_Control *the_thread, void *arg)
 	if (threads_info[testfunction_sporadic_if_1].id == id) {
 
         sporadic_if_1_size_ok = stack->size == SPORADIC_IF_1_STACK_SIZE;
-		return true;
 	}
     else if (threads_info[testfunction_sporadic_if_2].id == id) {
 
         sporadic_if_2_size_ok = stack->size == SPORADIC_IF_2_STACK_SIZE;
-		return true;
 	}
+
+    return false;
 }
 
 void testfunction_startup(void)
