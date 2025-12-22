@@ -24,7 +24,6 @@ void testfunction_PI_protected_if(const asn1SccMyInteger *IN_counter)
     }
 }
 
-
 void testfunction_PI_trigger_check(void)
 {
     test_result = counter == 4;
