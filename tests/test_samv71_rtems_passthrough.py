@@ -44,5 +44,23 @@ def test_samv71_rtems_passthrough():
         gdbmi.exit()
     assert not errors, "\n".join(errors)
 
+    common.do_clean_build("samv71-rtems-passthrough/TEST-SAMV71-PASSTHROUGH-RECEIVER")
+    remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
+    
+    build = common.do_build("samv71-rtems-passthrough/TEST-SAMV71-PASSTHROUGH-RECEIVER", ["samv71", "debug"])
+    stderr = build.stderr.decode("utf-8")
+    assert build.returncode == 0, f"Compilation errors: \n{stderr}"
+
+    expected = ["[TASTE] Initialization completed for function sender\r\n"]
+
+    errors, process = common.do_execute_without_kill(
+            "samv71-rtems-passthrough/TEST-SAMV71-PASSTHROUGH-RECEIVER", expected, test_exe="work/binaries/partition_2")
+    assert not errors, "\n".join(errors)
+
+    time.sleep(1)
+
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-passthrough/TEST-SAMV71-PASSTHROUGH-RECEIVER/work/binaries/partition_1', 'receiver.c', '24')
+    common.do_kill_process(process)
+
 if __name__ == "__main__":
     test_samv71_rtems_passthrough()

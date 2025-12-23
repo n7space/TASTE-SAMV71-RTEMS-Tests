@@ -59,9 +59,8 @@ def do_clean_build(test_name):
     except Exception:
         pass
 
-
-def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
-    '''Execute project and check expected output.
+def do_execute_without_kill(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
+    '''Execute project and check expected output without stopping it.
 
     This function executes the file specified by `test_exe` inside the test_name directory.
 
@@ -111,7 +110,28 @@ def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
     with open(execute_filepath, 'wb') as out:
         out.write(execute_log.getvalue())
 
+    return errors, process
+
+def do_kill_process(process):
+    '''Kills process
+
+    process -- process to be killed
+    '''
     process.kill(signal.SIGKILL)
+
+def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
+    '''Execute project and check expected output.
+
+    This function executes the file specified by `test_exe` inside the test_name directory.
+
+    test_name -- name of the test and also directory with test project
+    expected -- a list of expected outputs
+    timeout -- timeout for execution
+    test_exe -- name of the executable to run
+    '''
+    errors, process = do_execute_without_kill(test_name, expected, timeout, test_exe)
+
+    do_kill_process(process)
     return errors
 
 def run_verification_project(remote_gdb_server, project_bin, src_file_name, src_file_line, test_result_var_name='test_result'):
