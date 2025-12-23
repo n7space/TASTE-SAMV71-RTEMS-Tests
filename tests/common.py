@@ -76,7 +76,7 @@ def do_execute(test_name, expected, timeout=10, test_exe='test_binaries.sh'):
 
     # Initialize logs
     test_path = os.path.join('.', test_name)
-    execute_file = '{}_execute.log'.format(test_name)
+    execute_file = '{}_execute.log'.format(test_name.replace("/", "-"))
     execute_filepath = os.path.join(logs_dir, execute_file)
 
     test_executable = os.path.join(test_path, test_exe)
