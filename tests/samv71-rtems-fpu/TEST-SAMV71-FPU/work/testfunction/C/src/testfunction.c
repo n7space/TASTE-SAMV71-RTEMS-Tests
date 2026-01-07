@@ -8,10 +8,19 @@
     !! file. The up-to-date signatures can be found in the header file. !!
 */
 #include "testfunction.h"
-#include "Fpu/Fpu.h"
 
-static Fpu fpu;
+#define CPACR_ADDR 0xE000ED88UL
+#define CPACR (*(volatile uint32_t *)CPACR_ADDR)
+#define CP10_CP11_OFFSET 20
+#define FPU_FULL_ACCESS_MODE_CP10_CP11_MASK 0xF
+
 static bool test_result = false;
+
+static bool is_fpu_enabled()
+{
+    return ((CPACR & (FPU_FULL_ACCESS_MODE_CP10_CP11_MASK << CP10_CP11_OFFSET)) == 
+           (FPU_FULL_ACCESS_MODE_CP10_CP11_MASK << CP10_CP11_OFFSET));
+}
 
 void testfunction_startup(void)
 {
@@ -24,7 +33,7 @@ void testfunction_PI_trigger(void)
     volatile float c;
     c = a * b;
 
-    test_result = c == 3.75f;
+    test_result = is_fpu_enabled() && (c == 3.75f);
 }
 
 
