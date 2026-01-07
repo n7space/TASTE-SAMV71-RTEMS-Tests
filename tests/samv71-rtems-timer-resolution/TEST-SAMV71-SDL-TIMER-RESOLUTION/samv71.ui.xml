@@ -1,0 +1,18 @@
+<UI version="1.0" ><Entity id="{5a51619c-4e94-4536-ac62-55da397b5ad3}"><Taste coordinates="48000 27000 70000 47000">
+</Taste>
+</Entity><Entity id="{51ce9227-9ef0-4272-a3d5-e0ba5f1f164d}"><Taste coordinates="51000 29000 68000 45000">
+</Taste>
+</Entity><Entity id="{4a30f4bf-6ee8-4b9d-a228-6b48000f5486}">
+</Entity><Entity id="{f41e9d78-fa0d-4343-9855-d711a29f2938}">
+</Entity><Entity id="{65993d1b-005b-44ce-aa38-54598d3f1041}"><Taste coordinates="48000 28700">
+</Taste>
+</Entity><Entity id="{8761a2c2-95c3-40a5-884b-b2dc755c45a6}"><Taste coordinates="48000 32800">
+</Taste>
+</Entity><Entity id="{36feab60-3288-405c-8e55-db07fd00ede3}"><Taste coordinates="48000 36900">
+</Taste>
+</Entity><Entity id="{469a7551-1575-4ffb-a499-738218d08ce5}"><Taste coordinates="48000 41000">
+</Taste>
+</Entity><Entity id="{05088a6b-a1ef-4104-a2c6-994685164295}"><Taste coordinates="70000 28700">
+</Taste>
+</Entity>
+</UI>
