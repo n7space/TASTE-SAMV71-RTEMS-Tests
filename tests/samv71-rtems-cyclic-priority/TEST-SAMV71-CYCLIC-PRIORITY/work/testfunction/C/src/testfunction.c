@@ -14,8 +14,6 @@
 #define CYCLIC_IF_1_PRIORITY 5
 #define CYCLIC_IF_2_PRIORITY 13
 
-static bool cyclic_if_1_priority_ok = false;
-static bool cyclic_if_2_priority_ok = false;
 static bool test_result = false;
 
 

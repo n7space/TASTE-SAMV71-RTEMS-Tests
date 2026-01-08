@@ -15,7 +15,7 @@ def test_samv71_rtems_cyclic_priority():
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
-    common.run_verification_project(remote_gdb_server, 'samv71-rtems-cyclic-priority/TEST-SAMV71-CYCLIC-PRIORITY/work/binaries/partition_1', 'testfunction.c', '50')
+    common.run_verification_project(remote_gdb_server, 'samv71-rtems-cyclic-priority/TEST-SAMV71-CYCLIC-PRIORITY/work/binaries/partition_1', 'testfunction.c', '48')
 
 if __name__ == "__main__":
     test_samv71_rtems_cyclic_priority()
