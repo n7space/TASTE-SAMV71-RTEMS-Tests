@@ -8,7 +8,6 @@
     !! file. The up-to-date signatures can be found in the header file. !!
 */
 #include "sender.h"
-//#include <stdio.h>
 
 
 void sender_startup(void)
@@ -17,12 +16,6 @@ void sender_startup(void)
 
 void sender_PI_trigger(void)
 {
-    asn1SccMySeq seq;
-    seq.input_data = 1969;
-    seq.output_data = 13;
-    seq.validity = asn1SccMySeq_validity_invalid;
-
-    sender_RI_TC(&seq);
 }
 
 

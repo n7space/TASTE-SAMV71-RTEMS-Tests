@@ -17,8 +17,8 @@ void sender_startup(void)
 void sender_PI_trigger(void)
 {
     asn1SccMySeq seq;
-    seq.input_data = 1969;
-    seq.output_data = 13;
+    seq.input_data = 5;
+    seq.output_data = 5;
     seq.validity = asn1SccMySeq_validity_invalid;
 
     sender_RI_TC(&seq);

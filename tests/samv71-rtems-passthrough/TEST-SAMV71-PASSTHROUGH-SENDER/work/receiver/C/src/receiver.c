@@ -8,24 +8,14 @@
     !! file. The up-to-date signatures can be found in the header file. !!
 */
 #include "receiver.h"
-#include "stdio.h"
-
-static bool test_result = false;
 
 void receiver_startup(void)
 {
-    printf("START\n");
 }
 
 void receiver_PI_TC
       (const asn1SccMySeq *IN_p1)
-
 {
-    test_result = IN_p1->input_data == 1969 &&
-                  IN_p1->output_data == 13 &&
-                  IN_p1->validity == asn1SccMySeq_validity_invalid;
-
-    printf("TC received result: %d\n", test_result);
 }
 
 

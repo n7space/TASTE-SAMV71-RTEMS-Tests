@@ -18,9 +18,9 @@ void receiver_startup(void)
 void receiver_PI_TC
       (const asn1SccMySeq *IN_p1)
 {
-    test_result = IN_p1->input_data == 1969 &&
-                  IN_p1->output_data == 13 &&
-                  IN_p1->validity == asn1SccMySeq_validity_invalid;
+    test_result = IN_p1->input_data == 5 &&
+                  IN_p1->output_data == 5 &&
+                  IN_p1->validity == asn1SccMySeq_validity_valid;
     asm volatile("nop");
 }
 

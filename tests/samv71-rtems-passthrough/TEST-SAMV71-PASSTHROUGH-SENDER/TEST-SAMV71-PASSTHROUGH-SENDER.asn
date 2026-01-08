@@ -6,7 +6,7 @@ BEGIN
   MySeq       ::= SEQUENCE {
       input-data  MyInteger,
       output-data MyInteger,
-      validity    ENUMERATED { valid, invalid }
+      validity    ENUMERATED { valid (1969), invalid (13) }
   }
 
 END
