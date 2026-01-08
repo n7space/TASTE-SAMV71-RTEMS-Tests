@@ -14,8 +14,6 @@
 #define SPORADIC_IF_1_PRIORITY 5
 #define SPORADIC_IF_2_PRIORITY 12
 
-static bool sporadic_if_1_priority_ok = false;
-static bool sporadic_if_2_priority_ok = false;
 static bool test_result = false;
 
 void testfunction_startup(void)
