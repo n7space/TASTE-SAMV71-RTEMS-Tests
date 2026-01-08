@@ -8,8 +8,8 @@ import serial
 import threading
 from pygdbmi.gdbcontroller import GdbController
 
-EXPECTED_RECEIVED_DATA = b"\xfe\x00\x05\xfe\x00\x05\xfe\x00\x0d\xff" # translates to 5, 5, 13 in struct
-SEND_DATA = b"\x00\xfe\x00\x05\xfe\x00\x05\x07\xb1\xff" # translates to 5, 5, 1969 in struct
+EXPECTED_RECEIVED_DATA = bytes([0x00, 0xFE, 0x00, 0x05, 0xFE, 0x00, 0x05, 0xFE, 0x00, 0x0D, 0xFF]) # translates to 5, 5, 13 in struct
+SEND_DATA = bytes([0x00, 0xFE, 0x00, 0x05, 0xFE, 0x00, 0x05, 0x07, 0xB1, 0xFF]) # translates to 5, 5, 1969 in struct
 
 ser = serial.Serial(
             "SAMV71",
