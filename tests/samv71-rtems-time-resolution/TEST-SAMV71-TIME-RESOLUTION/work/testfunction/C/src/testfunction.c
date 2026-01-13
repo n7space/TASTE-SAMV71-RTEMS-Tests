@@ -12,28 +12,33 @@
 
 #define TEST_CHECKS 4
 
-static uint64_t test_times[TEST_CHECKS];
-static bool test_result = false;
+volatile uint64_t time_0 = 0;
+volatile uint64_t time_1 = 0;
+volatile uint64_t time_2 = 0;
+volatile uint64_t time_3 = 0;
+volatile uint64_t delta_0 = 0;
+volatile uint64_t delta_1 = 0;
+volatile uint64_t delta_2 = 0;
+
+volatile bool test_result = false;
 
 void testfunction_startup(void)
 {
-    for(int i = 0; i < TEST_CHECKS; i++){
-        test_times[i] = 0;
-    }
 }
 
 void testfunction_PI_trigger_check(void)
 {
-    for(int i = 0; i < TEST_CHECKS; i++){
-        test_times[i] = Hal_GetElapsedTimeInNs();
-    }
+    time_0 = Hal_GetElapsedTimeInNs();
+    time_1 = Hal_GetElapsedTimeInNs();
+    time_2 = Hal_GetElapsedTimeInNs();
+    time_3 = Hal_GetElapsedTimeInNs();
+    delta_0 = time_1 - time_0;
+    delta_1 = time_2 - time_1;
+    delta_2 = time_3 - time_2;
 
-    if(test_times[0] != 0 && test_times[1] &&test_times[2] != 0 && test_times[3] != 0 &&
-        test_times[0] < test_times[1] && test_times[1] < test_times[2] && test_times[2] < test_times[3] &&
-        test_times[0] > 199500000 && test_times[0] < 200500000 &&
-        test_times[1] > 199500000 && test_times[1] < 200500000 &&
-        test_times[2] > 199500000 && test_times[2] < 200500000 &&
-        test_times[3] > 199500000 && test_times[3] < 200500000){
+    if(time_0 != 0 && time_1 != 0 && time_2 != 0 && time_3 != 0 &&
+       time_0 != time_1 && time_1 != time_2 && time_2 != time_3 && 
+       delta_0 <= 1000 && delta_1 <= 1000 && delta_2 <= 1000){
         test_result = true;
     }
 }
