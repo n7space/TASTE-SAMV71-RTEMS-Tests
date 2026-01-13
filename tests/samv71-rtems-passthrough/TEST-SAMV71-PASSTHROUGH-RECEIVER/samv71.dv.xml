@@ -1,0 +1,43 @@
+<DeploymentView version="1.2" UiFile="samv71.ui.xml" creatorHash="383508e" modifierHash="383508e">
+    <Node id="{b7ebd980-957c-4397-8a99-2915ccd5760d}" name="x86 Linux C++_1" type="ocarina_processors_x86::x86.generic_linux" node_label="Node_2" namespace="ocarina_processors_x86">
+        <Partition id="{f2f1fd71-0922-4acd-bef4-e9b0d6760e9b}" name="Partition_2">
+            <Function id="{9f9a5bcd-2174-448e-8703-279b17205e10}" name="sender" path="sender"/>
+        </Partition>
+        <Device id="{f7ffd97d-e53c-4829-bcf7-cb74fd328caf}" name="tcp1" requires_bus_access="ocarina_buses::ip.generic" port="tcp1" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::ip_socket.linux" extends="ocarina_drivers::ip_socket" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{91255fb6-bb99-4d3f-8410-d3b909ea49ed}" name="tcp2" requires_bus_access="ocarina_buses::ip.generic" port="tcp2" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::ip_socket.linux" extends="ocarina_drivers::ip_socket" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{a197ca3f-8e3e-4bb1-b617-402f7b3a3545}" name="tcp3" requires_bus_access="ocarina_buses::ip.generic" port="tcp3" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::ip_socket.linux" extends="ocarina_drivers::ip_socket" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{7bd0369d-7002-4bda-bf4a-339c026580aa}" name="tcp4" requires_bus_access="ocarina_buses::ip.generic" port="tcp4" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::ip_socket.linux" extends="ocarina_drivers::ip_socket" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{a846d923-7325-4941-b7ea-859500fc7de0}" name="udp1" requires_bus_access="ocarina_buses::ip.generic" port="udp1" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::udp.linux" extends="ocarina_drivers::udp" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{d1780f0e-2622-4107-a4c6-41b11cea3771}" name="udp2" requires_bus_access="ocarina_buses::ip.generic" port="udp2" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::udp.linux" extends="ocarina_drivers::udp" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{9f1c0a51-269d-4d4f-bc48-1449d6a766e6}" name="udp3" requires_bus_access="ocarina_buses::ip.generic" port="udp3" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::udp.linux" extends="ocarina_drivers::udp" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{287f5b6b-9ea0-4454-955f-93c850e65b12}" name="udp4" requires_bus_access="ocarina_buses::ip.generic" port="udp4" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-socket-ip-driver.asn" asn1type="Socket-IP-Conf-T" asn1module="LINUX-SOCKET-IP-DRIVER" impl_extends="ocarina_drivers::udp.linux" extends="ocarina_drivers::udp" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{5977cd38-cd71-4370-ba87-f52b72286c18}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" packetizer="passthrough" config="{ devname  &quot;SAMV71&quot;, speed  b9600, parity  even, bits  8, use-paritybit  FALSE }" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-serial-ccsds-driver.asn" asn1type="Serial-CCSDS-Linux-Conf-T" asn1module="LINUX-SERIAL-CCSDS-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.linux" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+    </Node>
+    <Node id="{7f0202f0-d839-4ad4-b1d3-9f13fd74e998}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_1" namespace="ocarina_processors_arm">
+        <Partition id="{efe7e2f4-b934-46f2-a3ac-aca73a58eb05}" name="Partition_1">
+            <Function id="{828743c6-6d6d-40ee-bc2f-22363c32ff53}" name="receiver" path="receiver"/>
+        </Partition>
+        <Device id="{bdb4ae06-5b46-4447-9521-15d733fb6d92}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{2e510325-4b25-4473-ac42-d5d26883caaa}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{72234908-8947-4fb9-af98-059dc6f08474}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{bb8da738-39ac-4adc-a731-f6611650594e}" name="uart3" requires_bus_access="ocarina_buses::serial.ccsds" port="uart3" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+        <Device id="{38bedc5c-b72f-4c1a-ad6d-9325d18d1035}" name="uart4" requires_bus_access="ocarina_buses::serial.ccsds" packetizer="passthrough" config="{ devname  uart4, speed  b9600, parity  none }" port="uart4" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" namespace="ocarina_drivers">
+        </Device>
+    </Node>
+    <Connection id="{c1de214f-10b9-4b27-a785-c182978aab5d}" name="Connection_1" from_node="SAM V71 RTEMS N7S_1" from_port="uart4" to_bus="ocarina_buses::serial.ccsds" to_node="x86 Linux C++_1" to_port="uart0">
+            <Message id="{6a1351c2-bbf7-4234-a453-47512cbecc2c}" name="Message_1" from_function="sender" from_interface="TC" to_function="receiver" to_interface="TC"/>
+    </Connection>
+</DeploymentView>
