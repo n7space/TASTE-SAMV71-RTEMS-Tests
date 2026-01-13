@@ -9,14 +9,14 @@ from pygdbmi.gdbcontroller import GdbController
 
 def test_samv71_rtems_can_simple():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
-    build = common.do_build("samv71-rtems-can-simple", ["deploymentview", "debug"])
+    build = common.do_build("samv71-rtems-can/samv71-rtems-can-simple", ["deploymentview", "debug"])
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"
 
     gdbmi = GdbController(command=["gdb-multiarch", "--interpreter=mi2"])
     try:
         gdbmi.write(f"target extended-remote {remote_gdb_server}")
-        gdbmi.write("file samv71-rtems-can-simple/work/binaries/partition_1")
+        gdbmi.write("file samv71-rtems-can/samv71-rtems-can-simple/work/binaries/partition_1")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write("continue")
@@ -30,7 +30,7 @@ def test_samv71_rtems_can_simple():
         ]
 
         errors = common.do_execute(
-            "samv71-rtems-can-simple",
+            "samv71-rtems-can",
             expected,
             test_exe="test_samv71_rtems_can_simple.sh",
         )
