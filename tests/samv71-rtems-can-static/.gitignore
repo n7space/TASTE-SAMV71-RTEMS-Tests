@@ -1,0 +1,32 @@
+# Ignore whole work directory
+work/*
+
+# Ignore qt creator cache directory
+.qtc_clangd
+
+# Ignore qt creator user files
+*.pro.user*
+
+# Ignore aadl files
+*.aadl
+
+.gdb_history
+*.txt
+
+# Except GROUND source files
+!work/ground
+work/ground/*
+!work/ground/C
+work/ground/C/*
+!work/ground/C/src
+work/ground/C/src/*
+!work/ground/C/src/ground.c
+
+# Except CUBESAT source files
+!work/cubesat
+work/cubesat/*
+!work/cubesat/C
+work/cubesat/C/*
+!work/cubesat/C/src
+work/cubesat/C/src/*
+!work/cubesat/C/src/cubesat.c
