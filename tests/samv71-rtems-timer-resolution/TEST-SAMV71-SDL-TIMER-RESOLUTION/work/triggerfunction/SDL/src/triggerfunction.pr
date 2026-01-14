@@ -1,0 +1,49 @@
+/* CIF PROCESS (250, 150), (150, 75) */
+/* CIF Keep Specific Geode _REQSERVER_ 'https://gitlab.esa.int/taste/demo' */
+process Triggerfunction;
+    /* CIF Keep Specific Geode Partition 'default' */
+    /* CIF TEXT (835, 413), (170, 140) */
+    timer timer1;
+    timer timer2;
+    /* CIF ENDTEXT */
+    /* CIF START (573, 26), (70, 35) */
+    START;
+        /* CIF PROCEDURECALL (536, 81), (143, 35) */
+        call reset_timer(timer1);
+        /* CIF PROCEDURECALL (532, 136), (151, 35) */
+        call set_timer(10, timer1);
+        /* CIF PROCEDURECALL (536, 186), (143, 35) */
+        call reset_timer(timer2);
+        /* CIF PROCEDURECALL (532, 241), (151, 35) */
+        call set_timer(20, timer2);
+        /* CIF NEXTSTATE (573, 291), (70, 35) */
+        NEXTSTATE Wait;
+    /* CIF state (1074, 35), (70, 35) */
+    /* CIF Keep Specific Geode Partition 'default' */
+    state Wait;
+        /* CIF input (1074, 90), (70, 35) */
+        input timer2;
+            /* CIF PROCEDURECALL (1074, 145), (70, 35) */
+            call pi_2;
+            /* CIF PROCEDURECALL (1037, 200), (143, 35) */
+            call reset_timer(timer2);
+            /* CIF PROCEDURECALL (1033, 255), (151, 35) */
+            call set_timer(20, timer2);
+            /* CIF NEXTSTATE (1074, 305), (70, 35) */
+            NEXTSTATE Wait;
+    endstate;
+    /* CIF state (845, 26), (70, 35) */
+    /* CIF Keep Specific Geode Partition 'default' */
+    state Wait;
+        /* CIF input (845, 81), (70, 35) */
+        input timer1;
+            /* CIF PROCEDURECALL (845, 136), (70, 35) */
+            call pi_1;
+            /* CIF PROCEDURECALL (808, 191), (143, 35) */
+            call reset_timer(timer1);
+            /* CIF PROCEDURECALL (804, 246), (151, 35) */
+            call set_timer(10, timer1);
+            /* CIF NEXTSTATE (845, 296), (70, 35) */
+            NEXTSTATE Wait;
+    endstate;
+endprocess Triggerfunction;
