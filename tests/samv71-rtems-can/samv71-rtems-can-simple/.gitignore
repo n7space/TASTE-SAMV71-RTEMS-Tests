@@ -13,15 +13,6 @@ work/*
 .gdb_history
 *.txt
 
-# Except GROUND source files
-!work/ground
-work/ground/*
-!work/ground/C
-work/ground/C/*
-!work/ground/C/src
-work/ground/C/src/*
-!work/ground/C/src/ground.c
-
 # Except CUBESAT source files
 !work/cubesat
 work/cubesat/*

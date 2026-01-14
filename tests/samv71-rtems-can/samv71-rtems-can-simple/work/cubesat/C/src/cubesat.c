@@ -8,24 +8,31 @@
     !! file. The up-to-date signatures can be found in the header file. !!
 */
 #include "cubesat.h"
-//#include <stdio.h>
-
 
 void cubesat_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[cubesat] Startup");
 }
+
+void cubesat_PI_alive
+      ( const asn1SccCan_Frame * IN_testparam)
+
+{
+}
+
+static asn1SccCan_Frame frame;
+static asn1SccMyInteger myNumber = 0;
 
 void cubesat_PI_trigger(void)
 {
-   // Write your code here
+    frame.data = myNumber;
+    frame.id = 0xce;
+    frame.id |= 0x20000000;
+    cubesat_RI_ping(&frame);
+    if(myNumber == 9) {
+        myNumber = 0;
+    } else {
+        myNumber += 1;
+    }
 }
 
 
-
-void cubesat_PI_ping(  const asn1SccCan_Frame * p1)
-{
-
-}

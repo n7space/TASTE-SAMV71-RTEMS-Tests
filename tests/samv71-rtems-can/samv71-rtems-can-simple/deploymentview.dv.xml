@@ -1,24 +1,24 @@
 <DeploymentView version="1.2" UiFile="deploymentview.ui.xml" creatorHash="8f9a913" modifierHash="8f9a913">
-    <Node id="{0e398289-43f4-4bca-bbde-167db9c7fee3}" name="SAM V71 RTEMS N7S_2" type="ocarina_processors_arm::samv71.rtems" node_label="Node_2" namespace="ocarina_processors_arm">
-        <Partition id="{30b08c11-b539-4329-be27-f4255ea72d07}" name="Partition_2">
-            <Function id="{7d17ddc2-48e9-4d34-b790-aa26159e6966}" name="cubesat" path="cubesat"/>
-        </Partition>
-        <Device id="{7abb8057-9717-4ac8-a888-ccd82323d05c}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{66063260-367e-44df-92f4-f15428f7c659}" name="can0" requires_bus_access="ocarina_buses::can.generic" packetizer="passthrough" config="{ can-interface  mcan-interface-mcan1, bit-rate-prescaler  0, synchronization-jump  2, time-segments-after-sample-point  2, time-segments-before-sample-point  15, pck-source  pck-clock-source-plla-clock, pck-prescaler  14, address  application-control-can-id : FALSE }" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" extends="ocarina_drivers::can_generic" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::can_generic.samv71" namespace="ocarina_drivers">
-        </Device>
-    </Node>
     <Node id="{d4a32987-4756-4059-a5ed-5698c298bcfb}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_1" namespace="ocarina_processors_arm">
         <Partition id="{b4a5dbf0-b53c-4233-a292-80b6bf4d7267}" name="Partition_1">
-            <Function id="{03839edf-d49e-476b-b468-d3d31cefbf08}" name="ground" path="ground"/>
+            <Function id="{03839edf-d49e-476b-b468-d3d31cefbf08}" name="cubesat" path="cubesat"/>
         </Partition>
-        <Device id="{58876df7-7654-4532-a3be-f0aa52ccd544}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
+        <Device id="{58876df7-7654-4532-a3be-f0aa52ccd544}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
         </Device>
-        <Device id="{bf055d9b-1fa4-4a37-b239-f7f2f733647e}" name="can0" requires_bus_access="ocarina_buses::can.generic" packetizer="passthrough" config="{ can-interface  mcan-interface-mcan1, bit-rate-prescaler  0, synchronization-jump  2, time-segments-after-sample-point  2, time-segments-before-sample-point  15, pck-source  pck-clock-source-plla-clock, pck-prescaler  14, address  application-control-can-id : FALSE }" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" extends="ocarina_drivers::can_generic" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::can_generic.samv71" namespace="ocarina_drivers">
+        <Device id="{bf055d9b-1fa4-4a37-b239-f7f2f733647e}" name="can0" requires_bus_access="ocarina_buses::can.generic" packetizer="passthrough" config="{ can-interface  mcan-interface-mcan1, bit-rate-prescaler  0, synchronization-jump  2, time-segments-after-sample-point  2, time-segments-before-sample-point  15, pck-source  pck-clock-source-plla-clock, pck-prescaler  14, address  application-control-can-id : FALSE }" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::can_generic" impl_extends="ocarina_drivers::can_generic.samv71">
+        </Device>
+    </Node>
+    <Node id="{0e398289-43f4-4bca-bbde-167db9c7fee3}" name="SAM V71 RTEMS N7S_2" type="ocarina_processors_arm::samv71.rtems" node_label="Node_2" namespace="ocarina_processors_arm">
+        <Partition id="{30b08c11-b539-4329-be27-f4255ea72d07}" name="Partition_2">
+            <Function id="{7d17ddc2-48e9-4d34-b790-aa26159e6966}" name="dummy" path="dummy"/>
+        </Partition>
+        <Device id="{7abb8057-9717-4ac8-a888-ccd82323d05c}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{66063260-367e-44df-92f4-f15428f7c659}" name="can0" requires_bus_access="ocarina_buses::can.generic" packetizer="passthrough" config="{ can-interface  mcan-interface-mcan1, bit-rate-prescaler  0, synchronization-jump  2, time-segments-after-sample-point  2, time-segments-before-sample-point  15, pck-source  pck-clock-source-plla-clock, pck-prescaler  14, address  application-control-can-id : FALSE }" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" namespace="ocarina_drivers" bus_namespace="ocarina_buses" extends="ocarina_drivers::can_generic" impl_extends="ocarina_drivers::can_generic.samv71">
         </Device>
     </Node>
     <Connection id="{a5d032af-394a-4066-bffd-cdb0454563a8}" name="Connection_1" from_node="SAM V71 RTEMS N7S_1" from_port="can0" to_bus="ocarina_buses::can.generic" to_node="SAM V71 RTEMS N7S_2" to_port="can0">
-            <Message id="{071d2ef9-7d57-4529-ac7a-81e4c259d841}" name="Message_1" from_function="cubesat" from_interface="alive" to_function="ground" to_interface="alive"/>
-            <Message id="{192ffdff-b00d-47c2-85fa-a81464abed8d}" name="Message_2" from_function="ground" from_interface="ping" to_function="cubesat" to_interface="ping"/>
+            <Message id="{071d2ef9-7d57-4529-ac7a-81e4c259d841}" name="Message_1" from_function="dummy" from_interface="alive" to_function="cubesat" to_interface="alive"/>
+            <Message id="{192ffdff-b00d-47c2-85fa-a81464abed8d}" name="Message_2" from_function="cubesat" from_interface="ping" to_function="dummy" to_interface="ping"/>
     </Connection>
 </DeploymentView>
