@@ -107,11 +107,11 @@ def test_samv71_rtems_can_escaper():
         gdbmi.write("-exec-continue")
 
         expected = [
-            "  can1  RX - -  0BB   [2]  00 00",
-            "  can1  RX - -  0BB   [2]  00 01",
-            "  can1  RX - -  0BB   [2]  00 02",
-            "  can1  RX - -  0BB   [2]  00 03",
-            "  can1  RX - -  0BB   [2]  00 04",
+            "  can1  RX - -  141   [8]  00 FE 00 FE 00 FE 00 BB",
+            "  can1  RX - -  141   [8]  FE 00 CC FE 00 DD FE 00",
+            "  can1  RX - -  141   [2]  EE FF",
+            "  can1  RX - -  141   [8]  00 FE 00 01 FE 00 BB FE",
+            "  can1  RX - -  141   [8]  00 CC FE 00 DD FE 00 EE",
         ]
 
         errors = common.do_execute(
