@@ -51,3 +51,31 @@ To execute tests simply execute `make`
     ==================================================================== 2 passed in 19.23s =====================================================================
     make[1]: Leaving directory '/home/taste/projects/TASTE-SAMV71-RTEMS-Tests/tests'
     $
+
+
+# Testing CAN bus support
+
+All the tests which require CAN are disabled by default.
+These tests require a development board with configured CAN.
+The environment setup requires few more commands to execute on linux machine:
+
+    export SAMV71_REMOTE_USER=<test board username>
+    export SAMV71_REMOTE_IP=<test board ip>
+
+It is also required to setup ssh-key to ssh without password prompt. If ssh-key is secured by passphrase, then ssh-agent shall be used.
+
+## Executing tests
+
+    source env/bin/activate
+	cd tests
+	python3 test_samv71_rtems_can.py
+
+## Example test run
+
+    python3 test_samv71_rtems_can.py
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_simple.sh
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_simple_recv.sh
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_static.sh
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_static_recv.sh
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_escaper.sh
+    EXE ./samv71-rtems-can/test_samv71_rtems_can_escaper_recv.sh

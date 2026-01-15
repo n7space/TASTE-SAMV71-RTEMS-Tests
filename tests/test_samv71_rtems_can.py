@@ -5,6 +5,7 @@ import common
 import time
 import os
 import pygdbmi
+import pytest
 from pygdbmi.gdbcontroller import GdbController
 
 
@@ -36,6 +37,7 @@ def wait_for_breakpoint(gdbmi, timeout, function):
     return False
 
 
+@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
 def test_samv71_rtems_can_simple():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-simple")
@@ -87,6 +89,7 @@ def test_samv71_rtems_can_simple():
         gdbmi.exit()
 
 
+@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
 def test_samv71_rtems_can_static():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-static")
@@ -138,6 +141,7 @@ def test_samv71_rtems_can_static():
         gdbmi.exit()
 
 
+@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
 def test_samv71_rtems_can_escaper():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-escaper")
