@@ -164,6 +164,7 @@ def test_samv71_rtems_can_escaper():
             "  can1  RX - -  141   [2]  EE FF",
             "  can1  RX - -  141   [8]  00 FE 00 01 FE 00 BB FE",
             "  can1  RX - -  141   [8]  00 CC FE 00 DD FE 00 EE",
+            "  can1  RX - -  141   [1]  FF",
         ]
 
         errors = common.do_execute(
