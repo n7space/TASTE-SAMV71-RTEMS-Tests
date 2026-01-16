@@ -62,6 +62,10 @@ The environment setup requires few more commands to execute on linux machine:
     export SAMV71_REMOTE_USER=<test board username>
     export SAMV71_REMOTE_IP=<test board ip>
 
+And properly configured CAN interface on test board:
+
+	sudo ip link set can1 up type can bitrate 1000000 fd off sample-point 0.875
+
 It is also required to setup ssh-key to ssh without password prompt. If ssh-key is secured by passphrase, then ssh-agent shall be used.
 
 ## Executing tests
