@@ -4,9 +4,14 @@
 import common
 import time
 import os
+import pytest
 from pygdbmi.gdbcontroller import GdbController
 
 
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_SERIAL_ENABLED"),
+    reason="Serial is not enabled on current platform",
+)
 def test_samv71_rtems_serial():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     build = common.do_build("samv71-rtems-serial", ["deploymentview", "debug"])
@@ -17,7 +22,7 @@ def test_samv71_rtems_serial():
     try:
         gdbmi.write(f"target extended-remote {remote_gdb_server}")
         gdbmi.write("file samv71-rtems-serial/work/binaries/partition_1")
-        gdbmi.write("monitor reset")
+        common.target_extended_reset(gdbmi)
         gdbmi.write("load")
         gdbmi.write("continue")
 
@@ -39,6 +44,7 @@ def test_samv71_rtems_serial():
     finally:
         gdbmi.exit()
     assert not errors, "\n".join(errors)
+
 
 if __name__ == "__main__":
     test_samv71_rtems_serial()

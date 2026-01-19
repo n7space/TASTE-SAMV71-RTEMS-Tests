@@ -17,7 +17,8 @@ The repository organization is as follows:
 * Prepare linux machine
  * Execute in one terminal `cd tests && socat pty,link=SAMV71,raw,echo=0 tcp:<test board ip>:5006`
  * Execute in terminal `export SAMV71_REMOTE_GDBSERVER=<test board ip>:2331`
-
+ * Execute in terminal `export SAMV71_REMOTE_USER=<test board username>`
+ * Execute in terminal `export SAMV71_REMOTE_IP=<test board ip>`
 
 # Executing tests
 
@@ -51,3 +52,25 @@ To execute tests simply execute `make`
     ==================================================================== 2 passed in 19.23s =====================================================================
     make[1]: Leaving directory '/home/taste/projects/TASTE-SAMV71-RTEMS-Tests/tests'
     $
+
+# Testing Serial support
+
+All the tests which require Serial (UART) connection  are disabled by default.
+These tests require a development board with configured serial dongle.
+
+## Executing tests
+
+    SAMV71_RTEMS_SERIAL_ENABLED=1 make
+
+# Testing CAN bus support
+
+All the tests which require CAN are disabled by default.
+These tests require a development board with configured CAN dongle. To configure dongle on rpi, execute the following command.
+
+	sudo ip link set can1 up type can bitrate 1000000 fd off sample-point 0.875
+
+It is also required to setup ssh-key to ssh without password prompt. If ssh-key is secured by passphrase, then ssh-agent shall be used.
+
+## Executing tests
+
+    SAMV71_RTEMS_CAN_ENABLED=1 make

@@ -1,0 +1,8 @@
+TEST-SAM-RTEMS-CAN-DATAVIEW DEFINITIONS ::= BEGIN
+
+   MyInteger [encoding pos-int, endianness big, size 16]
+
+   Can-Id [encoding pos-int, size 32, endianness little]
+
+END
+
