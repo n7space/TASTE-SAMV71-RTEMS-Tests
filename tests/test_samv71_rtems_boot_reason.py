@@ -21,6 +21,10 @@ def test_samv71_rtems_boot_reason():
         gdbmi.write(f"target extended-remote {remote_gdb_server}")
         gdbmi.write("file samv71-rtems-boot-reason/TEST-SAMV71-FAULT/work/binaries/partition_1")
         gdbmi.write("monitor reset")
+        gdbmi.write("monitor reset 0")
+        gdbmi.write("monitor reset 1")
+        gdbmi.write("monitor reset 8")
+        gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write("continue")
 
@@ -28,7 +32,7 @@ def test_samv71_rtems_boot_reason():
         time.sleep(2)
     finally:
         gdbmi.exit()
-    
+
     build = common.do_build("samv71-rtems-boot-reason/TEST-SAMV71-BOOT-REASON", ["samv71", "debug"])
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"

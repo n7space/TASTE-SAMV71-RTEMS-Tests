@@ -32,6 +32,10 @@ def run_release_verification_project(remote_gdb_server, project_bin, src_functio
         gdbmi.write(f"target extended-remote {remote_gdb_server}")
         gdbmi.write(f"file {project_bin}")
         gdbmi.write("monitor reset")
+        gdbmi.write("monitor reset 0")
+        gdbmi.write("monitor reset 1")
+        gdbmi.write("monitor reset 8")
+        gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write(f"b {src_function_name}")
         gdbmi.write("continue", timeout_sec=5)
@@ -63,7 +67,7 @@ def run_release_verification_project(remote_gdb_server, project_bin, src_functio
 def test_samv71_rtems_time_resolution():
     common.do_clean_build("samv71-rtems-time-resolution/TEST-SAMV71-TIME-RESOLUTION")
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
-    
+
     build = common.do_build("samv71-rtems-time-resolution/TEST-SAMV71-TIME-RESOLUTION", ["samv71", "release"])
     stderr = build.stderr.decode("utf-8")
     assert build.returncode == 0, f"Compilation errors: \n{stderr}"

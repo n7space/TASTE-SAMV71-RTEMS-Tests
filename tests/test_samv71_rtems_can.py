@@ -37,7 +37,10 @@ def wait_for_breakpoint(gdbmi, timeout, function):
     return False
 
 
-@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_CAN_ENABLED"),
+    reason="CAN is not enabled on current platform",
+)
 def test_samv71_rtems_can_simple():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-simple")
@@ -53,6 +56,10 @@ def test_samv71_rtems_can_simple():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-simple/work/binaries/partition_1"
         )
+        gdbmi.write("monitor reset")
+        gdbmi.write("monitor reset 0")
+        gdbmi.write("monitor reset 1")
+        gdbmi.write("monitor reset 8")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
@@ -89,7 +96,10 @@ def test_samv71_rtems_can_simple():
         gdbmi.exit()
 
 
-@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_CAN_ENABLED"),
+    reason="CAN is not enabled on current platform",
+)
 def test_samv71_rtems_can_static():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-static")
@@ -105,6 +115,10 @@ def test_samv71_rtems_can_static():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-static/work/binaries/partition_1"
         )
+        gdbmi.write("monitor reset")
+        gdbmi.write("monitor reset 0")
+        gdbmi.write("monitor reset 1")
+        gdbmi.write("monitor reset 8")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
@@ -141,7 +155,10 @@ def test_samv71_rtems_can_static():
         gdbmi.exit()
 
 
-@pytest.mark.skip(reason="Tests of CAN are not enabled by default")
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_CAN_ENABLED"),
+    reason="CAN is not enabled on current platform",
+)
 def test_samv71_rtems_can_escaper():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
     common.do_clean_build("samv71-rtems-can/samv71-rtems-can-escaper")
@@ -157,6 +174,10 @@ def test_samv71_rtems_can_escaper():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-escaper/work/binaries/partition_1"
         )
+        gdbmi.write("monitor reset")
+        gdbmi.write("monitor reset 0")
+        gdbmi.write("monitor reset 1")
+        gdbmi.write("monitor reset 8")
         gdbmi.write("monitor reset")
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
