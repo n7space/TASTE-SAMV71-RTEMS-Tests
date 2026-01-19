@@ -56,11 +56,7 @@ def test_samv71_rtems_can_simple():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-simple/work/binaries/partition_1"
         )
-        gdbmi.write("monitor reset")
-        gdbmi.write("monitor reset 0")
-        gdbmi.write("monitor reset 1")
-        gdbmi.write("monitor reset 8")
-        gdbmi.write("monitor reset")
+        common.target_extended_reset(gdbmi)
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
         gdbmi.write("-exec-continue")
@@ -115,11 +111,7 @@ def test_samv71_rtems_can_static():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-static/work/binaries/partition_1"
         )
-        gdbmi.write("monitor reset")
-        gdbmi.write("monitor reset 0")
-        gdbmi.write("monitor reset 1")
-        gdbmi.write("monitor reset 8")
-        gdbmi.write("monitor reset")
+        common.target_extended_reset(gdbmi)
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
         gdbmi.write("-exec-continue")
@@ -174,11 +166,7 @@ def test_samv71_rtems_can_escaper():
         gdbmi.write(
             "file samv71-rtems-can/samv71-rtems-can-escaper/work/binaries/partition_1"
         )
-        gdbmi.write("monitor reset")
-        gdbmi.write("monitor reset 0")
-        gdbmi.write("monitor reset 1")
-        gdbmi.write("monitor reset 8")
-        gdbmi.write("monitor reset")
+        common.target_extended_reset(gdbmi)
         gdbmi.write("load")
         gdbmi.write("-break-insert cubesat_PI_alive")
         gdbmi.write("-exec-continue")

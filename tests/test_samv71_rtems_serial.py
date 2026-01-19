@@ -22,11 +22,7 @@ def test_samv71_rtems_serial():
     try:
         gdbmi.write(f"target extended-remote {remote_gdb_server}")
         gdbmi.write("file samv71-rtems-serial/work/binaries/partition_1")
-        gdbmi.write("monitor reset")
-        gdbmi.write("monitor reset 0")
-        gdbmi.write("monitor reset 1")
-        gdbmi.write("monitor reset 8")
-        gdbmi.write("monitor reset")
+        common.target_extended_reset(gdbmi)
         gdbmi.write("load")
         gdbmi.write("continue")
 
@@ -48,6 +44,7 @@ def test_samv71_rtems_serial():
     finally:
         gdbmi.exit()
     assert not errors, "\n".join(errors)
+
 
 if __name__ == "__main__":
     test_samv71_rtems_serial()
