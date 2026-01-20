@@ -17,7 +17,7 @@ SEND_DATA = bytes(
 )  # translates to 5, 5, 1969 in struct
 
 stop_sender = threading.Event()
-
+ser = serial.Serial("SAMV71", baudrate=9600, timeout=1)
 
 def sender_loop():
     while not stop_sender.is_set():
@@ -31,7 +31,6 @@ def sender_loop():
 )
 def test_samv71_rtems_passthrough():
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
-    ser = serial.Serial("SAMV71", baudrate=9600, timeout=1)
 
     build = common.do_clean_build(
         "samv71-rtems-passthrough/TEST-SAMV71-PASSTHROUGH-SENDER"
