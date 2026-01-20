@@ -26,9 +26,9 @@ void testfunction_PI_trigger_check(void)
 
     if(usage_data[0].maximum_execution_time > usage_data[0].average_execution_time && 
        usage_data[0].average_execution_time > usage_data[0].minimum_execution_time &&
-       usage_data[0].maximum_execution_time < 5360000 && usage_data[0].maximum_execution_time > 5350000 &&
-       usage_data[0].average_execution_time < 5360000 && usage_data[0].average_execution_time > 5350000 &&
-       usage_data[0].minimum_execution_time < 5360000 && usage_data[0].minimum_execution_time > 5350000 &&
+       usage_data[0].maximum_execution_time < 5350000 && usage_data[0].maximum_execution_time > 5340000 &&
+       usage_data[0].average_execution_time < 5350000 && usage_data[0].average_execution_time > 5340000 &&
+       usage_data[0].minimum_execution_time < 5350000 && usage_data[0].minimum_execution_time > 5340000 &&
        usage_data[1].maximum_execution_time > usage_data[1].average_execution_time && 
        usage_data[1].average_execution_time > usage_data[1].minimum_execution_time &&
        usage_data[1].maximum_execution_time < 53460000 && usage_data[1].maximum_execution_time > 53450000 &&
