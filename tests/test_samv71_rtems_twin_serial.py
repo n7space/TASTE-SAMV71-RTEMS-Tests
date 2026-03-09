@@ -30,12 +30,10 @@ def test_samv71_rtems_twin_serial():
         time.sleep(2)
 
         expected = [
-            "Sent ping  0",
-            "Got pong  0",
-            "Sent ping  1",
-            "Got pong  1",
-            "Sent ping  2",
-            "Got pong  2",
+            "Got response from UART4: 1",
+            "Got response from UART4: 2",
+            "Got response from UART2: 3",
+            "Got response from UART2: 4",
         ]
 
         errors = common.do_execute(

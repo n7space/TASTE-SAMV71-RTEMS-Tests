@@ -21,6 +21,8 @@
         </Device>
         <Device id="{96ebe2f2-15a1-47ed-89a9-f001119f5ad5}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  &quot;SAMV71&quot;, speed  b9600, parity  even, bits  8, use-paritybit  FALSE }" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-serial-ccsds-driver.asn" asn1type="Serial-CCSDS-Linux-Conf-T" asn1module="LINUX-SERIAL-CCSDS-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.linux" namespace="ocarina_drivers">
         </Device>
+        <Device id="{0c13bfaa-1bc8-11f1-ac73-0800279d6bde}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  &quot;SAMV71-secondary&quot;, speed  b9600, parity  even, bits  8, use-paritybit  FALSE }" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-Linux-Drivers/configurations/linux-serial-ccsds-driver.asn" asn1type="Serial-CCSDS-Linux-Conf-T" asn1module="LINUX-SERIAL-CCSDS-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.linux" namespace="ocarina_drivers">
+        </Device>
     </Node>
     <Node id="{c5053a6f-4d58-410b-acbb-a007256ef4d9}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_2" namespace="ocarina_processors_arm">
         <Partition id="{8304c8bf-5742-4387-8df3-31f39f0cc098}" name="Partition_2">
@@ -30,7 +32,7 @@
         </Device>
         <Device id="{c732ca4a-4acd-4ec3-857e-13c3940b3e85}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  uart1, speed  b9600, parity  none }" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
         </Device>
-        <Device id="{3482aafe-3fbf-4530-8d10-d275f4d60298}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
+        <Device id="{3482aafe-3fbf-4530-8d10-d275f4d60298}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  uart2, speed  b9600, parity  none }" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
         </Device>
         <Device id="{c9b21706-48bc-4439-a396-52014b707156}" name="uart3" requires_bus_access="ocarina_buses::serial.ccsds" port="uart3" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
         </Device>
@@ -41,33 +43,12 @@
         <Device id="{952dce9b-c55a-4954-94b1-f5e9f301de3b}" name="can1" requires_bus_access="ocarina_buses::can.generic" port="can1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" extends="ocarina_drivers::can_generic" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::can_generic.samv71" namespace="ocarina_drivers">
         </Device>
     </Node>
-    <Node id="{73ec8132-b570-4d56-955d-35cc526eb7d3}" name="SAM V71 RTEMS N7S_2" type="ocarina_processors_arm::samv71.rtems" node_label="Node_3" namespace="ocarina_processors_arm">
-        <Partition id="{1ab904c6-7ac2-476c-9cf2-0448a7c01ba3}" name="Partition_3">
-            <Function id="{2a1a794d-a852-43bc-b448-7900037ecbf6}" name="phantom_samv71" path="phantom_samv71"/>
-        </Partition>
-        <Device id="{7d2ec24a-3580-4b68-9d0b-5309529f2ecc}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  uart0, speed  b9600, parity  none }" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{01004200-2956-4629-b3c2-4bea35f29766}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" config="{ devname  uart1, speed  b9600, parity  none }" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{aba14860-21b5-4418-ab9c-b10f06de6fc1}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{d24107a3-5fc0-421f-a743-6f655c3e036c}" name="uart3" requires_bus_access="ocarina_buses::serial.ccsds" port="uart3" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{96bdf3c2-c79d-4987-a62c-0e38da1d6263}" name="uart4" requires_bus_access="ocarina_buses::serial.ccsds" port="uart4" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" extends="ocarina_drivers::serial_ccsds" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{5553eee6-3107-4e7d-999a-b8f4c2915632}" name="can0" requires_bus_access="ocarina_buses::can.generic" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" extends="ocarina_drivers::can_generic" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::can_generic.samv71" namespace="ocarina_drivers">
-        </Device>
-        <Device id="{824639e0-738d-4352-9e83-e7382c37ce29}" name="can1" requires_bus_access="ocarina_buses::can.generic" port="can1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" extends="ocarina_drivers::can_generic" bus_namespace="ocarina_buses" impl_extends="ocarina_drivers::can_generic.samv71" namespace="ocarina_drivers">
-        </Device>
-    </Node>
-    <Connection id="{dae20e98-3922-4512-a986-cf0a4ba2d388}" name="Connection_3" from_node="SAM V71 RTEMS N7S_1" from_port="uart1" to_bus="ocarina_buses::serial.ccsds" to_node="SAM V71 RTEMS N7S_2" to_port="uart1">
-            <Message id="{cc6a508d-f7f2-4e7f-912a-5f6c4a4bd90c}" name="Message_4" from_function="phantom_samv71" from_interface="pong_sam" to_function="samv71" to_interface="pong_sam"/>
-    </Connection>
     <Connection id="{35330493-14dd-4439-bb11-776459903a9e}" name="Connection_1" from_node="x86 Linux C++_1" from_port="uart0" to_bus="ocarina_buses::serial.ccsds" to_node="SAM V71 RTEMS N7S_1" to_port="uart4">
-            <Message id="{1b23cacc-390b-488c-a99a-ccdc60360a5d}" name="Message_1" from_function="samv71" from_interface="response" to_function="linux" to_interface="response"/>
-            <Message id="{a32f2113-e5b0-4cb7-9cd2-2d529efeee94}" name="Message_2" from_function="linux" from_interface="test" to_function="samv71" to_interface="test"/>
+            <Message id="{f4303a7f-f13f-4904-a8bd-897c6516ceb4}" name="Message_1" from_function="linux" from_interface="test_4" to_function="samv71" to_interface="test_4"/>
+            <Message id="{fd0bc978-ab3f-4ac7-8a40-c562d6e0a73d}" name="Message_2" from_function="samv71" from_interface="response_4" to_function="linux" to_interface="response_4"/>
     </Connection>
-    <Connection id="{04289f92-17ac-45d5-a83d-d3e65492033b}" name="Connection_2" from_node="SAM V71 RTEMS N7S_1" from_port="uart0" to_bus="ocarina_buses::serial.ccsds" to_node="SAM V71 RTEMS N7S_2" to_port="uart0">
-            <Message id="{89430113-8068-49c1-af19-7dd4b6bb312b}" name="Message_3" from_function="samv71" from_interface="ping_sam" to_function="phantom_samv71" to_interface="ping_sam"/>
+    <Connection id="{7ef2d2b7-656c-411a-8851-8f8233403611}" name="Connection_2" from_node="x86 Linux C++_1" from_port="uart1" to_bus="ocarina_buses::serial.ccsds" to_node="SAM V71 RTEMS N7S_1" to_port="uart2">
+            <Message id="{aae805ed-3a1f-4028-a487-8e6363465722}" name="Message_3" from_function="linux" from_interface="test_2" to_function="samv71" to_interface="test_2"/>
+            <Message id="{1954e4a9-677b-4731-8c80-e5b0d707285a}" name="Message_4" from_function="samv71" from_interface="response_2" to_function="linux" to_interface="response_2"/>
     </Connection>
 </DeploymentView>

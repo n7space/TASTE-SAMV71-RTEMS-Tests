@@ -10,27 +10,21 @@
 #include "samv71.h"
 //#include <stdio.h>
 
-
 void samv71_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[samv71] Startup");
 }
 
-void samv71_PI_pong_sam
+void samv71_PI_test_2
       (const asn1SccMyInteger *IN_param)
 
 {
-    samv71_RI_response(IN_param);
+    asn1SccMyInteger param = (*IN_param) + 1;
+    samv71_RI_response_2(&param);
 }
 
-
-void samv71_PI_test
+void samv71_PI_test_4
       (const asn1SccMyInteger *IN_param)
-
 {
-    samv71_RI_ping_sam(IN_param);
+    asn1SccMyInteger param = (*IN_param) + 1;
+    samv71_RI_response_4(&param);
 }
-
-

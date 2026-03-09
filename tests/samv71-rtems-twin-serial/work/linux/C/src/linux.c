@@ -10,25 +10,85 @@
 #include "linux.h"
 #include <stdio.h>
 
+typedef enum {
+    Initial,
+    Uart4Test1Sent,
+    Uart4Response1Received,
+    Uart4Test2Sent,
+    Uart4Response2Received,
+    Uart2Test1Sent,
+    Uart2Response1Received,
+    Uart2Test2Sent,
+    Uart2Response2Received,
+} TestState;
+
 static asn1SccMyInteger test_param = 0;
+static TestState test_state = Initial;
 
 void linux_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[linux] Startup");
 }
 
-void linux_PI_response
+void linux_PI_response_2
       (const asn1SccMyInteger *IN_param)
 
 {
-    printf("Got response %lu\n", *IN_param);
+    if(test_state == Uart2Test1Sent) {
+        test_param = *IN_param;
+        printf("Got response from UART2: %lu\n", *IN_param);
+        test_state = Uart2Response1Received;
+    }
+    else if(test_state == Uart2Test2Sent) {
+        test_param = *IN_param;
+        printf("Got response from UART2: %lu\n", *IN_param);
+        test_state = Uart2Response2Received;
+    }
+}
+
+void linux_PI_response_4
+      (const asn1SccMyInteger *IN_param)
+{
+    if(test_state == Uart4Test1Sent) {
+        test_param = *IN_param;
+        printf("Got response from UART4: %lu\n", *IN_param);
+        test_state = Uart4Response1Received;
+    }
+    else if(test_state == Uart4Test2Sent) {
+        test_param = *IN_param;
+        printf("Got response from UART4: %lu\n", *IN_param);
+        test_state = Uart4Response2Received;
+    }
 }
 
 void linux_PI_trigger( void )
 {
-    printf("Sending test %lu\n", test_param);
-    linux_RI_test(&test_param);
-    ++test_param;
+    switch(test_state)
+    {
+        case Initial:
+            linux_RI_test_4(&test_param);
+            test_state = Uart4Test1Sent;
+            break;
+        case Uart4Test1Sent:
+            break;
+        case Uart4Response1Received:
+            linux_RI_test_4(&test_param);
+            test_state = Uart4Test2Sent;
+            break;
+        case Uart4Test2Sent:
+            break;
+        case Uart4Response2Received:
+            linux_RI_test_2(&test_param);
+            test_state = Uart2Test1Sent;
+            break;
+        case Uart2Test1Sent:
+            break;
+        case Uart2Response1Received:
+            linux_RI_test_2(&test_param);
+            test_state = Uart2Test2Sent;
+            break;
+        case Uart2Test2Sent:
+            break;
+        case Uart2Response2Received:
+            break;
+    }
 }
