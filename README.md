@@ -13,9 +13,11 @@ The repository organization is as follows:
 * Prepare test board
  * Using SSH start JLink in one terminal
  * Execute in the second terminal `socat -x tcp-l:5006,reuseaddr,fork /dev/ttyUSB0,raw,echo=0,b9600`
+ * Execute in the third terminal `socat -x tcp-l:5007,reuseaddr,fork /dev/serial0,raw,echo=0,b9600`
 
 * Prepare linux machine
- * Execute in one terminal `cd tests && socat pty,link=SAMV71,raw,echo=0 tcp:<test board ip>:5006`
+ * Execute in first terminal `cd tests && socat pty,link=SAMV71,raw,echo=0 tcp:<test board ip>:5006`
+ * Execute in second terminal `cd tests && socat pty,link=SAMV71-secondary,raw,echo=0 tcp:<test board ip>:5007`
  * Execute in terminal `export SAMV71_REMOTE_GDBSERVER=<test board ip>:2331`
  * Execute in terminal `export SAMV71_REMOTE_USER=<test board username>`
  * Execute in terminal `export SAMV71_REMOTE_IP=<test board ip>`
