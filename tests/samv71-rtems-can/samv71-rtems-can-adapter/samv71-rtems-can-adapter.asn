@@ -1,0 +1,27 @@
+SAMV71-RTEMS-CAN-ADAPTER-DATAVIEW DEFINITIONS ::=
+BEGIN
+
+   MyInteger ::= INTEGER (0 .. 10000)
+   SmallInteger ::= INTEGER (0 .. 127)
+
+   Can-Standard-Id ::= INTEGER (0 .. 2047)
+   Can-Extended-Id ::= INTEGER (0 .. 536870911)
+
+   Can-Id ::= CHOICE {
+      standard-id Can-Standard-Id,
+      extended-id Can-Extended-Id
+   }
+
+   Can-Id-Wrapper ::= SEQUENCE {
+      id Can-Id
+   }
+
+   Can-Frame ::= SEQUENCE {
+      id Can-Id-Wrapper,
+      data OCTET STRING (SIZE(0..8))
+   }
+
+   Raw-Can-Frame ::= OCTET STRING (SIZE(0..4))
+
+END
+
