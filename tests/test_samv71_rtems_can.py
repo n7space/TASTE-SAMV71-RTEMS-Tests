@@ -231,7 +231,7 @@ def test_samv71_rtems_can_adapter():
             "  can1  RX - -  065   [2]  01 00",
             "  can1  TX - -  142   [3]  01 03 05",
             "  can1  RX - -  065   [2]  03 09",
-            "  can1  TX - -  142   [1]  CC CC",
+            "  can1  TX - -  142   [2]  CC CC",
             "  can1  RX - -  065   [2]  02 99",
         ]
 
