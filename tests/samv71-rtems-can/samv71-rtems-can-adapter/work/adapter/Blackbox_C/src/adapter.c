@@ -64,7 +64,7 @@ void adapter_receive_can_frame
         frame.id.id.u.standard_id = word & canStandardIdMask;
     }
     frame.data.nCount = IN_frame_len - sizeof(uint32_t);
-    memcpy((byte*)IN_frame + sizeof(uint32_t), frame.data.arr, IN_frame_len - sizeof(uint32_t));
+    memcpy(frame.data.arr, (byte*)IN_frame + sizeof(uint32_t), IN_frame_len - sizeof(uint32_t));
 
     vm_adapter_ping(PID_env, (const char*)&frame, sizeof(asn1SccCan_Frame));
 }

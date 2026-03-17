@@ -28,8 +28,9 @@ void cubesat_PI_ping
     frame.data.arr[1] = 0;
     for(int i = 0; i < IN_frame->data.nCount; ++i)
     {
-        frame.data.arr[1] = (frame.data.arr[1] + IN_frame->data.arr[i]) % 255
+        frame.data.arr[1] = (frame.data.arr[1] + IN_frame->data.arr[i]) % 255;
     }
+    cubesat_RI_pong(&frame);
 }
 
 

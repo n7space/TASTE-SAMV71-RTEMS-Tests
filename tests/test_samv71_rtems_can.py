@@ -202,8 +202,53 @@ def test_samv71_rtems_can_escaper():
     finally:
         gdbmi.exit()
 
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_CAN_ENABLED"),
+    reason="CAN is not enabled on current platform",
+)
+def test_samv71_rtems_can_adapter():
+    remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
+    common.do_clean_build("samv71-rtems-can/samv71-rtems-can-adapter")
+    build = common.do_build(
+        "samv71-rtems-can/samv71-rtems-can-adapter", ["deploymentview", "debug"]
+    )
+    stderr = build.stderr.decode("utf-8")
+    assert build.returncode == 0, f"Compilation errors: \n{stderr}"
+
+    gdbmi = GdbController(command=["gdb-multiarch", "--interpreter=mi2"])
+    try:
+        gdbmi.write(f"target extended-remote {remote_gdb_server}")
+        gdbmi.write(
+            "file samv71-rtems-can/samv71-rtems-can-adapter/work/binaries/partition_1"
+        )
+        common.target_extended_reset(gdbmi)
+        gdbmi.write("load")
+        gdbmi.write("-break-insert cubesat_PI_alive")
+        gdbmi.write("-exec-continue")
+
+        expected = [
+            "  can1  TX - -  142   [1]  00",
+            "  can1  RX - -  065   [2]  01 00",
+            "  can1  TX - -  142   [3]  01 03 05",
+            "  can1  RX - -  065   [2]  03 09",
+            "  can1  TX - -  142   [1]  CC CC",
+            "  can1  RX - -  065   [2]  02 99",
+        ]
+
+        errors = common.do_execute(
+            "samv71-rtems-can",
+            expected,
+            test_exe="test_samv71_rtems_can_adapter.sh",
+        )
+
+        assert not errors, "\n".join(errors)
+
+    finally:
+        gdbmi.exit()
+
 
 if __name__ == "__main__":
     test_samv71_rtems_can_simple()
     test_samv71_rtems_can_static()
     test_samv71_rtems_can_escaper()
+    test_samv71_rtems_can_adapter()
