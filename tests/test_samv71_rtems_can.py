@@ -246,9 +246,66 @@ def test_samv71_rtems_can_adapter():
     finally:
         gdbmi.exit()
 
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_CAN_ENABLED"),
+    reason="CAN is not enabled on current platform",
+)
+def test_samv71_rtems_can_sizes():
+    remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
+    common.do_clean_build("samv71-rtems-can/samv71-rtems-can-sizes")
+    build = common.do_build(
+        "samv71-rtems-can/samv71-rtems-can-sizes", ["deploymentview", "debug"]
+    )
+    stderr = build.stderr.decode("utf-8")
+    assert build.returncode == 0, f"Compilation errors: \n{stderr}"
+
+    gdbmi = GdbController(command=["gdb-multiarch", "--interpreter=mi2"])
+    try:
+        gdbmi.write(f"target extended-remote {remote_gdb_server}")
+        gdbmi.write(
+            "file samv71-rtems-can/samv71-rtems-can-sizes/work/binaries/partition_1"
+        )
+        common.target_extended_reset(gdbmi)
+        gdbmi.write("load")
+        gdbmi.write("-break-insert cubesat_PI_alive")
+        gdbmi.write("-exec-continue")
+
+        expected = [
+            "  can1  TX - -  099   [0] ",
+            "  can1  RX - -  0A0   [0] ",
+            "  can1  TX - -  098   [1]  01",
+            "  can1  RX - -  0A0   [1]  01",
+            "  can1  TX - -  097   [2]  01 02",
+            "  can1  RX - -  0A0   [2]  01 02",
+            "  can1  TX - -  096   [3]  01 02 03",
+            "  can1  RX - -  0A0   [3]  01 02 03",
+            "  can1  TX - -  095   [4]  01 02 03 04",
+            "  can1  RX - -  0A0   [4]  01 02 03 04",
+            "  can1  TX - -  094   [5]  01 02 03 04 05",
+            "  can1  RX - -  0A0   [5]  01 02 03 04 05",
+            "  can1  TX - -  093   [6]  01 02 03 04 05 06",
+            "  can1  RX - -  0A0   [6]  01 02 03 04 05 06",
+            "  can1  TX - -  092   [7]  01 02 03 04 05 06 07",
+            "  can1  RX - -  0A0   [7]  01 02 03 04 05 06 07",
+            "  can1  TX - -  091   [8]  01 02 03 04 05 06 07 08",
+            "  can1  RX - -  0A0   [8]  01 02 03 04 05 06 07 08",
+        ]
+
+        errors = common.do_execute(
+            "samv71-rtems-can",
+            expected,
+            test_exe="test_samv71_rtems_can_sizes.sh",
+        )
+
+        assert not errors, "\n".join(errors)
+
+    finally:
+        gdbmi.exit()
+
 
 if __name__ == "__main__":
     test_samv71_rtems_can_simple()
     test_samv71_rtems_can_static()
     test_samv71_rtems_can_escaper()
     test_samv71_rtems_can_adapter()
+    test_samv71_rtems_can_sizes()

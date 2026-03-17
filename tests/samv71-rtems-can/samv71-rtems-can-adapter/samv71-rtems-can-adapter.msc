@@ -1,0 +1,12 @@
+mscdocument samv71-rtems-can-adapter /* MSC AND */;
+    language ASN.1;
+    data samv71-rtems-can-adapter.asn;
+
+/* CIF MSCDOCUMENT (0, 0) (4200, 2300) */
+
+mscdocument Nominal /* MSC LEAF */;
+
+msc samv71-rtems-can-adapter;
+endmsc;
+endmscdocument;
+endmscdocument;

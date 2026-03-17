@@ -1,0 +1,25 @@
+SAMV71-RTEMS-CAN-ADAPTER-DATAVIEW DEFINITIONS ::= BEGIN
+
+   MyInteger [size 16, encoding pos-int]
+
+   SmallInteger [size 8, encoding pos-int]
+
+   Can-Id<INTEGER:id-size-det> [] {
+      standard-id [present-when id-size-det==0, size 29, encoding pos-int],
+      extended-id [present-when id-size-det==1, size 29, encoding pos-int]
+   }
+
+   Can-Id-Wrapper [] {
+      padding NULL [pattern '00'B],
+      id-size-det INTEGER [size 1, encoding pos-int],
+      id <id-size-det> []
+   }
+
+   Can-Frame [] {
+      id [],
+      data-size INTEGER [size 8, encoding pos-int],
+      data [size data-size]
+   }
+
+END
+
