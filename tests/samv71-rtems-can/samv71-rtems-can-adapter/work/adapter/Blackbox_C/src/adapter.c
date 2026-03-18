@@ -16,6 +16,8 @@
 static const uint32_t canIdTypeMask = 0x20000000u;
 static const uint32_t canExtendedIdMask = 0x1fffffffu;
 static const uint32_t canStandardIdMask = 0x000007ffu;
+
+// when the driver is configured with address=application-control-can-id, then
 // the driver requires first for bytes for Can-ID and the rest of data is actual data of can frame
 static const size_t rawCanFrameDataOffset = sizeof(uint32_t);
 
