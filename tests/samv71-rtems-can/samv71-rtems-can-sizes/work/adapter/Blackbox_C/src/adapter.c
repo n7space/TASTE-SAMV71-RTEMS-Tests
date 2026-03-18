@@ -10,19 +10,17 @@
 #include "adapter.h"
 #include <string.h>
 #include <assert.h>
-//#include <stdio.h>
 
 // first 29 bits are CAN-ID
 // the bit 30 determines if CAN-ID is 11-bit (standard) or 29-bit (extended)
 static const uint32_t canIdTypeMask = 0x20000000u;
 static const uint32_t canExtendedIdMask = 0x1fffffffu;
 static const uint32_t canStandardIdMask = 0x000007ffu;
+// the driver requires first for bytes for Can-ID and the rest of data is actual data of can frame
+static const size_t rawCanFrameDataOffset = sizeof(uint32_t);
 
 void adapter_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[adapter] Startup");
 }
 
 static byte outputFrame[12];
@@ -31,10 +29,15 @@ void adapter_pong
       (const char *IN_frame, size_t IN_frame_len)
 
 {
-    // convert ACN encoded Can-Frame (represented by byte array) into format required by driver
+    // The function is called when the application needs to send a frame on can bus.
+    // The actual parameter has a type Can-Frame with NATIVE encoding, but since this is
+    // a Blackbox_C, the parameters are represented as a buffers.
+    // The responsibility of this function is to
+    // convert Can-Frame (represented by byte array) into format required by driver.
     assert(IN_frame_len == sizeof(asn1SccCan_Frame));
     const asn1SccCan_Frame* frame = (const asn1SccCan_Frame*)IN_frame;
 
+    // fill the first four bytes with Can-ID, together with Can-ID type bit.
     uint32_t* addressWord = (uint32_t*)outputFrame;
     if(frame->id.id.kind == Can_Id_extended_id_PRESENT) {
         *addressWord = canIdTypeMask | frame->id.id.u.extended_id;
@@ -43,17 +46,24 @@ void adapter_pong
         *addressWord = frame->id.id.u.standard_id;
     }
 
-    memcpy(&outputFrame[sizeof(uint32_t)], frame->data.arr, frame->data.nCount);
+    // the rest of outputFrame is filled with actual data to be send.
+    memcpy(&outputFrame[rawCanFrameDataOffset], frame->data.arr, frame->data.nCount);
 
-    vm_adapter_send_can_frame(PID_env, (const char*)outputFrame, frame->data.nCount + sizeof(uint32_t));
+    // call the RI interface connected to other can-node.
+    vm_adapter_send_can_frame(PID_env, (const char*)outputFrame, frame->data.nCount + rawCanFrameDataOffset);
 }
 
 void adapter_receive_can_frame
       (const char *IN_frame, size_t IN_frame_len)
 
 {
-    // convert data from driver format into ACN Can-Frame format
+    // This is called when the driver receives frame from can bus.
+    // convert data from driver format into Can-Frame format,
+
+    assert(IN_frame_len >= 4);
     asn1SccCan_Frame frame;
+
+    // read first four bytes of message, where Can-ID and Can-ID type shall be placed.
     uint32_t word = *((const uint32_t*)IN_frame);
     if(word & canIdTypeMask) {
         frame.id.id.kind = Can_Id_extended_id_PRESENT;
@@ -63,9 +73,12 @@ void adapter_receive_can_frame
         frame.id.id.kind = Can_Id_standard_id_PRESENT;
         frame.id.id.u.standard_id = word & canStandardIdMask;
     }
-    frame.data.nCount = IN_frame_len - sizeof(uint32_t);
-    memcpy(frame.data.arr, (byte*)IN_frame + sizeof(uint32_t), IN_frame_len - sizeof(uint32_t));
 
+    // the rest of buffer is a frame data
+    frame.data.nCount = IN_frame_len - rawCanFrameDataOffset;
+    memcpy(frame.data.arr, (byte*)IN_frame + rawCanFrameDataOffset, IN_frame_len - rawCanFrameDataOffset);
+
+    // call the RI interface to pass the frame into application.
     vm_adapter_ping(PID_env, (const char*)&frame, sizeof(asn1SccCan_Frame));
 }
 

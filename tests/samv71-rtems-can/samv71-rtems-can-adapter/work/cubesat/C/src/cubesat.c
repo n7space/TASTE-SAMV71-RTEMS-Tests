@@ -20,11 +20,17 @@ void cubesat_PI_ping
       (const asn1SccCan_Frame *IN_frame)
 
 {
+    // the response has always two bytes
+    // the first byte contains the number of bytes in received frame
+    // the second byte contains a "hash" of the bytes in received frame.
+    // the response has always the same Can-ID: 101
     asn1SccCan_Frame frame;
     frame.id.id.kind = Can_Id_standard_id_PRESENT;
     frame.id.id.u.standard_id = 101;
     frame.data.nCount = 2;
+    // first byte is a number of received data bytes
     frame.data.arr[0] = IN_frame->data.nCount;
+    // second byte is a "hash" of received bytes
     frame.data.arr[1] = 0;
     for(int i = 0; i < IN_frame->data.nCount; ++i)
     {

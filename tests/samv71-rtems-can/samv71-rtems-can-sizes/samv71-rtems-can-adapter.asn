@@ -21,6 +21,11 @@ BEGIN
       data OCTET STRING (SIZE(0..8))
    }
 
+   -- This is a dummy data type for interfaces on which can frames will be exchanged (between adapter and device),
+   -- The type of parameter is ignored, Blackbox_C function sees this as a buffer with a given length.
+   -- The adapter uses bigger buffer than this, also broker and driver.
+   -- The size of ACN encoded value of this parameter shall be less than 8, otherwise the driver assumes that
+   -- message needs to be processed by Escaper.
    Raw-Can-Frame ::= OCTET STRING (SIZE(0..4))
 
 END
