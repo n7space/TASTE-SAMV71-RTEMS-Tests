@@ -80,7 +80,7 @@
     <Target iface_id="{3815c286-b43b-4d41-98e1-7d604cd048f0}" func_name="dummy" pi_name="send_can_frame" />
 </Connection>
 
-<Comment id="{3b3e18c7-fe23-43ea-84a5-1ed36599c8bf}" name="This project is a reference of application which needs to operate on ASN defined can frames.\nThe application, represented here as cubesat, uses Can-Frame datatype defined in ASN.\nTo make is possible, the application needs another function, which is called adapter here.\nThe whole purpose of adapter is to convert Can-Frame into a data buffer or back.\n\n\ncan driver has configuration option: address - application-control-can-id\npacketizer is set to: passthrough" required_system_element="NO">
+<Comment id="{3b3e18c7-fe23-43ea-84a5-1ed36599c8bf}" name="This project is a reference of application which needs to operate on ASN.1 defined can frames.\nThe application, represented here as cubesat, uses Can-Frame datatype defined in ASN.1.\nTo make it possible, the application needs a special function implemented as a Blackbox C, which is called adapter here.\nThe whole purpose of adapter is to convert Can-Frame into a data buffer or back.\n\n\nCan driver has configuration option: address - application-control-can-id\npacketizer is set to: passthrough\n\nThis demonstrates a special mode of the CAN driver designed to handle low-level protocols\n\nsuch as CAN-TS or CANopen." required_system_element="NO">
 </Comment>
 
 <Layer name="default" is_visible="true"/>

@@ -51,6 +51,10 @@ void adapter_pong
     // the rest of outputFrame is filled with actual data to be send.
     memcpy(&outputFrame[rawCanFrameDataOffset], frame->data.arr, frame->data.nCount);
 
+    // Setting this function's type to Blackbox C is important,
+    // at this is required for the outputFrame buffer to be passed without modification to
+    // the CAN device driver.
+
     // call the RI interface connected to other can-node.
     vm_adapter_send_can_frame(PID_env, (const char*)outputFrame, frame->data.nCount + rawCanFrameDataOffset);
 }
@@ -62,10 +66,15 @@ void adapter_receive_can_frame
     // This is called when the driver receives frame from can bus.
     // convert data from driver format into Can-Frame format,
 
+    // Setting this function's type to Blackbox C is important,
+    // at this is required for the IN_frame buffer to be exacly as passed from
+    // the CAN device driver.
+
     assert(IN_frame_len >= 4);
     asn1SccCan_Frame frame;
 
-    // read first four bytes of message, where Can-ID and Can-ID type shall be placed.
+    // read first four bytes of message, where Can-ID and Can-ID type shall be placed,
+    // as address=application-control-can-id is selected
     uint32_t word = *((const uint32_t*)IN_frame);
     if(word & canIdTypeMask) {
         frame.id.id.kind = Can_Id_extended_id_PRESENT;

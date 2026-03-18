@@ -1,4 +1,4 @@
-SAMV71-RTEMS-CAN-ADAPTER-DATAVIEW DEFINITIONS ::=
+SAMV71-RTEMS-CAN-SIZES-DATAVIEW DEFINITIONS ::=
 BEGIN
 
    MyInteger ::= INTEGER (0 .. 10000)
@@ -24,11 +24,11 @@ BEGIN
    -- This is a dummy data type for interfaces on which can frames will be exchanged (between adapter and device through driver),
    -- The driver is configured with option address=application-control-can-id and a passthrough packetizer.
    -- This option enables a special case in the driver, in which messages should be treated as
-   -- buffers consisting of both the CAN ID and the CAN data. The mode is intended to be used with
+   -- buffers consisting of both the CAN ID and the CAN data. The mode is intended to be used with 
    -- externally defined protocols or hardware devices (e.g., CAN-TS, CANopen), and thus TASTE specific
    -- message segmentation cannot be used, and so the payload must be at most 8 bytes long (CAN FD is not supported).
    -- The type of parameter is ignored, Blackbox_C function sees this as a buffer with a given length.
-   -- The adapter, broker and driver use internally a sufficiently larger buffer,
+   -- The adapter, broker and driver use internally a sufficiently larger buffer, 
    -- so storing at most 12 bytes (4 for ID and at most 8 for data) is safe.
    -- The size of ACN encoded value of this parameter shall be less than 8, otherwise the driver would assume that
    -- message needs to be processed by Escaper, which is not supported together with address=application-control-can-id option.
