@@ -1,0 +1,6 @@
+SAMV71-RTEMS-SERIAL-RAW-MODE-DATAVIEW DEFINITIONS ::= BEGIN
+
+   SmallInteger [encoding pos-int, size 8]
+
+END
+

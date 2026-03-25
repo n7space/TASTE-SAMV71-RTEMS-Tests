@@ -1,0 +1,29 @@
+# Ignore whole work directory
+work/*
+
+# Ignore qt creator cache directory
+.qtc_clangd
+
+# Ignore qt creator user files
+*.pro.user*
+
+# Ignore aadl files
+*.aadl
+
+# Except LINUX source files
+!work/linux
+work/linux/*
+!work/linux/C
+work/linux/C/*
+!work/linux/C/src
+work/linux/C/src/*
+!work/linux/C/src/linux.c
+
+# Except BOARD source files
+!work/board
+work/board/*
+!work/board/C
+work/board/C/*
+!work/board/C/src
+work/board/C/src/*
+!work/board/C/src/board.c

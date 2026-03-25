@@ -1,0 +1,9 @@
+SAMV71-RTEMS-SERIAL-RAW-MODE-DATAVIEW DEFINITIONS ::=
+BEGIN
+
+   MyInteger ::= INTEGER (0 .. 10000)
+
+   SmallInteger ::= INTEGER (0 .. 255)
+
+END
+
