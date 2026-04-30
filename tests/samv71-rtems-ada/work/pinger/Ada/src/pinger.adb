@@ -7,21 +7,21 @@
 --  !! the procedures corresponding to the provided interfaces in this  !!
 --  !! file. The up-to-date signatures can be found in the .ads file.   !!
 
-
+with Interfaces; use Interfaces;
 package body Pinger is
 
-   procedure Pong is
-   
+   procedure Pong (Param : in out asn1SccMyinteger) is
+         test_result : boolean := Param = 4;
       begin
-         --  Write your code here
+         pragma Unused(test_result);
          null;
       end Pong;
    
    
    procedure Trigger is
-   
+         param : asn1SccMyinteger := 2;
       begin
-         Pinger_RI.Ping;
+         Pinger_RI.Ping(param);
       end Trigger;
 
 

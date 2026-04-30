@@ -7,13 +7,14 @@
 --  !! the procedures corresponding to the provided interfaces in this  !!
 --  !! file. The up-to-date signatures can be found in the .ads file.   !!
 
-
+with Interfaces; use Interfaces;
 package body Ponger is
 
-   procedure Ping is
-   
+   procedure Ping (Param : in out asn1SccMyinteger) is
+         result : asn1SccMyinteger := Param + 2;
       begin
-         Ponger_RI.Pong;
+
+         Ponger_RI.Pong ( result );
       end Ping;
 
 
