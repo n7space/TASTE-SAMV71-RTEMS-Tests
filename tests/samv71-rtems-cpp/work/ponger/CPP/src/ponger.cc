@@ -15,8 +15,7 @@ void ponger_startup(void)
 {
 }
 
-void ponger_PI_ping
-      (const asn1SccMyInteger *IN_param)
+void ponger_PI_ping(const asn1SccMyInteger *IN_param)
 
 {
     asn1SccMyInteger number = *IN_param + 2;

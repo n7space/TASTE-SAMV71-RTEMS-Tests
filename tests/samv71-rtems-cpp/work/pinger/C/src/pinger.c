@@ -13,9 +13,6 @@
 
 void pinger_startup(void)
 {
-   // Write your initialisation code
-   // You may call sporadic required interfaces and start timers
-   // puts ("[pinger] Startup");
 }
 
 static bool test_result = false;
@@ -25,8 +22,7 @@ static void pinger_trap()
     asm volatile ("nop");
 }
 
-void pinger_PI_pong
-      (const asn1SccMyInteger *IN_param)
+void pinger_PI_pong(const asn1SccMyInteger *IN_param)
 
 {
     test_result = *IN_param == 4;
