@@ -8,6 +8,10 @@ import pytest
 from pygdbmi.gdbcontroller import GdbController
 
 
+@pytest.mark.skipif(
+    not os.getenv("SAMV71_RTEMS_ADA_ENABLED"),
+    reason="Ada is not enabled on current platform",
+)
 def test_samv71_rtems_ada():
     common.do_clean_build("samv71-rtems-ada")
     remote_gdb_server = os.getenv("SAMV71_REMOTE_GDBSERVER", default="127.0.0.1")
