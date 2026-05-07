@@ -1,0 +1,6 @@
+SAMV71-RTEMS-ADA-DATAVIEW DEFINITIONS ::= BEGIN
+
+MyInteger [encoding pos-int, size 16]
+
+END
+
