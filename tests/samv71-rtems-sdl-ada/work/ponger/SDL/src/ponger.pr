@@ -1,0 +1,24 @@
+/* CIF PROCESS (0, 152), (150, 75) */
+/* CIF Keep Specific Geode _REQSERVER_ 'https://gitlab.esa.int/taste/demo' */
+process Ponger;
+    /* CIF Keep Specific Geode Partition 'default' */
+    /* CIF TEXT (0, 0), (170, 140) */
+    dcl param MyInteger;
+    /* CIF ENDTEXT */
+    /* CIF START (428, 144), (70, 35) */
+    START;
+        /* CIF NEXTSTATE (428, 194), (70, 35) */
+        NEXTSTATE Wait;
+    /* CIF state (741, 160), (70, 35) */
+    /* CIF Keep Specific Geode Partition 'default' */
+    state Wait;
+        /* CIF input (728, 215), (95, 35) */
+        input ping(param);
+            /* CIF task (708, 270), (135, 35) */
+            task param := param + 2;
+            /* CIF output (726, 325), (100, 35) */
+            output pong(param);
+            /* CIF NEXTSTATE (741, 380), (70, 35) */
+            NEXTSTATE Wait;
+    endstate;
+endprocess Ponger;

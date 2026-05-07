@@ -1,0 +1,4 @@
+SAMV71-RTEMS-SDL-ADA-DATAVIEW DEFINITIONS ::= BEGIN
+   MyInteger [encoding pos-int, endianness big, size 16]
+END
+
