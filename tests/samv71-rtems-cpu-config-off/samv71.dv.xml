@@ -1,0 +1,22 @@
+<DeploymentView version="1.2" UiFile="samv71.ui.xml" creatorHash="383508e" modifierHash="383508e">
+    <Node id="{d5029c20-6a7e-4973-842d-99305204a194}" name="SAM V71 RTEMS N7S_1" type="ocarina_processors_arm::samv71.rtems" node_label="Node_1" namespace="ocarina_processors_arm">
+        <Partition id="{61046bb5-4b73-462e-bce8-7b6bf7eb2b14}" name="Partition_1">
+            <Function id="{457827f2-28da-4be2-914c-9a97c6a8ebcd}" name="ponger" path="ponger"/>
+            <Function id="{37cf2834-6f37-4f00-a9c2-9ef17c3078f0}" name="pinger" path="pinger"/>
+        </Partition>
+        <Device id="{04caae7e-aca1-421c-8fa4-fed999b6675f}" name="uart0" requires_bus_access="ocarina_buses::serial.ccsds" port="uart0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" namespace="ocarina_drivers" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{4283ca55-3f7d-44b0-a0b8-30de4c8db76c}" name="uart1" requires_bus_access="ocarina_buses::serial.ccsds" port="uart1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" namespace="ocarina_drivers" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{7432ed67-cc8a-4871-bc48-f8c5ecaca8cd}" name="uart2" requires_bus_access="ocarina_buses::serial.ccsds" port="uart2" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" namespace="ocarina_drivers" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{df8b11d9-7a07-4d5d-b344-d4e7faf5b670}" name="uart3" requires_bus_access="ocarina_buses::serial.ccsds" port="uart3" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" namespace="ocarina_drivers" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{737b1590-cf01-4156-8705-ea440c5a1957}" name="uart4" requires_bus_access="ocarina_buses::serial.ccsds" port="uart4" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-serial-driver.asn" asn1type="Serial-SamV71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-SERIAL-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::serial_ccsds" namespace="ocarina_drivers" impl_extends="ocarina_drivers::serial_ccsds.samv71_rtems">
+        </Device>
+        <Device id="{a0ae8429-390f-4b85-8d57-564620bb4d0b}" name="can0" requires_bus_access="ocarina_buses::can.generic" port="can0" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::can_generic" namespace="ocarina_drivers" impl_extends="ocarina_drivers::can_generic.samv71">
+        </Device>
+        <Device id="{98be3fd5-4c49-49a9-802c-0d0682f57caa}" name="can1" requires_bus_access="ocarina_buses::can.generic" port="can1" asn1file="/home/taste/tool-inst/include/TASTE-SAMV71-RTEMS-Drivers/configurations/samv71-rtems-can-driver.asn" asn1type="CAN-Samv71-Rtems-Conf-T" asn1module="SAMV71-RTEMS-CAN-DRIVER" bus_namespace="ocarina_buses" extends="ocarina_drivers::can_generic" namespace="ocarina_drivers" impl_extends="ocarina_drivers::can_generic.samv71">
+        </Device>
+    </Node>
+</DeploymentView>
