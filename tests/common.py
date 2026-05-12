@@ -6,6 +6,7 @@ import os
 import io
 import pexpect
 import signal
+import pytest
 from pygdbmi.gdbcontroller import GdbController
 
 
@@ -70,8 +71,8 @@ def do_clean_build(test_name):
 
     try:
         subprocess.run("make clean", cwd=test_path, shell=True, capture_output=True)
-    except Exception:
-        pass
+    except (OSError, ValueError, subprocess.SubprocessError):
+        pytest.fail(f"Unable to clean project {test_name}")
 
 
 def do_execute_without_kill(
