@@ -10,7 +10,7 @@ import common
 
 def is_location_dataview_uniq(locations):
     for location in locations:
-        if location["caret"]["file"].endswith("dataview-uniq.h"):
+        if location["caret"]["file"].endswith("dataview-uniq.c"):
             return True
     return False
 
@@ -29,9 +29,43 @@ def warning_description(message):
     return json.dumps(message, sort_keys=True, indent=4)
 
 
-def test_samv71_rtems_build():
+def parse_export(line):
+    line = line.strip().removeprefix("export ")
+    separator = line.find("=")
+    if separator > 0:
+        key=line[:separator]
+        value=line[separator+1:]
+        return (key, value)
+    return None
+
+
+def find_custom_environment(project_root):
+    makefile_path = os.path.abspath(os.path.join(project_root, "Makefile"))
+    current_path_value = os.path.abspath(project_root) + "/"
+    result = {}
+    with open(makefile_path, "r") as makefile:
+        exports = filter(lambda line: line.startswith("export "), makefile.readlines())
+        for export in exports:
+            var = parse_export(export)
+            if var:
+               result[var[0]] = var[1].replace("$(CURRENT_DIR)", current_path_value)
+    return result
+
+
+def prepare_custom_environment(project_root):
+    env = os.environ.copy()
+    custom_env = find_custom_environment(project_root)
+    env = env | custom_env
+    # compile files with additional flag to output json
+    if "PARTITION_1_USER_CFLAGS" in env:
+        env["PARTITION_1_USER_CFLAGS"] = env["PARTITION_1_USER_CFLAGS"] + " -fdiagnostics-format=json"
+    else:
+        env["PARTITION_1_USER_CFLAGS"] = "-fdiagnostics-format=json"
+    return env
+
+
+def check_project_has_no_build_warnings(project_root):
     # do standard clean and build
-    project_root = "samv71-rtems-c/TEST-SAMV71-FUNCTION-C-IMPLEMENTATION"
     common.do_clean_build(project_root)
 
     build = common.do_build(project_root, ["samv71", "debug"])
@@ -46,17 +80,30 @@ def test_samv71_rtems_build():
         pytest.fail(f"Unable to clean binaries {process.stderr}")
 
     try:
-        # compile files with additional flag to output json
-        os.environ["PARTITION_1_USER_CFLAGS"] = "-fdiagnostics-format=json"
-        process = subprocess.run(["make", "-f", "Makefile.node_1", "debug"], cwd=partition_root, shell=False, capture_output=True)
+        env = prepare_custom_environment(project_root)
+        process = subprocess.run(["make", "-f", "Makefile.node_1", "debug"], cwd=partition_root, shell=False, capture_output=True, env=env)
         # check if all generated messages are allowed
         lines = list(filter(lambda line: line, process.stderr.decode('utf-8').splitlines()))
         for line in lines:
             messages = json.loads(line)
             for message in messages:
-                assert is_warning_allowed(message), f"Unexpected warning:\n{warning_description(message)}"
+                assert is_warning_allowed(message), f"Unexpected warning in project {project_root}:\n{warning_description(message)}"
     except (OSError, ValueError, subprocess.SubprocessError):
         pytest.fail(f"Unable to build binaries {process.stderr}")
+
+
+def test_samv71_rtems_build():
+    check_project_has_no_build_warnings("samv71-rtems-c/TEST-SAMV71-FUNCTION-C-IMPLEMENTATION")
+    check_project_has_no_build_warnings("samv71-rtems-log/TEST-SAMV71-ACTIVATION-LOG")
+    check_project_has_no_build_warnings("samv71-rtems-stack-usage/TEST-SAMV71-STACK-USAGE")
+    check_project_has_no_build_warnings("samv71-rtems-cyclic-stack-size/TEST-SAMV71-CYCLIC-STACK-SIZE")
+    check_project_has_no_build_warnings("samv71-rtems-sporadic-stack-size/TEST-SAMV71-SPORADIC-STACK-SIZE")
+    check_project_has_no_build_warnings("samv71-rtems-cpu-config-off")
+    check_project_has_no_build_warnings("samv71-rtems-cpu-config-on/samv71-rtems-cpu-config-default")
+    check_project_has_no_build_warnings("samv71-rtems-cpu-config-on/samv71-rtems-cpu-config-freq")
+    check_project_has_no_build_warnings("samv71-rtems-cpu-usage/TEST-SAMV71-CPU-USAGE")
+    check_project_has_no_build_warnings("samv71-rtems-queue-usage/TEST-SAMV71-QUEUE-USAGE")
+
 
 
 if __name__ == "__main__":
