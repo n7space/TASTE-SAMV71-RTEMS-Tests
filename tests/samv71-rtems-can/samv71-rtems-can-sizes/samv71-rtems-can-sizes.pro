@@ -9,8 +9,8 @@ DISTFILES += work/binaries/filters
 DISTFILES += work/system.asn
 
 DISTFILES += deploymentview.dv.xml
-DISTFILES += samv71-rtems-can-adapter.asn
-DISTFILES += samv71-rtems-can-adapter.acn
+DISTFILES += samv71-rtems-can-sizes.asn
+DISTFILES += samv71-rtems-can-sizes.acn
 include(work/taste.pro)
 message($$DISTFILES)
 
