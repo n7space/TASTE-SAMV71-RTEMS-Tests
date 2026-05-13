@@ -1,0 +1,56 @@
+# Ignore whole work directory
+work/*
+
+# Except work/system.asn
+!work/system.asn
+
+# Except work linker_script
+!work/linker_script
+
+# Ignore qt creator cache directory
+.qtc_clangd
+
+# Ignore qt creator user files
+*.pro.user*
+
+# Ignore aadl files
+*.aadl
+
+# Ignore msc files
+*.msc
+
+# Except FUNCTION_1 source files
+!work/function_1
+work/function_1/*
+!work/function_1/C
+work/function_1/C/*
+!work/function_1/C/src
+work/function_1/C/src/*
+!work/function_1/C/src/function_1.c
+
+# Except FUNCTION_2 source files
+!work/function_2
+work/function_2/*
+!work/function_2/C
+work/function_2/C/*
+!work/function_2/C/src
+work/function_2/C/src/*
+!work/function_2/C/src/function_2.c
+
+# Except MONITOR_TICK source files
+!work/monitor_tick
+work/monitor_tick/*
+!work/monitor_tick/C
+work/monitor_tick/C/*
+!work/monitor_tick/C/src
+work/monitor_tick/C/src/*
+!work/monitor_tick/C/src/monitor_tick.c
+
+# Except TESTFUNCTION source files
+!work/testfunction
+work/testfunction/*
+!work/testfunction/C
+work/testfunction/C/*
+!work/testfunction/C/src
+work/testfunction/C/src/*
+!work/testfunction/C/src/testfunction.c
